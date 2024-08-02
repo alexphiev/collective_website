@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { ChevronsDown, Github, Handshake, Menu, Sprout } from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -17,6 +17,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -28,15 +29,16 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
+interface ServiceProps {
   title: string;
+  href: string;
   description: string;
 }
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#Serices",
+    label: "Services",
   },
   {
     href: "#team",
@@ -47,35 +49,38 @@ const routeList: RouteProps[] = [
     label: "Contact",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "#projects",
+    label: "Projects",
   },
 ];
 
-const featureList: FeatureProps[] = [
+const serviceList: ServiceProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "Beautiful and lightning-fast Web application from zero",
+    href: "#webapplication",
+    description:
+      "Since 8 years, we build Web applications and use the best available technology to make it performant and attractive.",
   },
   {
-    title: "Build Trust",
+    title: "Fully responsive and SEO-optimized Website",
+    href: "#website",
     description:
-      "Leverages social proof elements to establish trust and credibility.",
+      "From no-code to full-code websites, depending on your needs and budget, and always with the smoothest user experience and best SEO possible.",
   },
   {
-    title: "Capture Leads",
+    title: "Mobile applications for iOS and Android",
+    href: "#mobileapplications",
     description:
-      "Make your lead capture form visually appealing and strategically.",
+      "User centric design and development for mobile applications, using hybrid and native technologies based on your needs.",
   },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header className="bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky z-40 rounded-2xl flex justify-between items-center p-2">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        Dev For Good
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -88,8 +93,8 @@ export const Navbar = () => {
           </SheetTrigger>
 
           <SheetContent
-            side="left"
-            className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+            side="right"
+            className="flex flex-col justify-between w-52 rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
           >
             <div>
               <SheetHeader className="mb-4 ml-4">
@@ -128,45 +133,59 @@ export const Navbar = () => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
+          {/* Advanced navigation item */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
+            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
+              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      href="#services"
                     >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
+                      <Sprout className="h-6 w-6" />
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        Digital products a better world
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        We use the best available technology to empower your
+                        ideas.
                       </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+                <div className="h-full flex flex-col">
+                  <ul className="flex flex-col flex-1 justify-between">
+                    {serviceList.map(({ title, href, description }) => (
+                      <li
+                        key={title}
+                        className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
+                      >
+                        <Link href={href}>
+                          <p className="mb-1 font-semibold text-foreground ">
+                            {title}
+                          </p>
+                          <p className="line-clamp-2 text-muted-foreground">
+                            {description}
+                          </p>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
+          {/* Simple navigation links */}
           <NavigationMenuItem>
-            {routeList.map(({ href, label }) => (
-              <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
+            {routeList.slice(1).map(({ href, label }) => (
+              <Link key={label} href={href} legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   {label}
-                </Link>
-              </NavigationMenuLink>
+                </NavigationMenuLink>
+              </Link>
             ))}
           </NavigationMenuItem>
         </NavigationMenuList>
