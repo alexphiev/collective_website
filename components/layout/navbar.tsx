@@ -1,6 +1,13 @@
 "use client";
-import { ChevronsDown, Github, Handshake, Menu, Sprout } from "lucide-react";
-import React from "react";
+import {
+  ChevronsDown,
+  Github,
+  Handshake,
+  Linkedin,
+  Menu,
+  Sprout,
+} from "lucide-react";
+import React, { useEffect, useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -56,30 +63,51 @@ const routeList: RouteProps[] = [
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Beautiful and lightning-fast Web application from zero",
+    title: "Impactful Web Applications",
     href: "#webapplication",
     description:
-      "Since 8 years, we build Web applications and use the best available technology to make it performant and attractive.",
+      "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact.",
   },
   {
-    title: "Fully responsive and SEO-optimized Website",
+    title: "Beautiful Websites for Every Cause",
     href: "#website",
     description:
-      "From no-code to full-code websites, depending on your needs and budget, and always with the smoothest user experience and best SEO possible.",
+      "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience.",
   },
   {
-    title: "Mobile applications for iOS and Android",
+    title: "Mobile Apps for Positive Change",
     href: "#mobileapplications",
     description:
-      "User centric design and development for mobile applications, using hybrid and native technologies based on your needs.",
+      "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time.",
   },
 ];
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setHasScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky z-40 rounded-2xl flex justify-between items-center p-2">
-      <Link href="/" className="font-bold text-lg flex items-center">
+    <header
+      className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 ${
+        hasScrolled
+          ? "bg-gradient-to-b from-gray-900/80 to-transparent backdrop-blur-sm"
+          : "bg-transparent"
+      }`}
+    >
+      <Link href="/" className="hidden lg:flex font-bold text-lg items-center">
         Dev For Good
       </Link>
       {/* <!-- Mobile --> */}
@@ -93,15 +121,14 @@ export const Navbar = () => {
           </SheetTrigger>
 
           <SheetContent
-            side="right"
+            side="left"
             className="flex flex-col justify-between w-52 rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
           >
             <div>
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
+                    Dev For Good
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -135,9 +162,11 @@ export const Navbar = () => {
         <NavigationMenuList>
           {/* Advanced navigation item */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent">
+              Services
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
@@ -146,17 +175,17 @@ export const Navbar = () => {
                     >
                       <Sprout className="h-6 w-6" />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        Digital products a better world
+                        Digital products for a better world
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        We use the best available technology to empower your
-                        ideas.
+                        We use the best available technology to help your ideas
+                        have the impact they deserve.
                       </p>
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <div className="h-full flex flex-col">
-                  <ul className="flex flex-col flex-1 justify-between">
+                <li className="row-span-3">
+                  <ul className="flex flex-col flex-1 justify-between space-y-2">
                     {serviceList.map(({ title, href, description }) => (
                       <li
                         key={title}
@@ -173,34 +202,37 @@ export const Navbar = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           {/* Simple navigation links */}
-          <NavigationMenuItem>
-            {routeList.slice(1).map(({ href, label }) => (
-              <Link key={label} href={href} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          {routeList.slice(1).map(({ href, label }) => (
+            <NavigationMenuItem key={label}>
+              <Link href={href} legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={`bg-transparent ${navigationMenuTriggerStyle()}`}
+                >
                   {label}
                 </NavigationMenuLink>
               </Link>
-            ))}
-          </NavigationMenuItem>
+            </NavigationMenuItem>
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
 
       <div className="hidden lg:flex">
         <ToggleTheme />
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
+        <Button asChild size="sm" variant="ghost" aria-label="View on LinkedIn">
           <Link
-            aria-label="View on GitHub"
+            aria-label="View on LinkedIn"
             href="https://github.com/nobruf/shadcn-landing-page.git"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <Github className="size-5" />
+            <Linkedin className="size-5" />
           </Link>
         </Button>
       </div>
