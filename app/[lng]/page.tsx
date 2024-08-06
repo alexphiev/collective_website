@@ -8,11 +8,16 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { languages } from "../i18n/settings";
 
-export default function Home() {
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
+
+export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <>
-      <HeroSection />
+      <HeroSection lng={lng} />
       <SponsorsSection />
       <BenefitsSection />
       <FeaturesSection />

@@ -1,13 +1,14 @@
-"use client";
+import { useTranslation } from "@/app/i18n";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
+import { ArrowRight, Type } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { TypewritterComponent } from "../typewritter-component";
 
-export const HeroSection = () => {
-  const { theme } = useTheme();
+export const HeroSection = async ({ lng }: { lng: string }) => {
+  const { t } = await useTranslation(lng);
+
   return (
     <section className="container w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
@@ -20,16 +21,18 @@ export const HeroSection = () => {
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+            <h1>{t("hero.title.1")}</h1>
             <h1>
-              We build digital products with
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                impact 🌿
+                <TypewritterComponent
+                  words={[1, 2, 3].map((i) => t(`hero.title.2.${i}`))}
+                />
               </span>
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We're here to help you build digital products that make a difference.`}
+            {t("hero.subtitle")}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
@@ -59,11 +62,7 @@ export const HeroSection = () => {
             width={1200}
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
-            src={
-              theme === "light"
-                ? "/hero-image-light.jpeg"
-                : "/hero-image-dark.jpeg"
-            }
+            src={"/hero-image-dark.jpeg"}
             alt="dashboard"
           />
 

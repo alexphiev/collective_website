@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "services": {
+      "title": "Services",
+      "left": {
+        "title": "Digital products for a better world",
+        "description": "We use the best available technology to help your ideas have the impact they deserve."
+      },
+      "webapp": {
+        "title": "Impactful Web Applications",
+        "description": "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
+      },
+      "website": {
+        "title": "Beautiful Websites for Every Cause",
+        "description": "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience."
+      },
+      "mobileapp": {
+        "title": "Mobile Apps for Positive Change",
+        "description": "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time."
+      }
+    },  
+    "team": "Team",
+    "contact": "Contact",
+    "projects": "Projects",
+    "lang": {
+      "en": {
+        "code": "EN",
+        "name": "English"
+      },
+      "es": {
+        "code": "ES",
+        "name": "Spanish"
+      },
+      "fr": {
+        "code": "FR",
+        "name": "French"
+      }
+    }
+  },
+  "hero": {
+    "title.1": "We build digital products",
+    "title.2": {
+      "1": "for impact",
+      "2": "for a better world",
+      "3": "for positive change"
+    },
+    "subtitle": "We're here to help you build a project that makes a difference."
+  }
+}

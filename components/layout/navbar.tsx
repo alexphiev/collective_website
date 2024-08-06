@@ -1,22 +1,8 @@
 "use client";
-import {
-  ChevronsDown,
-  Github,
-  Handshake,
-  Linkedin,
-  Menu,
-  Sprout,
-} from "lucide-react";
-import React, { useEffect, useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "../ui/sheet";
-import { Separator } from "../ui/separator";
+import { Linkedin, Menu, Sprout } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,10 +12,18 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
+import { Separator } from "../ui/separator";
+import {
+  Sheet,
+  SheetContent,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+import { ToggleLanguage } from "./toogle-language";
 import { ToggleTheme } from "./toogle-theme";
+import { useTranslation } from "@/app/i18n/client";
 
 interface RouteProps {
   href: string;
@@ -42,49 +36,47 @@ interface ServiceProps {
   description: string;
 }
 
-const routeList: RouteProps[] = [
-  {
-    href: "#Serices",
-    label: "Services",
-  },
-  {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#projects",
-    label: "Projects",
-  },
-];
-
-const serviceList: ServiceProps[] = [
-  {
-    title: "Impactful Web Applications",
-    href: "#webapplication",
-    description:
-      "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact.",
-  },
-  {
-    title: "Beautiful Websites for Every Cause",
-    href: "#website",
-    description:
-      "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience.",
-  },
-  {
-    title: "Mobile Apps for Positive Change",
-    href: "#mobileapplications",
-    description:
-      "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time.",
-  },
-];
-
-export const Navbar = () => {
+export const Navbar = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng);
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+
+  const routeList: RouteProps[] = [
+    {
+      href: "#serices",
+      label: t("nav.services.title"),
+    },
+    {
+      href: "#team",
+      label: t("nav.team"),
+    },
+    {
+      href: "#contact",
+      label: t("nav.contact"),
+    },
+    {
+      href: "#projects",
+      label: t("nav.projects"),
+    },
+  ];
+
+  const serviceList: ServiceProps[] = [
+    {
+      title: t("nav.services.webapp.title"),
+      href: "#webapplication",
+      description: t("nav.services.webapp.description"),
+    },
+    {
+      title: t("nav.services.website.title"),
+      href: "#website",
+      description: t("nav.services.website.description"),
+    },
+    {
+      title: t("nav.services.mobileapp.title"),
+      href: "#mobileapplications",
+      description: t("nav.services.mobileapp.description"),
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,10 +93,10 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 ${
+      className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 transition-all duration-500 ${
         hasScrolled
-          ? "bg-gradient-to-b from-gray-900/80 to-transparent backdrop-blur-sm"
-          : "bg-transparent"
+          ? "bg-gradient-to-b from-gray-900/80 to-transparent backdrop-blur-md border-b"
+          : "bg-transparent border-transparent"
       }`}
     >
       <Link href="/" className="hidden lg:flex font-bold text-lg items-center">
@@ -150,7 +142,7 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
-
+              <ToggleLanguage lng={lng} />
               <ToggleTheme />
             </SheetFooter>
           </SheetContent>
@@ -175,11 +167,10 @@ export const Navbar = () => {
                     >
                       <Sprout className="h-6 w-6" />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        Digital products for a better world
+                        {t("nav.services.left.title")}
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        We use the best available technology to help your ideas
-                        have the impact they deserve.
+                        {t("nav.services.left.description")}
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -210,25 +201,25 @@ export const Navbar = () => {
           {/* Simple navigation links */}
           {routeList.slice(1).map(({ href, label }) => (
             <NavigationMenuItem key={label}>
-              <Link href={href} legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`bg-transparent ${navigationMenuTriggerStyle()}`}
-                >
-                  {label}
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href={href}
+                className={`bg-transparent w-24 ${navigationMenuTriggerStyle()}`}
+              >
+                {label}
+              </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
         </NavigationMenuList>
       </NavigationMenu>
 
       <div className="hidden lg:flex">
+        <ToggleLanguage lng={lng} />
         <ToggleTheme />
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on LinkedIn">
+        <Button asChild size="sm" variant="ghost" aria-label="LinkedIn">
           <Link
-            aria-label="View on LinkedIn"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/alexandrephiev/"
             target="_blank"
             rel="noopener noreferrer"
           >

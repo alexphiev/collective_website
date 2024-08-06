@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "services": {
+      "title": "Servicios",
+      "left": {
+        "title": "Productos digitales para un mundo mejor",
+        "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
+      },
+      "webapp": {
+        "title": "Aplicaciones Web Impactantes",
+        "description": "Creando soluciones web hermosas y ultrarrápidas que impulsan el cambio positivo. 8 años de experiencia en UI/UX y optimización de rendimiento para el impacto social."
+      },
+      "website": {
+        "title": "Sitios Web Hermosos para Cada Causa",
+        "description": "Desde no-code de base hasta full-code empresarial: sitios web optimizados para SEO y responsivos que amplifican tu misión y resuenan con tu audiencia."
+      },
+      "mobileapp": {
+        "title": "Aplicaciones Móviles para el Cambio Positivo",
+        "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso y crean conexiones significativas. Aprovechando la tecnología para marcar la diferencia, un toque a la vez."
+      }
+    },
+    "team": "Equipo",
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "lang": {
+      "en": {
+        "code": "EN",
+        "name": "Inglés"
+      },
+      "es": {
+        "code": "ES",
+        "name": "Español"
+      },
+      "fr": {
+        "code": "FR",
+        "name": "Francés"
+      }
+    }
+  },
+  "hero": {
+    "title.1": "Desarrollamos productos digitales",
+    "title.2": {
+      "1": "para el impacto",
+      "2": "para un mundo mejor",
+      "3": "para un cambio positivo"
+    },
+    "subtitle": "Estamos aquí para ayudarte a construir un proyecto que marque la diferencia."
+  }
+}
