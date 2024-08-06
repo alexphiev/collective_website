@@ -3,14 +3,12 @@
 import { useTranslation } from "@/app/i18n/client";
 import { languages } from "@/app/i18n/settings";
 import { usePathname, useRouter } from "next/navigation";
-import { Button } from "../ui/button";
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
-  SelectValue,
 } from "../ui/select";
 
 const languageNames: { [key in (typeof languages)[number]]: string } = {
@@ -32,12 +30,8 @@ export const ToggleLanguage = ({ lng }: { lng: string }) => {
         router.push(newPath);
       }}
     >
-      <SelectTrigger className="px-2 border-none focus:ring-0 focus:ring-offset-0 h-[36px] w-[55px] m-0">
-        <Button variant="ghost" size="sm" className="flex items-center gap-2">
-          <SelectValue placeholder="Select a language">
-            {t(`nav.lang.${lng}.code`)}
-          </SelectValue>
-        </Button>
+      <SelectTrigger className="px-2 font-bold text-xs border-none focus:ring-0 focus:ring-offset-0 h-[36px] w-[55px] m-0 hover:bg-accent hover:text-accent-foreground">
+        {t(`nav.lang.${lng}.code`)}
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

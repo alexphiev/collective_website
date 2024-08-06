@@ -1,10 +1,10 @@
 import { useTranslation } from "@/app/i18n";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Type } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { TypewritterComponent } from "../typewritter-component";
+import heroImageDark from "@/public/hero-image.jpg";
 
 export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -47,17 +47,17 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           </div>
         </div>
 
-        <div className="relative group mt-14">
-          <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
+        <div className="relative group">
+          {/* <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div> */}
+          <div className="absolute top-0 left-0 w-full h-20 md:h-28 bg-gradient-to-t from-background/0 via-background/50 to-background rounded-lg z-20"></div>
           <Image
-            width={1200}
-            height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
-            src={"/hero-image-dark.jpeg"}
-            alt="dashboard"
+            className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-b-2 border-secondary border-b-primary/30 z-10"
+            src={heroImageDark}
+            alt="dashboard image"
           />
-
-          <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
+          {/* <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div> */}
+          <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg z-20"></div>
+          <div className="absolute bottom-0 lg:-bottom-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
         </div>
       </div>
     </section>

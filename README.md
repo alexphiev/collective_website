@@ -4,7 +4,7 @@
 
 ### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to NextJS
 
-![Alt text](./public/demo-img.jpg)
+![Alt text](./public/demo-img.png)
 
 ## Sections
 
