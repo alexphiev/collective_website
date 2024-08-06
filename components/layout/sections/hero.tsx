@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { TypewritterComponent } from "../typewritter-component";
-import heroImageDark from "@/public/hero-image.jpg";
+import heroImageDark from "@/public/devices.svg";
 
 export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -49,14 +49,13 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
 
         <div className="relative group">
           {/* <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div> */}
-          <div className="absolute top-0 left-0 w-full h-20 md:h-28 bg-gradient-to-t from-background/0 via-background/50 to-background rounded-lg z-20"></div>
+          {/* <div className="absolute top-0 left-0 w-full h-20 md:h-28 bg-gradient-to-t from-background/0 via-background/50 to-background rounded-lg z-20"></div> */}
           <Image
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-b-2 border-secondary border-b-primary/30 z-10"
+            className="w-full md:w-[800px] pt-10 mx-auto rounded-lg relative leading-none flex items-center z-10"
             src={heroImageDark}
             alt="dashboard image"
           />
           {/* <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div> */}
-          <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg z-20"></div>
           <div className="absolute bottom-0 lg:-bottom-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
         </div>
       </div>

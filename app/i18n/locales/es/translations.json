@@ -1,40 +1,42 @@
 {
-  "nav": {
-    "services": {
-      "title": "Servicios",
-      "left": {
-        "title": "Productos digitales para un mundo mejor",
-        "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
-      },
-      "webapp": {
-        "title": "Aplicaciones Web Impactantes",
-        "description": "Creando soluciones web hermosas y ultrarrápidas que impulsan el cambio positivo. 8 años de experiencia en UI/UX y optimización de rendimiento para el impacto social."
-      },
-      "website": {
-        "title": "Sitios Web Hermosos para Cada Causa",
-        "description": "Desde no-code de base hasta full-code empresarial: sitios web optimizados para SEO y responsivos que amplifican tu misión y resuenan con tu audiencia."
-      },
-      "mobileapp": {
-        "title": "Aplicaciones Móviles para el Cambio Positivo",
-        "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso y crean conexiones significativas. Aprovechando la tecnología para marcar la diferencia, un toque a la vez."
-      }
+  "services": {
+    "title": "Servicios",
+    "left": {
+      "title": "Productos digitales para un mundo mejor",
+      "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
     },
-    "team": "Equipo",
-    "contact": "Contacto",
-    "projects": "Proyectos",
-    "lang": {
-      "en": {
-        "code": "EN",
-        "name": "Inglés"
-      },
-      "es": {
-        "code": "ES",
-        "name": "Español"
-      },
-      "fr": {
-        "code": "FR",
-        "name": "Francés"
-      }
+    "webapp": {
+      "title": "Aplicaciones Web Impactantes",
+      "description": "Creando soluciones web hermosas y ultrarrápidas que impulsan el cambio positivo. 8 años de experiencia en UI/UX y optimización de rendimiento para el impacto social."
+    },
+    "website": {
+      "title": "Sitios Web Hermosos para Cada Causa",
+      "description": "Desde no-code de base hasta full-code empresarial: sitios web optimizados para SEO y responsivos que amplifican tu misión y resuenan con tu audiencia."
+    },
+    "mobileapp": {
+      "title": "Aplicaciones Móviles para el Cambio Positivo",
+      "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso y crean conexiones significativas. Aprovechando la tecnología para marcar la diferencia, un toque a la vez."
+    },
+    "data": {
+      "title": "Análisis y visualización de datos",
+      "description": "Te ayudamos a recopilar, analizar y visualizar datos para tomar decisiones informadas y medir tu impacto. Desde la recopilación de datos hasta la visualización de datos, te cubrimos."
+    }
+  },
+  "team": "Equipo",
+  "contact": "Contacto",
+  "projects": "Proyectos",
+  "lang": {
+    "en": {
+      "code": "EN",
+      "name": "Inglés"
+    },
+    "es": {
+      "code": "ES",
+      "name": "Español"
+    },
+    "fr": {
+      "code": "FR",
+      "name": "Francés"
     }
   },
   "hero": {

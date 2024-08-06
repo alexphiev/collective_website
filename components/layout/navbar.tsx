@@ -1,7 +1,7 @@
 "use client";
 import { Linkedin, Menu, Sprout } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "../ui/button";
 import {
   NavigationMenu,
@@ -24,16 +24,11 @@ import {
 import { ToggleLanguage } from "./toogle-language";
 import { ToggleTheme } from "./toogle-theme";
 import { useTranslation } from "@/app/i18n/client";
+import { getServiceList } from "@/utils/services";
 
 interface RouteProps {
   href: string;
   label: string;
-}
-
-interface ServiceProps {
-  title: string;
-  href: string;
-  description: string;
 }
 
 export const Navbar = ({ lng }: { lng: string }) => {
@@ -41,40 +36,26 @@ export const Navbar = ({ lng }: { lng: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
+  const serviceList = useMemo(() => {
+    return getServiceList(t);
+  }, [t]);
+
   const routeList: RouteProps[] = [
     {
       href: "#serices",
-      label: t("nav.services.title"),
+      label: t("services.title"),
     },
     {
       href: "#team",
-      label: t("nav.team"),
+      label: t("team"),
     },
     {
       href: "#contact",
-      label: t("nav.contact"),
+      label: t("contact"),
     },
     {
       href: "#projects",
-      label: t("nav.projects"),
-    },
-  ];
-
-  const serviceList: ServiceProps[] = [
-    {
-      title: t("nav.services.webapp.title"),
-      href: "#webapplication",
-      description: t("nav.services.webapp.description"),
-    },
-    {
-      title: t("nav.services.website.title"),
-      href: "#website",
-      description: t("nav.services.website.description"),
-    },
-    {
-      title: t("nav.services.mobileapp.title"),
-      href: "#mobileapplications",
-      description: t("nav.services.mobileapp.description"),
+      label: t("projects"),
     },
   ];
 
@@ -167,10 +148,10 @@ export const Navbar = ({ lng }: { lng: string }) => {
                     >
                       <Sprout className="h-6 w-6" />
                       <div className="mb-2 mt-4 text-lg font-medium">
-                        {t("nav.services.left.title")}
+                        {t("services.section.title")}
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        {t("nav.services.left.description")}
+                        {t("services.section.description")}
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -183,7 +164,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
                         className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
                       >
                         <Link href={href}>
-                          <p className="mb-1 font-semibold text-foreground ">
+                          <p className="mb-1 font-semibold text-foreground">
                             {title}
                           </p>
                           <p className="line-clamp-2 text-muted-foreground">

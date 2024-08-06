@@ -31,7 +31,7 @@ export const ToggleLanguage = ({ lng }: { lng: string }) => {
       }}
     >
       <SelectTrigger className="px-2 font-bold text-xs border-none focus:ring-0 focus:ring-offset-0 h-[36px] w-[55px] m-0 hover:bg-accent hover:text-accent-foreground">
-        {t(`nav.lang.${lng}.code`)}
+        {t(`lang.${lng}.code`)}
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

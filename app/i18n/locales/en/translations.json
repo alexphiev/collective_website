@@ -1,40 +1,42 @@
 {
-  "nav": {
-    "services": {
-      "title": "Services",
-      "left": {
-        "title": "Digital products for a better world",
-        "description": "We use the best available technology to help your ideas have the impact they deserve."
-      },
-      "webapp": {
-        "title": "Impactful Web Applications",
-        "description": "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
-      },
-      "website": {
-        "title": "Beautiful Websites for Every Cause",
-        "description": "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience."
-      },
-      "mobileapp": {
-        "title": "Mobile Apps for Positive Change",
-        "description": "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time."
-      }
-    },  
-    "team": "Team",
-    "contact": "Contact",
-    "projects": "Projects",
-    "lang": {
-      "en": {
-        "code": "EN",
-        "name": "English"
-      },
-      "es": {
-        "code": "ES",
-        "name": "Spanish"
-      },
-      "fr": {
-        "code": "FR",
-        "name": "French"
-      }
+  "services": {
+    "title": "Services",
+    "section": {
+      "title": "Digital products for a better world",
+      "description": "We use the best available technology to help your ideas have the impact they deserve."
+    },
+    "webapp": {
+      "title": "Impactful Web Applications",
+      "description": "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
+    },
+    "website": {
+      "title": "Beautiful Websites for every cause",
+      "description": "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience."
+    },
+    "mobileapp": {
+      "title": "Mobile Apps for positive change",
+      "description": "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time."
+    },
+    "data": {
+      "title": "Data alaysis and visualization",
+      "description": "We help you collect, analyze and visualize data to make informed decisions and measure your impact. From data collection to data visualization, we've got you covered."
+    }
+  },  
+  "team": "Team",
+  "contact": "Contact",
+  "projects": "Projects",
+  "lang": {
+    "en": {
+      "code": "EN",
+      "name": "English"
+    },
+    "es": {
+      "code": "ES",
+      "name": "Spanish"
+    },
+    "fr": {
+      "code": "FR",
+      "name": "French"
     }
   },
   "hero": {

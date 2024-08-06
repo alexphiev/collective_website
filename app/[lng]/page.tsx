@@ -18,12 +18,12 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <>
       <HeroSection lng={lng} />
+      <ServicesSection lng={lng} />
+      <TeamSection />
       <SponsorsSection />
       <BenefitsSection />
       <FeaturesSection />
-      <ServicesSection />
       <TestimonialSection />
-      <TeamSection />
       <PricingSection />
       <FAQSection />
       <FooterSection />
