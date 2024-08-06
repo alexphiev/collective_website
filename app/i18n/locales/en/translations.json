@@ -44,6 +44,12 @@
       "2": "for a better world",
       "3": "for positive change"
     },
-    "subtitle": "We're here to help you build a project that makes a difference."
+    "subtitle": "We're here to help you build a project that makes a difference.",
+    "badge": {
+      "label": "Availability",
+      "title": "September 2024"
+    },
+    "cta1": "Get in touch",
+    "cta2": "View projects"
   }
 }

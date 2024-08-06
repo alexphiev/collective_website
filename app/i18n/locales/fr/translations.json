@@ -44,6 +44,12 @@
       "2": "pour un monde meilleur",
       "3": "pour un changement positif"
     },
-    "subtitle": "Nous sommes là pour vous aider à réaliser un projet qui fait la différence."
+    "subtitle": "Nous sommes là pour vous aider à réaliser un projet qui fait la différence.",
+    "badge": {
+      "label": "Disponibilité",
+      "title": "Septembre 2024"
+    },
+    "cta1": "Contactez-nous",
+    "cta2": "Voir nos réalisations"
   }
 }

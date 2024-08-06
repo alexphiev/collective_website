@@ -44,6 +44,12 @@
       "2": "para un mundo mejor",
       "3": "para un cambio positivo"
     },
-    "subtitle": "Estamos aquí para ayudarte a construir un proyecto que marque la diferencia."
+    "subtitle": "Estamos aquí para ayudarte a construir un proyecto que marque la diferencia.",
+    "badge": {
+      "label": "Disponibilidad",
+      "title": "Septiembre 2024"
+    },
+    "cta1": "Ponte en contacto",
+    "cta2": "Ver proyectos"
   }
 }
