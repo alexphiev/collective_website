@@ -1,7 +1,10 @@
 {
+  "contactus": "Contactez-nous",
+  "day": "jour",
+  "month": "mois",
   "services": {
     "title": "Services",
-    "left": {
+    "section": {
       "title": "Des produits numériques pour un monde meilleur",
       "description": "Nous utilisons la meilleure technologie disponible pour aider vos idées à avoir l'impact qu'elles méritent."
     },
@@ -22,7 +25,13 @@
       "description": "Nous vous aidons à collecter, analyser et visualiser des données pour prendre des décisions éclairées et mesurer votre impact. De la collecte de données à la visualisation des données, nous vous couvrons."
     }
   },
-  "team": "Équipe",
+  "team": {
+    "section": {
+      "title": "Équipe"
+    },
+    "title": "Amis et développeurs depuis 8 ans",
+    "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur."
+  },
   "contact": "Contact",
   "projects": "Projets",
   "lang": {
@@ -53,5 +62,43 @@
     },
     "cta1": "Contactez-nous",
     "cta2": "Voir nos réalisations"
-  }
+  },
+    "pricing": {
+      "title": "Tarification",
+      "subtitle": "Une tarification transparente et compétitive pour plus d'impact",
+      "description": "Nous sommes fiers d'offrir une grande valeur pour notre expertise senior et notre travail d'équipe hautement efficace pour vous aider à atteindre des objectifs positifs.",
+      "cta": "Contactez-nous",
+      "nonprofit": {
+        "title": "ONG",
+        "description": "Nous aidons les ONG à atteindre leurs objectifs à un coût réduit.",
+        "unit": "jour",
+        "benefits": {
+          "1": "1 chef d'équipe pour une communication simple",
+          "2": "Jusqu'à 2 développeurs simultanés",
+          "3": "1 mois de support gratuit"
+        }
+      },
+      "pro": {
+        "title": "Pro",
+        "description": "Notre collectif complet dédié à votre succès.",
+        "unit": "jour",
+        "benefits": {
+          "1": "1 chef d'équipe pour une communication simple",
+          "2": "Jusqu'à 4 développeurs simultanés",
+          "3": "1 mois de support gratuit",
+          "4": "Support prioritaire"
+        }
+      },
+      "support": {
+        "title": "Support Illimité",
+        "description": "À vos côtés pour de petits changements et corrections de bugs.",
+        "unit": "mois (premiers 5 clients)",
+        "benefits": {
+          "1": "Temps de réponse rapide",
+          "2": "1 demande à la fois",
+          "3": "Montant fixe pour toujours",
+          "4": "Annulez à tout moment"
+        }
+      }
+    }
 }

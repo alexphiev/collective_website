@@ -1,7 +1,10 @@
 {
+  "contactus": "Contáctanos",
+  "day": "día",
+  "month": "mes",
   "services": {
     "title": "Servicios",
-    "left": {
+    "section": {
       "title": "Productos digitales para un mundo mejor",
       "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
     },
@@ -22,7 +25,13 @@
       "description": "Te ayudamos a recopilar, analizar y visualizar datos para tomar decisiones informadas y medir tu impacto. Desde la recopilación de datos hasta la visualización de datos, te cubrimos."
     }
   },
-  "team": "Equipo",
+  "team": {
+    "section": {
+      "title": "Equipo"
+    },
+    "title": "Amigos y desarrolladores desde hace 8 años",
+    "description": "Creemos en el poder de la tecnología para hacer del mundo un lugar mejor."
+  },
   "contact": "Contacto",
   "projects": "Proyectos",
   "lang": {
@@ -53,5 +62,43 @@
     },
     "cta1": "Ponte en contacto",
     "cta2": "Ver proyectos"
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Un precio transparente y competitivo para más impacto",
+    "description": "Estamos orgullosos de ofrecer un gran valor por nuestra experiencia senior y trabajo en equipo altamente eficiente para ayudarte a lograr objetivos positivos.",
+    "cta": "Contáctanos",
+    "nonprofit": {
+      "title": "Sin fines de lucro",
+      "description": "Ayudamos a las ONG a alcanzar sus objetivos a un costo reducido.",
+      "unit": "día",
+      "benefits": {
+        "1": "1 líder de equipo para una comunicación sencilla",
+        "2": "Hasta 2 desarrolladores simultáneos",
+        "3": "1 mes de soporte gratuito"
+      }
+    },
+    "pro": {
+      "title": "Pro",
+      "description": "Nuestro colectivo completo dedicado a tu éxito.",
+      "unit": "día",
+      "benefits": {
+        "1": "1 líder de equipo para una comunicación sencilla",
+        "2": "Hasta 4 desarrolladores simultáneos",
+        "3": "1 mes de soporte gratuito",
+        "4": "Soporte prioritario"
+      }
+    },
+    "support": {
+      "title": "Soporte Ilimitado",
+      "description": "A tu lado para pequeños cambios y corrección de errores.",
+      "unit": "mes (primeros 5 clientes)",
+      "benefits": {
+        "1": "Tiempo de respuesta rápido",
+        "2": "1 solicitud a la vez",
+        "3": "Cantidad fija para siempre",
+        "4": "Cancela en cualquier momento"
+      }
+    }
   }
 }

@@ -47,7 +47,7 @@ const featureList: FeaturesProps[] = [
   },
 ];
 
-export const FeaturesSection = () => {
+export const FeaturesSection = ({ lng }: { lng: string }) => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">

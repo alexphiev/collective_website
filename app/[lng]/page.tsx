@@ -5,10 +5,10 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
-import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { languages } from "../i18n/settings";
+import { ClientsSection } from "@/components/layout/sections/clients";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -18,15 +18,15 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <>
       <HeroSection lng={lng} />
+      <ClientsSection />
       <ServicesSection lng={lng} />
-      <TeamSection />
-      <SponsorsSection />
-      <BenefitsSection />
-      <FeaturesSection />
-      <TestimonialSection />
-      <PricingSection />
-      <FAQSection />
-      <FooterSection />
+      <TeamSection lng={lng} />
+      <BenefitsSection lng={lng} />
+      <FeaturesSection lng={lng} />
+      <TestimonialSection lng={lng} />
+      <PricingSection lng={lng} />
+      <FAQSection lng={lng} />
+      <FooterSection lng={lng} />
     </>
   );
 }

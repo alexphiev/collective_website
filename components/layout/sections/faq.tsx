@@ -43,7 +43,7 @@ const FAQList: FAQProps[] = [
   },
 ];
 
-export const FAQSection = () => {
+export const FAQSection = ({ lng }: { lng: string }) => {
   return (
     <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
       <div className="text-center mb-8">

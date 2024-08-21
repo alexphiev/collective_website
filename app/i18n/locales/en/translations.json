@@ -1,4 +1,7 @@
 {
+  "contactus": "Contact us",
+  "day": "day",
+  "month": "month",
   "services": {
     "title": "Services",
     "section": {
@@ -7,10 +10,10 @@
     },
     "webapp": {
       "title": "Impactful Web Applications",
-      "description": "Crafting beautiful, lightning-fast web solutions that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
+      "description": "Crafting beautiful, lightning-fast web applications that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
     },
     "website": {
-      "title": "Beautiful Websites for every cause",
+      "title": "Websites for every cause",
       "description": "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience."
     },
     "mobileapp": {
@@ -18,11 +21,17 @@
       "description": "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time."
     },
     "data": {
-      "title": "Data alaysis and visualization",
+      "title": "Data alaysis that empower",
       "description": "We help you collect, analyze and visualize data to make informed decisions and measure your impact. From data collection to data visualization, we've got you covered."
     }
   },  
-  "team": "Team",
+  "team": {
+    "section": {
+      "title": "Team"
+    },
+    "title": "Friends and developers since 8 years",
+    "description": "We believe in the power of technology to make the world a better place."
+  },
   "contact": "Contact",
   "projects": "Projects",
   "lang": {
@@ -53,5 +62,43 @@
     },
     "cta1": "Get in touch",
     "cta2": "View projects"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "A transparent and competitve pricing for more impact",
+    "description": "We are proud to offer a great value for our senior expertise and highly efficient team work to help you achieve positive goals.",
+    "cta": "Contact us",
+    "nonprofit": {
+      "title": "Non-profit",
+      "description": "We help NGOs achieve their goals at a reduced cost.",
+      "unit": "day",
+      "benefits": {
+        "1": "1 team leader for simple communication",
+        "2": "Up to 2 simultaneous developers",
+        "3": "1 month of free support"
+      }
+    },
+    "pro": {
+      "title": "Pro",
+      "description": "Our full collective dedicated to your success.",
+      "unit": "day",
+      "benefits": {
+        "1": "1 team leader for simple communication",
+        "2": "Up to 4 simultaneous developers",
+        "3": "1 month of free support",
+        "4": "Priority support"
+      }
+    },
+    "support": {
+      "title": "Unlimited Support",
+      "description": "On your side for small changes and bug fixes.",
+      "unit": "month (first 5 clients)",
+      "benefits": {
+        "1": "Fast response time",
+        "2": "1 request at a time",
+        "3": "Fixed amount forever",
+        "4": "Cancel at any time"
+      }
+    }
   }
 }

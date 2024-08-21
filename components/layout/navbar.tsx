@@ -36,9 +36,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const serviceList = useMemo(() => {
-    return getServiceList(t);
-  }, [t]);
+  const serviceList = getServiceList(t);
 
   const routeList: RouteProps[] = [
     {
@@ -47,7 +45,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     },
     {
       href: "#team",
-      label: t("team"),
+      label: t("team.section.title"),
     },
     {
       href: "#contact",
