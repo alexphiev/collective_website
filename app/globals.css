@@ -87,3 +87,19 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-background-top {
+  background-image: linear-gradient(
+    to top,
+    theme('colors.accent.DEFAULT'),
+    theme('colors.background')
+  );
+}
+
+.gradient-background-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    theme('colors.accent.DEFAULT'),
+    theme('colors.background')
+  );
+}

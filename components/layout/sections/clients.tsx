@@ -7,10 +7,8 @@ import Link from "next/link";
 
 export const ClientsSection = () => {
   return (
-    <section id="clients" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">Our Clients</h2>
-
-      <div className="mx-auto">
+    <section id="clients" className="mx-auto p-18 sm:p-32">
+      <div className="mx-auto max-w-[100%]">
         <Marquee
           className="gap-[3rem]"
           fade

@@ -20,12 +20,13 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
       <HeroSection lng={lng} />
       <ClientsSection />
       <ServicesSection lng={lng} />
-      <TeamSection lng={lng} />
-      <BenefitsSection lng={lng} />
-      <FeaturesSection lng={lng} />
       <TestimonialSection lng={lng} />
+      <TeamSection lng={lng} />
       <PricingSection lng={lng} />
-      <FAQSection lng={lng} />
+
+      {/* <BenefitsSection lng={lng} />
+      <FeaturesSection lng={lng} />
+      <FAQSection lng={lng} /> */}
       <FooterSection lng={lng} />
     </>
   );

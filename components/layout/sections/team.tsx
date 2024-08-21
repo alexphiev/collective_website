@@ -26,8 +26,8 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="team" className="container lg:w-[90%] xl:w-[80%] py-24">
-      <div className="text-center mb-8">
+    <section id="team" className="py-24 gradient-background-bottom">
+      <div className="container lg:w-[90%] xl:w-[80%] text-center mb-16">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           {t("team.section.title")}
         </h2>
@@ -38,7 +38,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
         <span className="text-muted-foreground">{t("team.description")}</span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+      <div className="container lg:w-[90%] xl:w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
         {team.map(
           (
             { imageUrl, firstName, lastName, position, socialNetworks },

@@ -1,7 +1,9 @@
 "use client";
+import { useTranslation } from "@/app/i18n/client";
+import { getServiceList } from "@/utils/services";
 import { Linkedin, Menu, Sprout } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import {
   NavigationMenu,
@@ -23,8 +25,6 @@ import {
 } from "../ui/sheet";
 import { ToggleLanguage } from "./toogle-language";
 import { ToggleTheme } from "./toogle-theme";
-import { useTranslation } from "@/app/i18n/client";
-import { getServiceList } from "@/utils/services";
 
 interface RouteProps {
   href: string;
@@ -46,6 +46,10 @@ export const Navbar = ({ lng }: { lng: string }) => {
     {
       href: "#team",
       label: t("team.section.title"),
+    },
+    {
+      href: "#pricing",
+      label: t("pricing.title"),
     },
     {
       href: "#contact",

@@ -10,7 +10,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
 
   return (
-    <section className="container w-full">
+    <section className="w-full gradient-background-bottom">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 lg:pt-28">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2 px-3">
@@ -20,8 +20,8 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
             <span> {t("hero.badge.title")} </span>
           </Badge>
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>{t("hero.title.1")}</h1>
+          <div className="max-w-screen-xl mx-auto text-center text-4xl md:text-6xl font-bold">
+            <h1 className="pb-3">{t("hero.title.1")}</h1>
             <h1>
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
                 <TypewritterComponent

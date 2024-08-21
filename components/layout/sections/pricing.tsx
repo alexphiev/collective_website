@@ -26,7 +26,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
         {t("pricing.subtitle")}
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
+      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-24">
         {t("pricing.description")}
       </h3>
 
