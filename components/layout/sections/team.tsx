@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { getTeam } from "@/utils/team";
+import { getTeam } from "@/utils/team-utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,8 +26,8 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="team" className="py-24 gradient-background-bottom">
-      <div className="container lg:w-[90%] xl:w-[80%] text-center mb-16">
+    <section id="team" className="py-16">
+      <div className="container text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           {t("team.section.title")}
         </h2>
@@ -35,10 +35,9 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
         <h2 className="text-3xl md:text-4xl text-center font-bold">
           {t("team.title")}
         </h2>
-        <span className="text-muted-foreground">{t("team.description")}</span>
       </div>
 
-      <div className="container lg:w-[90%] xl:w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+      <div className="container px-0 grid grid-cols-2 lg:grid-cols-4">
         {team.map(
           (
             { imageUrl, firstName, lastName, position, socialNetworks },
@@ -46,7 +45,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
           ) => (
             <Card
               key={index}
-              className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+              className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg scroll-reveal-up"
             >
               <CardHeader className="p-0 gap-0">
                 <div className="h-full overflow-hidden">

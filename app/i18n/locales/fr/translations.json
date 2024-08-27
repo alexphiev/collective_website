@@ -1,5 +1,6 @@
 {
   "contactus": "Contactez-nous",
+  "getintouch": "Prenez contact",
   "day": "jour",
   "month": "mois",
   "services": {
@@ -63,42 +64,49 @@
     "cta1": "Contactez-nous",
     "cta2": "Voir nos réalisations"
   },
-    "pricing": {
-      "title": "Tarification",
-      "subtitle": "Une tarification transparente et compétitive pour plus d'impact",
-      "description": "Nous sommes fiers d'offrir une grande valeur pour notre expertise senior et notre travail d'équipe hautement efficace pour vous aider à atteindre des objectifs positifs.",
-      "cta": "Contactez-nous",
-      "nonprofit": {
-        "title": "ONG",
-        "description": "Nous aidons les ONG à atteindre leurs objectifs à un coût réduit.",
-        "unit": "jour",
-        "benefits": {
-          "1": "1 chef d'équipe pour une communication simple",
-          "2": "Jusqu'à 2 développeurs simultanés",
-          "3": "1 mois de support gratuit"
-        }
-      },
-      "pro": {
-        "title": "Pro",
-        "description": "Notre collectif complet dédié à votre succès.",
-        "unit": "jour",
-        "benefits": {
-          "1": "1 chef d'équipe pour une communication simple",
-          "2": "Jusqu'à 4 développeurs simultanés",
-          "3": "1 mois de support gratuit",
-          "4": "Support prioritaire"
-        }
-      },
-      "support": {
-        "title": "Support Illimité",
-        "description": "À vos côtés pour de petits changements et corrections de bugs.",
-        "unit": "mois (premiers 5 clients)",
-        "benefits": {
-          "1": "Temps de réponse rapide",
-          "2": "1 demande à la fois",
-          "3": "Montant fixe pour toujours",
-          "4": "Annulez à tout moment"
-        }
+  "pricing": {
+    "title": "Tarification",
+    "subtitle": "Une tarification transparente et compétitive pour plus d'impact",
+    "description": "Nous sommes fiers d'offrir une grande valeur pour notre expertise senior et notre travail d'équipe hautement efficace pour vous aider à atteindre des objectifs positifs.",
+    "cta": "Contactez-nous",
+    "nonprofit": {
+      "title": "ONG",
+      "description": "Nous aidons les ONG à atteindre leurs objectifs à un coût réduit.",
+      "unit": "jour",
+      "benefits": {
+        "1": "1 chef d'équipe pour une communication simple",
+        "2": "Jusqu'à 2 développeurs simultanés",
+        "3": "1 mois de support gratuit"
+      }
+    },
+    "pro": {
+      "title": "Pro",
+      "description": "Notre collectif complet dédié à votre succès.",
+      "unit": "jour",
+      "benefits": {
+        "1": "1 chef d'équipe pour une communication simple",
+        "2": "Jusqu'à 4 développeurs simultanés",
+        "3": "1 mois de support gratuit",
+        "4": "Support prioritaire"
+      }
+    },
+    "support": {
+      "title": "Support Illimité",
+      "description": "À vos côtés pour de petits changements et corrections de bugs.",
+      "unit": "mois (premiers 5 clients)",
+      "benefits": {
+        "1": "Temps de réponse rapide",
+        "2": "1 demande à la fois",
+        "3": "Montant fixe pour toujours",
+        "4": "Annulez à tout moment"
       }
     }
+  },
+  "impact": {
+    "title": "Notre Impact",
+    "clients": "Clients aidés",
+    "sdgs": "ODD explorés",
+    "years": "Années d'expérience",
+    "description": "Nous sommes fiers d'avoir aidé nos clients à atteindre leurs Objectifs de Développement Durable."
+  }
 }

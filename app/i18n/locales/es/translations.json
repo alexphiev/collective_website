@@ -1,5 +1,6 @@
 {
   "contactus": "Contáctanos",
+  "getintouch": "Ponte en contacto",
   "day": "día",
   "month": "mes",
   "services": {
@@ -100,5 +101,12 @@
         "4": "Cancela en cualquier momento"
       }
     }
+  },
+  "impact": {
+    "title": "Nuestro Impacto",
+    "clients": "Clientes ayudados",
+    "sdgs": "ODS explorados",
+    "years": "Años de experiencia",
+    "description": "Estamos orgullosos de haber ayudado a nuestros clientes a alcanzar sus Objetivos de Desarrollo Sostenible."
   }
 }

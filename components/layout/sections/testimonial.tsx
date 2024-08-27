@@ -78,10 +78,7 @@ const reviewList: ReviewProps[] = [
 
 export const TestimonialSection = ({ lng }: { lng: string }) => {
   return (
-    <section
-      id="testimonials"
-      className="container py-24 gradient-background-top"
-    >
+    <section id="testimonials" className="py-16 gradient-background">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           Testimonials
@@ -96,13 +93,13 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
         opts={{
           align: "start",
         }}
-        className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
+        className="relative w-[85%] lg:max-w-screen-xl mx-auto"
       >
         <CarouselContent>
           {reviewList.map((review) => (
             <CarouselItem
               key={review.name}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="md:basis-1/2 lg:basis-1/3 gap-[1.2rem] xl:gap-[1.5rem]"
             >
               <Card className="bg-muted/50 dark:bg-card">
                 <CardContent className="pt-6 pb-0">

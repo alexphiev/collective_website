@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { getPlans } from "@/utils/pricing";
+import { getPlans } from "@/utils/pricing-utils";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "@/app/i18n";
 import { createNumberArray } from "@/lib/utils";
@@ -17,7 +17,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
   const plans = getPlans(t);
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="pricing" className="py-24 sm:py-32 gradient-background">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         {t("pricing.title")}
       </h2>
@@ -30,7 +30,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
         {t("pricing.description")}
       </h3>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+      <div className="container grid px-0 w-[85%] md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(({ code, popular, isNew, price, benefitSize }) => (
           <Card
             key={code}

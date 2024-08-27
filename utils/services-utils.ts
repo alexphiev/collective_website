@@ -15,13 +15,13 @@ export const getServiceList = (t: TFunction): Service[] => {
   return [
     {
       title: t("services.webapp.title"),
-      href: "#webapplication",
+      href: "#webapp",
       description: t("services.webapp.description"),
       image: webapp,
     },
     {
       title: t("services.mobileapp.title"),
-      href: "#mobileapplications",
+      href: "#mobileapp",
       description: t("services.mobileapp.description"),
       image: mobile,
     },

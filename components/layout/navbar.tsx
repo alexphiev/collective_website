@@ -1,6 +1,6 @@
 "use client";
 import { useTranslation } from "@/app/i18n/client";
-import { getServiceList } from "@/utils/services";
+import { getServiceList } from "@/utils/services-utils";
 import { Linkedin, Menu, Sprout } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   const routeList: RouteProps[] = [
     {
-      href: "#serices",
+      href: "#services",
       label: t("services.title"),
     },
     {
@@ -78,7 +78,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     <header
       className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 transition-all duration-500 ${
         hasScrolled
-          ? "bg-gradient-to-b from-gray-900/80 to-transparent backdrop-blur-md border-b"
+          ? "bg-gradient-to-b from-secondary to-transparent backdrop-blur-md border-b"
           : "bg-transparent border-transparent"
       }`}
     >
@@ -165,7 +165,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
                         key={title}
                         className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
                       >
-                        <Link href={href}>
+                        <Link href={"#service-list"}>
                           <p className="mb-1 font-semibold text-foreground">
                             {title}
                           </p>

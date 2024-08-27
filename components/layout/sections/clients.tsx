@@ -1,33 +1,32 @@
 "use client";
 
-import { clients } from "@/utils/clients";
+import { clients } from "@/utils/clients-utils";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const ClientsSection = () => {
   return (
-    <section id="clients" className="mx-auto p-18 sm:p-32">
-      <div className="mx-auto max-w-[100%]">
+    <section id="clients" className="py-16">
+      <div className="container">
         <Marquee
           className="gap-[3rem]"
           fade
           innerClassName="gap-[3rem]"
           pauseOnHover
         >
-          {clients.map(({ url, name }) => (
+          {clients.map(({ url, name, icon }) => (
             <div
               key={name}
-              className="flex items-center text-xl md:text-xl font-medium"
+              className="flex items-center text-xl md:text-xl font-medium filter grayscale hover:filter-none"
             >
               {/* <Image
                 className="mr-2"
                 src={icon}
                 alt={name}
-                sizes="100vw"
-                width={0}
-                height={32}
-                style={{ filter: "grayscale(100%)" }}
+                width={50}
+                height={50}
               /> */}
               <Link
                 href={url || ""}
