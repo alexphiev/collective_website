@@ -49,7 +49,7 @@ export const clients = [
   {
     name: "Viva Labs",
     icon: sdg3,
-    url: "https://www.linkedin.com/company/viva-labs/mycompany/",
+    url: "https://www.linkedin.com/company/viva-labs/",
   },
   {
     name: "Enel X",
