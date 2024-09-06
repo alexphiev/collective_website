@@ -19,24 +19,25 @@ import { Star } from "lucide-react";
 interface ReviewProps {
   image: string;
   name: string;
-  userName: string;
+  title: string;
   comment: string;
   rating: number;
 }
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image:
+      "https://i0.wp.com/www.bridgeforbillions.org/wp-content/uploads/2022/04/JAIME.jpg?w=1080&ssl=1",
+    name: "Jaime Mateo",
+    title: "CTO · Bridge for Billions",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "I would highlight the communication and accountability from their side which helped us to always know the status of the project.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    title: "Cybersecurity Analyst",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
     rating: 4.8,
@@ -45,7 +46,7 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    title: "Chief Technology Officer",
     comment:
       "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     rating: 4.9,
@@ -53,7 +54,7 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Ethan Parker",
-    userName: "Data Scientist",
+    title: "Data Scientist",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
     rating: 5.0,
@@ -61,7 +62,7 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    title: "IT Project Manager",
     comment:
       "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
     rating: 5.0,
@@ -69,7 +70,7 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    title: "DevOps Engineer",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     rating: 4.9,
@@ -96,9 +97,9 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
         className="relative w-[85%] lg:max-w-screen-xl mx-auto"
       >
         <CarouselContent>
-          {reviewList.map((review) => (
+          {reviewList.map(({ name, comment, title, image }) => (
             <CarouselItem
-              key={review.name}
+              key={name}
               className="md:basis-1/2 lg:basis-1/3 gap-[1.2rem] xl:gap-[1.5rem]"
             >
               <Card className="bg-muted/50 dark:bg-card">
@@ -110,22 +111,19 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
                   </div>
-                  {`"${review.comment}"`}
+                  {`"${comment}"`}
                 </CardContent>
 
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
+                      <AvatarImage src={image} alt="radix" />
                       <AvatarFallback>SV</AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
-                      <CardDescription>{review.userName}</CardDescription>
+                      <CardTitle className="text-lg">{name}</CardTitle>
+                      <CardDescription>{title}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
