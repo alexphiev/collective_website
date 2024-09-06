@@ -1,5 +1,6 @@
 import { TFunction } from "i18next";
 import alexandre from "@/public/alexandre.jpeg";
+import bernardo from "@/public/bernardo_compressed.jpeg";
 import { StaticImageData } from "next/image";
 
 interface TeamProps {
@@ -77,7 +78,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
       ],
     },
     {
-      imageUrl: "https://i.pravatar.cc/250?img=63",
+      imageUrl: bernardo,
       firstName: "Bernardo",
       lastName: "Caetano",
       position: "Senior Backend Developer · AWS Specialist",
