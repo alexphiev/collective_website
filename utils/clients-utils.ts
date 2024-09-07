@@ -1,11 +1,11 @@
 import sdg3 from "@/public/logos/sdgs/sdg-3-healthwellbeing.png";
 
 export const clients = [
-  {
-    name: "Netherlands Comprehensive Cancer Organisation",
-    icon: sdg3,
-    url: "https://www.iknl.nl/",
-  },
+  // {
+  //   name: "Netherlands Comprehensive Cancer Organisation",
+  //   icon: sdg3,
+  //   url: "https://www.iknl.nl/",
+  // },
   {
     name: "Bridge for Billions",
     icon: sdg3,
@@ -22,6 +22,11 @@ export const clients = [
     url: "https://www.codecarbon.io/",
   },
   {
+    name: "Enel X",
+    icon: sdg3,
+    url: "https://www.enelx.com/",
+  },
+  {
     name: "Learning Planet Institute",
     icon: sdg3,
     url: "https://www.learningplanetinstitute.org/",
@@ -36,11 +41,11 @@ export const clients = [
     icon: sdg3,
     url: "https://www.kreftregisteret.no/",
   },
-  {
-    name: "Privitar",
-    icon: sdg3,
-    url: "https://www.privitar.com/",
-  },
+  // {
+  //   name: "Privitar",
+  //   icon: sdg3,
+  //   url: "https://www.privitar.com/",
+  // },
   {
     name: "Reusa’m",
     icon: sdg3,
@@ -50,11 +55,6 @@ export const clients = [
     name: "Viva Labs",
     icon: sdg3,
     url: "https://www.linkedin.com/company/viva-labs/",
-  },
-  {
-    name: "Enel X",
-    icon: sdg3,
-    url: "https://www.enelx.com/",
   },
   {
     name: "ClimaTalk",
