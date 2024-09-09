@@ -40,7 +40,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
       <div className="container px-0 grid grid-cols-2 lg:grid-cols-4">
         {team.map(
           (
-            { imageUrl, firstName, lastName, position, socialNetworks },
+            { imageUrl, linkedInUrl, firstName, lastName, position, socialNetworks },
             index
           ) => (
             <Card
@@ -48,15 +48,17 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
               className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg scroll-reveal-up"
             >
               <CardHeader className="p-0 gap-0">
-                <div className="h-full overflow-hidden">
-                  <Image
-                    src={imageUrl}
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
-                  />
-                </div>
+                <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                  <div className="h-full overflow-hidden">
+                    <Image
+                        src={imageUrl}
+                        alt="Profile Image"
+                        width={300}
+                        height={300}
+                        className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                    />
+                  </div>
+                </a>
                 <CardTitle className="flex flex-col py-6 pb-4 px-4">
                   {firstName}
                   <span className="text-primary">{lastName}</span>
@@ -69,18 +71,18 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
                 {position}
               </CardContent>
 
-              <CardFooter className="space-x-4 mt-auto px-4">
-                {socialNetworks.map(({ name, url }, index) => (
-                  <Link
-                    key={index}
-                    href={url}
-                    target="_blank"
-                    className="hover:opacity-80 transition-all"
-                  >
-                    {socialIcon(name)}
-                  </Link>
-                ))}
-              </CardFooter>
+              {/*<CardFooter className="space-x-4 mt-auto px-4">*/}
+              {/*  {socialNetworks.map(({ name, url }, index) => (*/}
+              {/*    <Link*/}
+              {/*      key={index}*/}
+              {/*      href={url}*/}
+              {/*      target="_blank"*/}
+              {/*      className="hover:opacity-80 transition-all"*/}
+              {/*    >*/}
+              {/*      {socialIcon(name)}*/}
+              {/*    </Link>*/}
+              {/*  ))}*/}
+              {/*</CardFooter>*/}
             </Card>
           )
         )}
