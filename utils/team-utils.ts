@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image";
 
 interface TeamProps {
   imageUrl: string | StaticImageData;
-  linkedInUrl: string;
+  imageLinkUrl: string;
   firstName: string;
   lastName: string;
   position: string;
@@ -23,7 +23,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
   return [
     {
       imageUrl: alexandre,
-      linkedInUrl: "https://www.linkedin.com/in/alexandrephiev/",
+      imageLinkUrl: "https://www.linkedin.com/in/alexandrephiev/",
       firstName: "Alexandre",
       lastName: "Phiev",
       position: "Senior Full Stack Web Developer",
@@ -43,7 +43,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     },
     {
       imageUrl: "https://i.pravatar.cc/250?img=59",
-      linkedInUrl: "https://www.linkedin.com/in/stefano-ventrudo-64742783/",
+      imageLinkUrl: "https://www.linkedin.com/in/stefano-ventrudo-64742783/",
       firstName: "Stefano",
       lastName: "Ventrudo",
       position: "Senior Mobile & Full Stack Web Developer",
@@ -63,7 +63,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     },
     {
       imageUrl: "https://i.pravatar.cc/250?img=61",
-      linkedInUrl: "https://www.linkedin.com/in/daan-knoors/",
+      imageLinkUrl: "https://www.linkedin.com/in/daan-knoors/",
       firstName: "Daan",
       lastName: "Knoors",
       position: "Senior Data Scientist",
@@ -83,7 +83,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     },
     {
       imageUrl: bernardo,
-      linkedInUrl: "https://www.linkedin.com/in/b-caetano/",
+      imageLinkUrl: "https://www.linkedin.com/in/b-caetano/",
       firstName: "Bernardo",
       lastName: "Caetano",
       position: "Senior Backend Developer · AWS Specialist",

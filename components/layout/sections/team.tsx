@@ -40,7 +40,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
       <div className="container px-0 grid grid-cols-2 lg:grid-cols-4">
         {team.map(
           (
-            { imageUrl, linkedInUrl, firstName, lastName, position, socialNetworks },
+            { imageUrl, imageLinkUrl, firstName, lastName, position, socialNetworks },
             index
           ) => (
             <Card
@@ -48,7 +48,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
               className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg scroll-reveal-up"
             >
               <CardHeader className="p-0 gap-0">
-                <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                <a href={imageLinkUrl} target="_blank" rel="noopener noreferrer">
                   <div className="h-full overflow-hidden">
                     <Image
                         src={imageUrl}
