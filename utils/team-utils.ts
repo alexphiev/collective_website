@@ -1,6 +1,7 @@
 import { TFunction } from "i18next";
 import alexandre from "@/public/alexandre.jpeg";
 import bernardo from "@/public/bernardo_compressed.jpeg";
+import daan from "@/public/daan.JPG";
 import { StaticImageData } from "next/image";
 
 interface TeamProps {
@@ -62,14 +63,14 @@ export const getTeam = (t: TFunction): TeamProps[] => {
       ],
     },
     {
-      imageUrl: "https://i.pravatar.cc/250?img=61",
+      imageUrl: daan,
       imageLinkUrl: "https://www.linkedin.com/in/daan-knoors/",
       firstName: "Daan",
       lastName: "Knoors",
-      position: "Senior Data Scientist",
-      yearsOfExperience: 7,
+      position: "Senior Data Scientist & Privacy Engineer",
+      yearsOfExperience: 8,
       nationality: "nl",
-      languages: ["nl", "en", "es"],
+      languages: ["nl", "en", "es", "de"],
       socialNetworks: [
         {
           name: "LinkedIn",
