@@ -1,6 +1,7 @@
 import { TFunction } from "i18next";
 import alexandre from "@/public/alexandre.jpeg";
 import bernardo from "@/public/bernardo_compressed.jpeg";
+import stefano from "@/public/stefano.png";
 import daan from "@/public/daan_color.jpeg";
 import { StaticImageData } from "next/image";
 
@@ -43,7 +44,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
       ],
     },
     {
-      imageUrl: "https://i.pravatar.cc/250?img=59",
+      imageUrl: stefano,
       imageLinkUrl: "https://www.linkedin.com/in/stefano-ventrudo-64742783/",
       firstName: "Stefano",
       lastName: "Ventrudo",
