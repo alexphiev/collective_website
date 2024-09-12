@@ -1,7 +1,7 @@
 import { TFunction } from "i18next";
 import alexandre from "@/public/alexandre.jpeg";
 import bernardo from "@/public/bernardo_compressed.jpeg";
-import stefano from "@/public/stefano.jpg";
+import stefano from "@/public/stefano.png";
 import daan from "@/public/daan_color.jpeg";
 import { StaticImageData } from "next/image";
 
