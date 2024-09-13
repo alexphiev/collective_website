@@ -25,7 +25,7 @@
       "title": "Data alaysis that empower",
       "description": "We help you collect, analyze and visualize data to make informed decisions and measure your impact. From data collection to data visualization, we've got you covered."
     }
-  },  
+  },
   "team": {
     "section": {
       "title": "Team"
@@ -107,6 +107,6 @@
     "clients": "Clients helped",
     "sdgs": "SDGs explored",
     "years": "Years of experience",
-    "description": "We are proud to have helped our clients achieve their Sustainable Development Goals."
+    "description": "We are proud to have helped our clients get closer to their UN Sustainable Development Goals."
   }
 }
