@@ -1,8 +1,9 @@
 import { TFunction } from "i18next";
 import alexandre from "@/public/alexandre.jpeg";
-import bernardo from "@/public/bernardo_compressed.jpeg";
 import stefano from "@/public/stefano.jpeg";
 import daan from "@/public/daan_color.jpeg";
+import bernardo from "@/public/bernardo_compressed_squared.jpg";
+
 import { StaticImageData } from "next/image";
 
 interface TeamProps {
