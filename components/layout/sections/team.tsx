@@ -11,6 +11,7 @@ import {
 import { getTeam } from "@/utils/team-utils";
 import Image from "next/image";
 import Link from "next/link";
+import { SectionTitle } from "./section-title";
 
 export const TeamSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -28,9 +29,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
   return (
     <section id="team" className="py-16">
       <div className="container text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          {t("team.section.title")}
-        </h2>
+        <SectionTitle title={t("team.section.title")} />
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
           {t("team.title")}
@@ -40,7 +39,14 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
       <div className="container px-0 grid grid-cols-2 lg:grid-cols-4">
         {team.map(
           (
-            { imageUrl, imageLinkUrl, firstName, lastName, position, socialNetworks },
+            {
+              imageUrl,
+              imageLinkUrl,
+              firstName,
+              lastName,
+              position,
+              socialNetworks,
+            },
             index
           ) => (
             <Card
@@ -48,14 +54,18 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
               className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg scroll-reveal-up"
             >
               <CardHeader className="p-0 gap-0">
-                <a href={imageLinkUrl} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={imageLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="h-full overflow-hidden">
                     <Image
-                        src={imageUrl}
-                        alt="Profile Image"
-                        width={300}
-                        height={300}
-                        className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                      src={imageUrl}
+                      alt="Profile Image"
+                      width={300}
+                      height={300}
+                      className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
                     />
                   </div>
                 </a>

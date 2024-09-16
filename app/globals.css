@@ -9,27 +9,36 @@ html {
 /* *=========== Theme =========== */
 @layer base {
   :root {
+    /* Base colors */
+    --rich-black: 220 40% 8%;
+    --pearl-white: 0 0% 95%;
+    --coral: 16 100% 66%;
+    --dark-slate: 215 30% 13%;
+    --muted-lavender: 260 20% 70%;
+    --deep-burgundy: 345 50% 30%;
+    --aquamarine: 160 100% 50%;
+
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-    
+
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
-    
+
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    
+
     --primary: 352 100% 68%;
     --primary-foreground: 210 40% 98%;
-    
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222 47% 11%;
-    
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    
+
     --accent: 210 40% 96.1%;
     --accent-foreground: 222 47% 11%;
-    
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
@@ -41,33 +50,34 @@ html {
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
-    
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
-    
-    --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
-    
-    --primary: 352 100% 68%;
-    --primary-foreground: 222 47% 11%;
-    
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Main theme colors */
+    --background: var(--rich-black);
+    --foreground: var(--pearl-white);
+
+    --card: var(--dark-slate);
+    --card-foreground: var(--pearl-white);
+
+    --popover: var(--rich-black);
+    --popover-foreground: var(--aquamarine);
+
+    --primary: var(--coral);
+    --primary-foreground: var(--pearl-white);
+
+    --secondary: var(--dark-slate);
+    --secondary-foreground: var(--aquamarine);
+
+    --muted: var(--dark-slate);
+    --muted-foreground: var(--muted-lavender);
+
+    --accent: var(--aquamarine);
+    --accent-foreground: var(--pearl-white);
+
+    --destructive: var(--deep-burgundy);
+    --destructive-foreground: var(--pearl-white);
+
+    --border: var(--dark-slate);
+    --input: var(--dark-slate);
+    --ring: hsl(270 60% 60%);
   }
 }
 
@@ -87,7 +97,8 @@ html {
   gap: 1.2rem;
 }
 
-@media (max-width: 640px) { /* Tailwind's sm breakpoint is 640px */
+@media (max-width: 640px) {
+  /* Tailwind's sm breakpoint is 640px */
   .grid {
     gap: 0.8rem;
   }
@@ -96,7 +107,8 @@ html {
   }
 }
 
-@media (min-width: 1280px) { /* Tailwind's xl breakpoint is 1280px */
+@media (min-width: 1280px) {
+  /* Tailwind's xl breakpoint is 1280px */
   .grid {
     gap: 1.5rem;
   }
@@ -114,25 +126,25 @@ html {
 .gradient-background-top {
   background-image: linear-gradient(
     to top,
-    theme('colors.secondary.DEFAULT'),
-    theme('colors.background')
+    theme("colors.secondary.DEFAULT"),
+    theme("colors.background")
   );
 }
 
 .gradient-background {
   background-image: linear-gradient(
     to top,
-    theme('colors.background'),
-    theme('colors.secondary.DEFAULT'),
-    theme('colors.background')
+    theme("colors.background"),
+    theme("colors.secondary.DEFAULT"),
+    theme("colors.background")
   );
 }
 
 .gradient-background-bottom {
   background-image: linear-gradient(
     to bottom,
-    theme('colors.accent.DEFAULT'),
-    theme('colors.background')
+    theme("colors.secondary.DEFAULT"),
+    theme("colors.background")
   );
 }
 

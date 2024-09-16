@@ -12,15 +12,14 @@ import { getPlans } from "@/utils/pricing-utils";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "@/app/i18n";
 import { createNumberArray } from "@/lib/utils";
+import { SectionTitle } from "./section-title";
 
 export const PricingSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
   const plans = getPlans(t);
   return (
     <section id="pricing" className="py-24 sm:py-32 gradient-background">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        {t("pricing.title")}
-      </h2>
+      <SectionTitle title={t("pricing.title")} />
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
         {t("pricing.subtitle")}

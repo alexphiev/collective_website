@@ -20,7 +20,6 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
   return (
     <>
       <HeroSection lng={lng} />
-      <ContactUsButton lng={lng} code="getintouch" />
       <ImpactSection lng={lng} />
       <ServicesSection lng={lng} />
       <ContactUsButton lng={lng} code="contactus" />
