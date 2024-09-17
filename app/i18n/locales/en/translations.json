@@ -10,20 +10,20 @@
       "description": "We use the best available technology to help your ideas have the impact they deserve."
     },
     "webapp": {
-      "title": "Impactful Web Applications",
-      "description": "Crafting beautiful, lightning-fast web applications that empower positive change. 8 years of expertise in UI/UX and performance optimization for social impact."
-    },
-    "website": {
-      "title": "Websites for every cause",
-      "description": "From grassroots no-code to enterprise full-code: SEO-optimized, responsive websites that amplify your mission and resonate with your audience."
+      "title": "Web Applications and Websites",
+      "description": "Crafting beautiful, lightning-fast Web applications and websites. We focus on a user-centric design with enhanced performance and optimized SEO, from MVP to full-scale production-ready products."
     },
     "mobileapp": {
-      "title": "Mobile Apps for positive change",
-      "description": "User-centric iOS and Android apps that drive engagement and create meaningful connections. Leveraging technology to make a difference, one tap at a time."
+      "title": "Native and Hybrid Mobile Apps",
+      "description": "User-centric iOS and Android apps that drive engagement. We build native and hybrid mobile apps that are fast, reliable and secure with a great attention to details."
     },
     "data": {
       "title": "Data Science & Machine Learning",
       "description": "We can help you to extract value and discover new insights from your data. This includes the implementation of systems for automated data processing and visualization, as well as data analysis and machine learning deployment. We also specialize in the latest privacy-enhancing techniques to ensure data can be processed, safely, while sensitive information remains protected."
+    },
+    "backend": {
+      "title": "Backend Management",
+      "description": "We build and maintain the backend of your application, ensuring it is secure, scalable and reliable. We use the best available technology to create solid databases, fast APIs and bulletproof authentication."
     }
   },
   "team": {
@@ -108,5 +108,9 @@
     "sdgs": "SDGs explored",
     "years": "Years of experience",
     "description": "We are proud to have helped our clients get closer to their UN Sustainable Development Goals."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What our clients say"
   }
 }

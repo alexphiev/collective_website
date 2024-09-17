@@ -15,6 +15,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import { SectionTitle } from "./section-title";
+import { useTranslation } from "@/app/i18n/client";
 
 interface ReviewProps {
   image: string;
@@ -78,15 +80,14 @@ const reviewList: ReviewProps[] = [
 ];
 
 export const TestimonialSection = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng);
   return (
     <section id="testimonials" className="py-16 gradient-background">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
-        </h2>
+        <SectionTitle title={t("testimonials.title")} />
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          {t("testimonials.subtitle")}
         </h2>
       </div>
 
@@ -103,14 +104,14 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
               className="md:basis-1/2 lg:basis-1/3 gap-[1.2rem] xl:gap-[1.5rem]"
             >
               <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">
-                  <div className="flex gap-1 pb-6">
+                <CardContent className="pt-6 pb-0 h-[130px] text-ellipsis">
+                  {/* <div className="flex gap-1 pb-6">
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
-                  </div>
+                  </div> */}
                   {`"${comment}"`}
                 </CardContent>
 
