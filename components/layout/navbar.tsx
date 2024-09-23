@@ -57,7 +57,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     },
     {
       href: "#projects",
-      label: t("projects"),
+      label: t("projects.title"),
     },
   ];
 
