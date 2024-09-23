@@ -50,13 +50,13 @@
     }
   },
   "hero": {
-    "title.1": "We build digital products",
+    "title.1": "Developers for a better world",
     "title.2": {
-      "1": "for impact",
-      "2": "for a better world",
-      "3": "for positive change"
+      "1": "Mobile & Website",
+      "2": "Backend & automation",
+      "3": "Data analysis"
     },
-    "subtitle": "We're here to help you build a project that makes a difference.",
+    "subtitle": "We Build. We Create. We Change the World.",
     "badge": {
       "label": "Availability",
       "title": "September 2024"
