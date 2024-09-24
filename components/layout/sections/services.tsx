@@ -25,7 +25,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
       </h2>
       <h3
         id="service-list"
-        className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-16"
+        className="mx-auto text-xl text-center text-muted-foreground mb-16"
       >
         {t("services.section.description")}
       </h3>
@@ -67,8 +67,7 @@ const ServiceCard = ({
           src={image}
           alt={title}
           fill
-          style={{ objectFit: "cover" }}
-          objectPosition="center top"
+          style={{ objectFit: "cover", objectPosition: "center top" }}
           className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0"
         />
       </div>

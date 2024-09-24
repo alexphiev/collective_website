@@ -10,20 +10,20 @@
       "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
     },
     "webapp": {
-      "title": "Aplicaciones Web Impactantes",
-      "description": "Creando soluciones web hermosas y ultrarrápidas que impulsan el cambio positivo. 8 años de experiencia en UI/UX y optimización de rendimiento para el impacto social."
+      "title": "Aplicaciones Web y Sitios Web",
+      "description": "Creando aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un rendimiento mejorado y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
     },
     "website": {
       "title": "Sitios Web Hermosos para Cada Causa",
       "description": "Desde no-code de base hasta full-code empresarial: sitios web optimizados para SEO y responsivos que amplifican tu misión y resuenan con tu audiencia."
     },
     "mobileapp": {
-      "title": "Aplicaciones Móviles para el Cambio Positivo",
-      "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso y crean conexiones significativas. Aprovechando la tecnología para marcar la diferencia, un toque a la vez."
+      "title": "Aplicaciones Móviles Nativas e Híbridas",
+      "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso. Construimos aplicaciones móviles nativas e híbridas que son rápidas, confiables y seguras con gran atención a los detalles."
     },
     "data": {
-      "title": "Análisis y visualización de datos",
-      "description": "Te ayudamos a recopilar, analizar y visualizar datos para tomar decisiones informadas y medir tu impacto. Desde la recopilación de datos hasta la visualización de datos, te cubrimos."
+      "title": "Ciencia de Datos y Aprendizaje Automático",
+      "description": "Te ayudamos a extraer valor y descubrir nuevos conocimientos a partir de tus datos. Esto incluye la implementación de sistemas para el procesamiento automatizado de datos y su visualización, así como el análisis de datos y el despliegue de aprendizaje automático. También nos especializamos en las técnicas más recientes de mejora de la privacidad para garantizar que los datos se puedan procesar de manera segura, mientras se protege la información sensible."
     },
     "backend": {
       "title": "Gestión de Backend",
@@ -139,5 +139,29 @@
     "subtitle": "Lo que dicen nuestros clientes",
     "henrik": "Trabajé con el Colectivo Dev for Good durante años. Siempre entregaron un trabajo excelente con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en ellos para hacer lo necesario para que el trabajo se haga.",
     "jaime": "Destacaría la comunicación y la responsabilidad de su parte, lo que nos ayudó a conocer siempre el estado del proyecto."
+  },
+  "about": {
+    "section": {
+      "title": "Sobre nosotros"
+    },
+    "team": {
+      "title": "Quiénes somos",
+      "description": "Amigos y desarrolladores desde hace más de 8 años, combinamos nuestras habilidades complementarias para el impacto."
+    },
+    "values": {
+      "title": "El Colectivo Dev For Good",
+      "1": {
+        "title": "Experiencias diversas",
+        "description": "Somos un grupo de amigos de diferentes países, unidos por nuestra pasión compartida por usar la tecnología para tener un impacto positivo. Nuestras diversas trayectorias y habilidades complementarias nos permiten abordar desafíos desde ángulos únicos, resultando en soluciones innovadoras."
+      },
+      "2": {
+        "title": "Impulsados por un propósito",
+        "description": "Nuestro colectivo se construyó sobre la creencia de que nuestro trabajo debe alinearse con nuestros valores. Elegimos cuidadosamente proyectos que resuenan con nuestro compromiso de crear un cambio significativo, asegurando que cada línea de código que escribimos sirva a un propósito mayor."
+      },
+      "3": {
+        "title": "Altamente eficientes",
+        "description": "Habiendo trabajado juntos durante años, hemos desarrollado una colaboración fluida que nos hace altamente eficientes. Cuando te asocias con nosotros, puedes confiar en que escucharemos atentamente tus necesidades mientras también aportamos ideas frescas. Nuestro objetivo es simple: construir el mejor producto para servir a tu misión."
+      }
+    }
   }
 }

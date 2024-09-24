@@ -62,7 +62,7 @@ export default function ContactSection({ lng }: { lng: string }) {
   return (
     <section
       id="contact"
-      className="w-full py-12 px-0 lg:px-32 md:py-16 mt-16 gradient-background-top border-t-2 border-white"
+      className="w-full py-12 px-0 lg:px-32 md:py-16 mt-16 gradient-background-top border-t-2 border-white/20"
     >
       <div className="container px-4 md:px-6">
         <div className="space-y-4">
@@ -70,7 +70,7 @@ export default function ContactSection({ lng }: { lng: string }) {
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               {t("contact.getInTouch")}
             </h1>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               {t("contact.contactDescription")}
             </p>
           </div>

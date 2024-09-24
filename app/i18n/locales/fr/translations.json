@@ -10,16 +10,16 @@
       "description": "Nous utilisons la meilleure technologie disponible pour aider vos idées à avoir l'impact qu'elles méritent."
     },
     "webapp": {
-      "title": "Applications Web à impact",
-      "description": "Création de solutions web belles et ultra-rapides qui favorisent le changement positif. 8 ans d'expertise en UI/UX et optimisation des performances pour l'impact social."
+      "title": "Applications Web et Sites Web",
+      "description": "Création d'applications web et de sites web beaux et ultra-rapides. Nous nous concentrons sur un design centré sur l'utilisateur avec des performances améliorées et un SEO optimisé, depuis le MVP jusqu'aux produits prêts pour la production à grande échelle."
     },
     "mobileapp": {
-      "title": "Applications mobiles pour un changement positif",
-      "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement et créent des connexions significatives. Exploiter la technologie pour faire la différence, un tap à la fois."
+      "title": "Applications Mobiles Natives et Hybrides",
+      "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement. Nous construisons des applications mobiles natives et hybrides qui sont rapides, fiables et sécurisées avec une grande attention aux détails."
     },
     "data": {
-      "title": "Data Science & Machine Learning",
-      "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l’analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
+      "title": "Science des Données et Apprentissage Automatique",
+      "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l'analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
     },
     "backend": {
       "title": "Gestion du Backend",
@@ -135,5 +135,26 @@
     "subtitle": "Ce que disent nos clients",
     "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour faire ce qu'il faut pour que le travail soit fait.",
     "jaime": "Je soulignerais la communication et la responsabilité de leur part, ce qui nous a aidés à toujours connaître l'état du projet."
+  },
+  "about": {
+    "section": {
+      "title": "À propos de nous"
+    },
+    "title": "Amis et développeurs depuis 8 ans",
+    "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur.",
+    "values": {
+      "quality": {
+        "title": "Qualité",
+        "description": "Nous nous efforçons de fournir des produits de la plus haute qualité."
+      },
+      "impact": {
+        "title": "Impact",
+        "description": "Notre objectif est de créer un impact positif sur la société."
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Nous valorisons une communication claire et efficace avec nos clients."
+      }
+    }
   }
 }

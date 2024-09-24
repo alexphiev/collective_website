@@ -26,13 +26,6 @@
       "description": "We build and maintain the backend of your application, ensuring it is secure, scalable and reliable. We use the best available technology to create solid databases, fast APIs and bulletproof authentication."
     }
   },
-  "team": {
-    "section": {
-      "title": "Team"
-    },
-    "title": "Friends and developers since 8 years",
-    "description": "We believe in the power of technology to make the world a better place."
-  },
   "contact": {
     "title": "Contact",
     "getInTouch": "Get in touch",
@@ -135,5 +128,29 @@
     "subtitle": "What our clients say",
     "henrik": "I worked with the Dev for Good Collective for years. They consistently delivered great work with an eye for quality and design. They are proactive, see opportunities, and you can trust them to do what's needed to get the job done.",
     "jaime": "I would highlight the communication and accountability from their side which helped us to always know the status of the project."
+  },
+  "about": {
+    "section": {
+      "title": "About us"
+    },
+    "team": {
+      "title": "Who we are",
+      "description": "Friends and developers for 8+ years, we combine our complementary skills for impact."
+    },
+    "values": {
+      "title": "The Dev For Good Collective",
+      "1": {
+        "title": "Diverse experiences",
+        "description": "We are a group of friends from different countries, united by our shared passion for using technology to make a positive impact. Our diverse backgrounds and complementary skills allow us to tackle challenges from unique angles, resulting in innovative solutions."
+      },
+      "2": {
+        "title": "Purpose driven",
+        "description": "Our collective was built on the belief that our work should align with our values. We carefully choose projects that resonate with our commitment to creating meaningful change, ensuring that every line of code we write serves a greater purpose."
+      },
+      "3": {
+        "title": "Highly efficient",
+        "description": "Having worked together for years, we've developed a seamless collaboration that makes us highly efficient. When you partner with us, you can trust that we'll listen carefully to your needs while also bringing fresh ideas to the table. Our goal is simple: to build the best product to serve your mission."
+      }
+    }
   }
 }
