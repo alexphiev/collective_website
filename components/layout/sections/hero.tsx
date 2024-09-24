@@ -32,7 +32,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
             <h1>
               <span className="text-transparent bg-gradient-to-tr from-accent to-primary bg-clip-text">
                 <TypewritterComponent
-                  words={[1, 2, 3].map((i) => t(`hero.title.2.${i}`))}
+                  words={[1, 2, 3, 4].map((i) => t(`hero.title.2.${i}`))}
                 />
               </span>
             </h1>

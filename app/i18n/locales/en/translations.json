@@ -52,11 +52,12 @@
   "hero": {
     "title.1": "Developers for a better world",
     "title.2": {
-      "1": "Mobile & Website",
-      "2": "Backend & automation",
-      "3": "Data analysis"
+      "1": "Mobile Applications",
+      "2": "Websites",
+      "3": "Backend, DB & Automations",
+      "4": "Data & Machine Learning"
     },
-    "subtitle": "We Build. We Create. We Change the World.",
+    "subtitle": "We're here to help you build a project that makes a difference.",
     "badge": {
       "label": "Availability",
       "title": "September 2024"
