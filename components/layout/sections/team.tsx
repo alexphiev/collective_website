@@ -27,7 +27,7 @@ export const TeamSection = async ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="team" className="py-16">
+    <section id="team" className="py-16 gradient-background-bottom">
       <div className="container text-center mb-8">
         <SectionTitle title={t("team.section.title")} />
 

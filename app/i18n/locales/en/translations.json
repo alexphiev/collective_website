@@ -103,6 +103,9 @@
     }
   },
   "impact": {
+    "section": {
+      "title": "Impact"
+    },
     "title": "Our Impact",
     "clients": "Clients helped",
     "sdgs": "SDGs explored",
@@ -111,6 +114,8 @@
   },
   "testimonials": {
     "title": "Testimonials",
-    "subtitle": "What our clients say"
+    "subtitle": "What our clients say",
+    "henrik": "I worked with the Dev for Good Collective for years. They consistently delivered great work with an eye for quality and design. They are proactive, see opportunities, and you can trust them to do what's needed to get the job done.",
+    "jaime": "I would highlight the communication and accountability from their side which helped us to always know the status of the project."
   }
 }

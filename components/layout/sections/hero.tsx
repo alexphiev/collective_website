@@ -20,7 +20,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           className="opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
-        <div className="relative z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 lg:py-28">
+        <div className="relative px-2 z-10 grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 lg:py-28">
           <div className="text-center space-y-8">
             <div className="max-w-screen-xl mx-auto text-center text-4xl md:text-6xl font-bold">
               <h1 className="pb-3">{t("hero.title.1")}</h1>
@@ -37,7 +37,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
               {t("hero.subtitle")}
             </p>
           </div>
-          <ContactUsButton lng={lng} code="getintouch" />
+          <ContactUsButton lng={lng} code="getintouch" background={""} />
         </div>
       </div>
     </section>

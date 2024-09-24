@@ -44,20 +44,16 @@ export const Navbar = ({ lng }: { lng: string }) => {
       label: t("services.title"),
     },
     {
+      href: "#our-impact",
+      label: t("impact.section.title"),
+    },
+    {
       href: "#team",
       label: t("team.section.title"),
     },
     {
-      href: "#pricing",
-      label: t("pricing.title"),
-    },
-    {
       href: "#contact",
       label: t("contact"),
-    },
-    {
-      href: "#projects",
-      label: t("projects"),
     },
   ];
 
@@ -126,7 +122,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
               <ToggleLanguage lng={lng} />
-              <ToggleTheme />
+              <ToggleTheme lng={lng} />
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -137,7 +133,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
         <NavigationMenuList>
           {/* Advanced navigation item */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent">
+            <NavigationMenuTrigger className="bg-transparent hover:bg-transparent/20 focus:bg-transparent/20">
               Services
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -145,14 +141,14 @@ export const Navbar = ({ lng }: { lng: string }) => {
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-accent/50 to-primary/50 p-6 no-underline outline-none focus:shadow-md"
                       href="#services"
                     >
-                      <Sprout className="h-6 w-6" />
-                      <div className="mb-2 mt-4 text-lg font-medium">
+                      <Sprout className="h-6 w-6 text-accent-foreground" />
+                      <div className="mb-2 mt-4 text-lg font-medium text-accent-foreground">
                         {t("services.section.title")}
                       </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
+                      <p className="text-sm leading-tight text-accent-foreground/80">
                         {t("services.section.description")}
                       </p>
                     </a>
@@ -160,7 +156,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
                 </li>
                 <li className="row-span-3">
                   <ul className="flex flex-col flex-1 justify-between space-y-2">
-                    {serviceList.map(({ title, href, description }) => (
+                    {serviceList.map(({ title, description }) => (
                       <li
                         key={title}
                         className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
@@ -186,7 +182,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             <NavigationMenuItem key={label}>
               <NavigationMenuLink
                 href={href}
-                className={`bg-transparent w-24 ${navigationMenuTriggerStyle()}`}
+                className={`bg-transparent hover:bg-transparent/20 w-24 ${navigationMenuTriggerStyle()}`}
               >
                 {label}
               </NavigationMenuLink>
@@ -197,9 +193,15 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
       <div className="hidden lg:flex">
         <ToggleLanguage lng={lng} />
-        <ToggleTheme />
+        <ToggleTheme lng={lng} />
 
-        <Button asChild size="sm" variant="ghost" aria-label="LinkedIn">
+        <Button
+          asChild
+          size="sm"
+          variant="ghost"
+          aria-label="LinkedIn"
+          className="hover:bg-transparent/20"
+        >
           <Link
             aria-label="LinkedIn"
             href="https://www.linkedin.com/in/alexandrephiev/"

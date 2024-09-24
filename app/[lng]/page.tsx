@@ -11,6 +11,7 @@ import { languages } from "../i18n/settings";
 import { ClientsSection } from "@/components/layout/sections/clients";
 import { ImpactSection } from "@/components/layout/sections/impact";
 import { ContactUsButton } from "@/components/layout/contact-us-button";
+import ContactSection from "@/components/layout/sections/contact";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -22,14 +23,19 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
       <HeroSection lng={lng} />
       <ImpactSection lng={lng} />
       <ServicesSection lng={lng} />
-      <ContactUsButton lng={lng} code="contactus" />
+      <ContactUsButton
+        lng={lng}
+        code="contactus"
+        background="gradient-background-bottom"
+      />
       <TestimonialSection lng={lng} />
       <TeamSection lng={lng} />
-      <PricingSection lng={lng} />
+      {/* <PricingSection lng={lng} /> */}
 
       {/* <BenefitsSection lng={lng} />
       <FeaturesSection lng={lng} />
       <FAQSection lng={lng} /> */}
+      <ContactSection lng={lng} />
       <FooterSection lng={lng} />
     </>
   );
