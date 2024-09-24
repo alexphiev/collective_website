@@ -13,10 +13,6 @@
       "title": "Applications Web à impact",
       "description": "Création de solutions web belles et ultra-rapides qui favorisent le changement positif. 8 ans d'expertise en UI/UX et optimisation des performances pour l'impact social."
     },
-    "website": {
-      "title": "Des sites Web pour toutes les cause",
-      "description": "Du no-code de base au full-code d'entreprise : des sites web optimisés pour le SEO et responsifs qui amplifient votre mission et résonnent avec votre audience."
-    },
     "mobileapp": {
       "title": "Applications mobiles pour un changement positif",
       "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement et créent des connexions significatives. Exploiter la technologie pour faire la différence, un tap à la fois."
@@ -24,6 +20,10 @@
     "data": {
       "title": "Data Science & Machine Learning",
       "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l’analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
+    },
+    "backend": {
+      "title": "Gestion du Backend",
+      "description": "Nous construisons et maintenons le backend de votre application, en veillant à ce qu'il soit sécurisé, évolutif et fiable. Nous utilisons la meilleure technologie disponible pour créer des bases de données solides, des API rapides et une authentification à toute épreuve."
     }
   },
   "team": {
@@ -33,7 +33,25 @@
     "title": "Amis et développeurs depuis 8 ans",
     "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur."
   },
-  "contact": "Contact",
+  "contact": {
+    "title": "Contact",
+    "getInTouch": "Prenez contact",
+    "contactDescription": "Vous avez une question ou vous voulez travailler ensemble ? Remplissez le formulaire et nous vous répondrons dès que possible.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre email",
+    "messagePlaceholder": "Entrez votre message",
+    "submit": "Envoyer",
+    "newContactRequest": "Nouvelle demande de contact reçue !",
+    "successTitle": "Merci pour votre message !",
+    "successDescription": "Nous vous répondrons bientôt.",
+    "errorMessage": "Échec de l'envoi de votre message",
+    "errorDescription": "Nous sommes désolés pour le désagrément. Veuillez réessayer plus tard ou nous contacter via LinkedIn.",
+    "validationErrorTitle": "Veuillez remplir tous les champs",
+    "validationErrorDescription": "Tous les champs sont requis."
+  },
   "projects": "Projets",
   "lang": {
     "en": {
@@ -103,10 +121,19 @@
     }
   },
   "impact": {
+    "section": {
+      "title": "Impact"
+    },
     "title": "Notre Impact",
     "clients": "Clients aidés",
     "sdgs": "ODD explorés",
     "years": "Années d'expérience",
     "description": "Nous sommes fiers d'avoir aidé nos clients à se rapprocher de leurs Objectifs de Développement Durable."
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Ce que disent nos clients",
+    "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour faire ce qu'il faut pour que le travail soit fait.",
+    "jaime": "Je soulignerais la communication et la responsabilité de leur part, ce qui nous a aidés à toujours connaître l'état du projet."
   }
 }

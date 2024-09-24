@@ -1,16 +1,23 @@
 "use client";
 
+import { useTranslation } from "@/app/i18n/client";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { sendMessageToSlack } from "@/utils/contact-utils";
-import { toast } from "sonner";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react"; // Add this import
+import { Spinner } from "@/components/ui/spinner";
 
 export default function ContactSection({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng);
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false); // Add this state
+
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true); // Set loading state to true
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
@@ -18,12 +25,37 @@ export default function ContactSection({ lng }: { lng: string }) {
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
 
+    // Validation for non-empty fields
+    if (!name || !email || !message) {
+      toast({
+        title: t("contact.validationErrorTitle"),
+        description: t("contact.validationErrorDescription"),
+        variant: "destructive",
+      });
+      setIsLoading(false); // Reset loading state
+      return;
+    }
+
     const slackMessage = `New contact request received!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
     try {
       await sendMessageToSlack(slackMessage);
-      toast.success("Thank you for your message! We'll get back to you soon.");
+      toast({
+        title: t("contact.successTitle"),
+        description: t("contact.successDescription"),
+        variant: "default",
+        duration: 5000,
+      });
+
+      form.reset(); // Clear the form if successful
     } catch (error) {
-      toast.error("Failed to send your message. Please try again later.");
+      toast({
+        title: t("contact.errorTitle"),
+        description: t("contact.errorDescription"),
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsLoading(false); // Reset loading state
     }
   };
 
@@ -36,33 +68,51 @@ export default function ContactSection({ lng }: { lng: string }) {
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Get in touch
+              {t("contact.getInTouch")}
             </h1>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Have a question or want to work together? Fill out the form and
-              we&apos;ll get back to you as soon as possible.
+              {t("contact.contactDescription")}
             </p>
           </div>
           <form className="space-y-4" onSubmit={submit}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="space-y-2 col-span-1">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Enter your name" />
+                <Label htmlFor="name">{t("contact.name")}</Label>
+                <Input
+                  id="name"
+                  name="name"
+                  placeholder={t("contact.namePlaceholder")}
+                  disabled={isLoading} // Disable input when loading
+                />
               </div>
               <div className="space-y-2 col-span-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" />
+                <Label htmlFor="email">{t("contact.email")}</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder={t("contact.emailPlaceholder")}
+                  disabled={isLoading} // Disable input when loading
+                />
               </div>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
+              <Label htmlFor="message">{t("contact.message")}</Label>
               <Textarea
                 id="message"
-                placeholder="Enter your message"
+                name="message"
+                placeholder={t("contact.messagePlaceholder")}
                 className="min-h-[120px]"
+                disabled={isLoading} // Disable textarea when loading
               />
             </div>
-            <Button variant="default">Submit</Button>
+            <Button variant="default" disabled={isLoading}>
+              {isLoading ? (
+                <Spinner className="w-4 h-4" />
+              ) : (
+                t("contact.submit")
+              )}
+            </Button>
           </form>
         </div>
       </div>

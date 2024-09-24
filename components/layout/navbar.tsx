@@ -53,7 +53,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     },
     {
       href: "#contact",
-      label: t("contact"),
+      label: t("contact.title"),
     },
   ];
 

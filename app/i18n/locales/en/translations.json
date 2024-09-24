@@ -33,7 +33,25 @@
     "title": "Friends and developers since 8 years",
     "description": "We believe in the power of technology to make the world a better place."
   },
-  "contact": "Contact",
+  "contact": {
+    "title": "Contact",
+    "getInTouch": "Get in touch",
+    "contactDescription": "Have a question or want to work together? Fill out the form and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "messagePlaceholder": "Enter your message",
+    "submit": "Submit",
+    "newContactRequest": "New contact request received!",
+    "successTitle": "Thank you for your message!",
+    "successDescription": "We'll get back to you soon.",
+    "errorMessage": "Failed to send your message",
+    "errorDescription": "We are sorry for the inconvenience. Please try again later or contact us via LinkedIn.",
+    "validationErrorTitle": "Please fill in all fields",
+    "validationErrorDescription": "All fields are required."
+  },
   "projects": "Projects",
   "lang": {
     "en": {

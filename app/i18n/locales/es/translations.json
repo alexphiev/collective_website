@@ -24,6 +24,10 @@
     "data": {
       "title": "Análisis y visualización de datos",
       "description": "Te ayudamos a recopilar, analizar y visualizar datos para tomar decisiones informadas y medir tu impacto. Desde la recopilación de datos hasta la visualización de datos, te cubrimos."
+    },
+    "backend": {
+      "title": "Gestión de Backend",
+      "description": "Construimos y mantenemos el backend de tu aplicación, asegurando que sea seguro, escalable y confiable. Usamos la mejor tecnología disponible para crear bases de datos sólidas, APIs rápidas y autenticación a prueba de balas."
     }
   },
   "team": {
@@ -33,7 +37,25 @@
     "title": "Amigos y desarrolladores desde hace 8 años",
     "description": "Creemos en el poder de la tecnología para hacer del mundo un lugar mejor."
   },
-  "contact": "Contacto",
+  "contact": {
+    "title": "Contacto",
+    "getInTouch": "Ponte en contacto",
+    "contactDescription": "¿Tienes alguna pregunta o quieres trabajar juntos? Rellena el formulario y te responderemos lo antes posible.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "namePlaceholder": "Introduce tu nombre",
+    "emailPlaceholder": "Introduce tu correo electrónico",
+    "messagePlaceholder": "Introduce tu mensaje",
+    "submit": "Enviar",
+    "newContactRequest": "¡Nueva solicitud de contacto recibida!",
+    "successTitle": "¡Gracias por tu mensaje!",
+    "successDescription": "Nos pondremos en contacto contigo pronto.",
+    "errorMessage": "No se pudo enviar tu mensaje",
+    "errorDescription": "Lo sentimos por los inconvenientes. Por favor, inténtalo de nuevo más tarde o contáctanos a través de LinkedIn.",
+    "validationErrorTitle": "Por favor, rellena todos los campos",
+    "validationErrorDescription": "Todos los campos son requeridos."
+  },
   "projects": "Proyectos",
   "lang": {
     "en": {
@@ -103,10 +125,19 @@
     }
   },
   "impact": {
+    "section": {
+      "title": "Impacto"
+    },
     "title": "Nuestro Impacto",
     "clients": "Clientes ayudados",
     "sdgs": "ODS explorados",
     "years": "Años de experiencia",
     "description": "Estamos orgullosos de haber ayudado a nuestros clientes a acercarse de sus Objetivos de Desarrollo Sostenible."
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen nuestros clientes",
+    "henrik": "Trabajé con el Colectivo Dev for Good durante años. Siempre entregaron un trabajo excelente con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en ellos para hacer lo necesario para que el trabajo se haga.",
+    "jaime": "Destacaría la comunicación y la responsabilidad de su parte, lo que nos ayudó a conocer siempre el estado del proyecto."
   }
 }
