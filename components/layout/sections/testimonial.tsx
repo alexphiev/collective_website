@@ -55,7 +55,7 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
                         src={image}
                         alt="radix"
                         layout="fill"
-                        objectFit="cover"
+                        style={{ objectFit: "cover" }}
                       />
                       <AvatarFallback>{name.split(" ")[0][0]}</AvatarFallback>
                     </Avatar>

@@ -67,7 +67,7 @@ const ServiceCard = ({
           src={image}
           alt={title}
           layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           objectPosition="center top"
           className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0"
         />

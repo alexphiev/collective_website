@@ -15,7 +15,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           src={heroBackground}
           alt="Hero Background"
           layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           quality={100}
           className="opacity-20"
         />
