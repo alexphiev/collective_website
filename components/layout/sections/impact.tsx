@@ -16,12 +16,12 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
   ];
 
   return (
-    <section id="impact" className="py-16 gradient-background">
+    <section id="impact" className="py-16 gradient-background-top">
       <SectionTitle title={t("impact.title")} />
       <ClientsSection />
       <div className="container grid sm:grid-cols-1 lg:grid-cols-2 pt-6">
         {/* Left */}
-        <div className="flex flex-col justify-start w-full pr-6 gap-6">
+        <div className="flex flex-col justify-start w-full lg:pr-6 gap-6">
           <div className="grid grid-cols-3 w-full">
             {cardData.map((data, index) => (
               <Card
@@ -41,7 +41,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
           </h3>
         </div>
         {/* Right */}
-        <div className="grid grid-cols-5 h-min relative">
+        <div className="grid grid-cols-3 lg:grid-cols-5 h-min relative">
           {sdgs.map(({ icon, name, url }) => (
             <Link key={name} href={url} target="_blank">
               <Image

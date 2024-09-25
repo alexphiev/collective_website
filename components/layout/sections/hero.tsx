@@ -9,14 +9,13 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
 
   return (
     <section className="flex items-center justify-center w-full h-screen">
-
       {/* Background Image */}
       <div className="absolute inset-0 z-0" z-index="1">
         <Image
           src={heroBackground}
           alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           quality={100}
           className="opacity-40"
         />
@@ -26,7 +25,6 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
 
       <div className="flex relative z-10 w-full max-w-screen-xl mx-auto px-4 items-center justify-center">
         <div className="flex flex-col text-start space-y-8 items-start justify-start">
-
           <div className="max-w-screen-xl mx-auto text-start text-4xl md:text-6xl font-bold">
             <h1 className="pb-3">{t("hero.title.1")}</h1>
             <h1>
@@ -37,11 +35,15 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
               </span>
             </h1>
           </div>
-
           <p className="max-w-screen-sm w-full text-xl text-muted-foreground text-start">
             {t("hero.subtitle")}
           </p>
-          <ContactUsButton lng={lng} code="getintouch" startAlignment={true} />
+          <ContactUsButton
+            lng={lng}
+            code="getintouch"
+            startAlignment={true}
+            background={""}
+          />
         </div>
       </div>
     </section>

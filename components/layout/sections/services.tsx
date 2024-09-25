@@ -17,7 +17,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="services" className="py-16">
+    <section id="services" className="py-16 px-2 bg-card">
       <SectionTitle title={t("services.title")} />
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
@@ -25,12 +25,12 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
       </h2>
       <h3
         id="service-list"
-        className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-16"
+        className="mx-auto text-xl text-center text-muted-foreground mb-16"
       >
         {t("services.section.description")}
       </h3>
 
-      <div className="container px-0 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="container px-0 grid grid-cols-1 lg:grid-cols-4 gap-4">
         {serviceList.map((service, index) => (
           <ServiceCard
             key={index}
@@ -58,7 +58,7 @@ const ServiceCard = ({
   return (
     <Card
       key={href}
-      className="border-0 group relative overflow-hidden h-[440px] cursor-pointer"
+      className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer"
       onClick={onClick}
     >
       <div className="absolute inset-0 bg-gradient-to-tr from-primary from-25% to-accent opacity-80 z-10 bg-fixed"></div>
@@ -66,9 +66,8 @@ const ServiceCard = ({
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center top"
+          fill
+          style={{ objectFit: "cover", objectPosition: "center top" }}
           className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0"
         />
       </div>
@@ -87,12 +86,12 @@ const ServiceCard = ({
         }`}
       ></div>
       <div
-        className={`absolute inset-x-0 bottom-0 text-white p-6 transition-all duration-300 ease-in-out z-30 ${
+        className={`absolute inset-x-0 bottom-0 overflow-y-auto text-white p-6 transition-all duration-300 ease-in-out z-30 ${
           isClicked ? "h-full" : "h-0 opacity-0"
         }`}
       >
-        <CardTitle className="text-white mb-4">{title}</CardTitle>
-        <p className="text-white/80">{description}</p>
+        <CardTitle className="mb-4">{title}</CardTitle>
+        <p>{description}</p>
       </div>
     </Card>
   );
