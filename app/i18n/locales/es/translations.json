@@ -144,21 +144,21 @@
     },
     "team": {
       "title": "Quiénes somos",
-      "description": "Amigos y desarrolladores desde hace más de 8 años, combinamos nuestras habilidades complementarias para el impacto."
+      "description": "Amigos y desarrolladores durante más de 8 años, combinamos nuestras habilidades complementarias para generar impacto."
     },
     "values": {
       "title": "El Colectivo Dev For Good",
       "1": {
-        "title": "Experiencias diversas",
-        "description": "Somos un grupo de amigos de diferentes países, unidos por nuestra pasión compartida por usar la tecnología para tener un impacto positivo. Nuestras diversas trayectorias y habilidades complementarias nos permiten abordar desafíos desde ángulos únicos, resultando en soluciones innovadoras."
+        "title": "Habilidades complementarias",
+        "description": "Somos cuatro desarrolladores con experiencias complementarias en ingeniería de software, desarrollo web, aplicaciones móviles y ciencia de datos. Podemos tomar tu idea y construir un producto completo listo para producción desde cero o ayudarte a mejorar y automatizar un servicio existente, para que puedas concentrarte en lo más importante."
       },
       "2": {
         "title": "Impulsados por un propósito",
         "description": "Nuestro colectivo se construyó sobre la creencia de que nuestro trabajo debe alinearse con nuestros valores. Elegimos cuidadosamente proyectos que resuenan con nuestro compromiso de crear un cambio significativo, asegurando que cada línea de código que escribimos sirva a un propósito mayor."
       },
       "3": {
-        "title": "Altamente eficientes",
-        "description": "Habiendo trabajado juntos durante años, hemos desarrollado una colaboración fluida que nos hace altamente eficientes. Cuando te asocias con nosotros, puedes confiar en que escucharemos atentamente tus necesidades mientras también aportamos ideas frescas. Nuestro objetivo es simple: construir el mejor producto para servir a tu misión."
+        "title": "Comunicación fluida",
+        "description": "Habiendo trabajado juntos durante años, hemos desarrollado una colaboración sin fisuras que nos hace altamente eficientes y organizados. Cuando te asocias con nosotros, puedes confiar en que escucharemos atentamente tus necesidades mientras aportamos ideas frescas a la mesa."
       }
     }
   }

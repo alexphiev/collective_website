@@ -42,6 +42,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
             {t("impact.description")}
           </h3>
         </div>
+
         {/* Right */}
         <div className="grid grid-cols-3 lg:grid-cols-5 h-min relative">
           {sdgs.map(({ icon, name, url }) => (
@@ -51,8 +52,8 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
                 className="rounded-lg filter opacity-85 hover:filter-none transform transition-transform duration-300 ease-linear hover:scale-125  shadow-lg"
                 src={icon}
                 alt={name}
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
             </Link>
           ))}
