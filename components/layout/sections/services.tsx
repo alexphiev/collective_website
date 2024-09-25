@@ -61,18 +61,17 @@ const ServiceCard = ({
       className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer"
       onClick={onClick}
     >
-      <div className="absolute inset-0 bg-gradient-to-tr from-primary from-25% to-accent opacity-80 z-10 bg-fixed"></div>
-      <div className="absolute z-10 inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
           style={{ objectFit: "cover", objectPosition: "center top" }}
-          className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0"
+          className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0 group-hover:saturate-100"
         />
       </div>
       <CardContent
-        className={`relative z-20 h-full flex flex-col justify-end p-6 transition-all duration-500 ease-in-out ${
+        className={`relative z-20 h-full flex flex-col justify-end transition-all duration-500 ease-in-out ${
           isClicked
             ? "opacity-0 transform translate-y-4"
             : "opacity-100 transform translate-y-0"
@@ -96,3 +95,15 @@ const ServiceCard = ({
     </Card>
   );
 };
+
+/*
+
+layout="fill"
+objectFit="cover"
+objectPosition="center top"
+className="transition-all duration-500 ease-in-out group-hover:scale-110 saturate-100 group-hover:saturate-100"
+
+
+        className={`absolute inset-x-0 bottom-0 text-white transition-all duration-300 ease-in-out z-30 ${
+
+*/
