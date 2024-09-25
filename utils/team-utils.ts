@@ -4,11 +4,17 @@ import stefano from "@/public/stefano.jpeg";
 import daan from "@/public/daan_color.jpeg";
 import bernardo from "@/public/bernardo_compressed_squared.jpg";
 
+import france from "@/public/flags/france.png";
+import italy from "@/public/flags/italy.png";
+import netherlands from "@/public/flags/netherlands.png";
+import portugal from "@/public/flags/portugal.png";
+
 import { StaticImageData } from "next/image";
 
 interface TeamProps {
   imageUrl: string | StaticImageData;
   imageLinkUrl: string;
+  flagIconUrl: string | StaticImageData;
   firstName: string;
   lastName: string;
   position: string;
@@ -27,6 +33,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     {
       imageUrl: alexandre,
       imageLinkUrl: "https://www.linkedin.com/in/alexandrephiev/",
+      flagIconUrl: france,
       firstName: "Alexandre",
       lastName: "Phiev",
       position: "Senior Full Stack Web Developer",
@@ -47,6 +54,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     {
       imageUrl: stefano,
       imageLinkUrl: "https://www.linkedin.com/in/stefano-ventrudo-64742783/",
+      flagIconUrl: italy,
       firstName: "Stefano",
       lastName: "Ventrudo",
       position: "Senior Mobile & Full Stack Web Developer",
@@ -67,6 +75,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     {
       imageUrl: daan,
       imageLinkUrl: "https://www.linkedin.com/in/daan-knoors/",
+      flagIconUrl: netherlands,
       firstName: "Daan",
       lastName: "Knoors",
       position: "Senior Data Scientist & Privacy Engineer",
@@ -87,6 +96,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     {
       imageUrl: bernardo,
       imageLinkUrl: "https://www.linkedin.com/in/b-caetano/",
+      flagIconUrl: portugal,
       firstName: "Bernardo",
       lastName: "Caetano",
       position: "Senior Backend Developer · AWS Specialist",

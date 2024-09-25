@@ -14,7 +14,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { SectionTitle } from "./section-title";
 import { useTranslation } from "@/app/i18n/client";
 import { getTestimonials } from "@/utils/testimonials-utils";
 import Image from "next/image";
@@ -24,9 +23,7 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
   return (
     <section id="testimonials" className="py-16 pt-36 gradient-background-top">
       <div className="text-center mb-8">
-        <SectionTitle title={t("testimonials.title")} />
-
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 text-accent">
           {t("testimonials.subtitle")}
         </h2>
       </div>

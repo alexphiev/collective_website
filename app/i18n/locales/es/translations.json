@@ -11,11 +11,7 @@
     },
     "webapp": {
       "title": "Aplicaciones Web y Sitios Web",
-      "description": "Creando aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un rendimiento mejorado y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
-    },
-    "website": {
-      "title": "Sitios Web Hermosos para Cada Causa",
-      "description": "Desde no-code de base hasta full-code empresarial: sitios web optimizados para SEO y responsivos que amplifican tu misión y resuenan con tu audiencia."
+      "description": "Creando aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un alto rendimiento y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
     },
     "mobileapp": {
       "title": "Aplicaciones Móviles Nativas e Híbridas",
@@ -72,13 +68,14 @@
     }
   },
   "hero": {
-    "title.1": "Desarrollamos productos digitales",
+    "title.1": "Desarrollando tu visión para el cambio",
     "title.2": {
-      "1": "para el impacto",
-      "2": "para un mundo mejor",
-      "3": "para un cambio positivo"
+      "1": "Aplicaciones Móviles",
+      "2": "Aplicaciones Web y Sitios Web",
+      "3": "Soluciones de Backend",
+      "4": "Datos y Machine Learning"
     },
-    "subtitle": "Estamos aquí para ayudarte a construir un proyecto que marque la diferencia.",
+    "subtitle": "Desarrollamos el cambio que quieres ver en el mundo",
     "badge": {
       "label": "Disponibilidad",
       "title": "Septiembre 2024"

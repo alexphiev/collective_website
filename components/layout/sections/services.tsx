@@ -4,7 +4,6 @@ import { useTranslation } from "@/app/i18n/client";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { getServiceList, Service } from "@/utils/services-utils";
 import Image from "next/image";
-import { SectionTitle } from "./section-title";
 import { useState } from "react";
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
@@ -17,9 +16,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="services" className="py-16 px-2 bg-card">
-      <SectionTitle title={t("services.title")} />
-
+    <section id="services" className="py-16 px-2 bg-card text-accent">
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
         {t("services.section.title")}
       </h2>
@@ -95,15 +92,3 @@ const ServiceCard = ({
     </Card>
   );
 };
-
-/*
-
-layout="fill"
-objectFit="cover"
-objectPosition="center top"
-className="transition-all duration-500 ease-in-out group-hover:scale-110 saturate-100 group-hover:saturate-100"
-
-
-        className={`absolute inset-x-0 bottom-0 text-white transition-all duration-300 ease-in-out z-30 ${
-
-*/
