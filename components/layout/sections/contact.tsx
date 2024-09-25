@@ -62,9 +62,9 @@ export default function ContactSection({ lng }: { lng: string }) {
   return (
     <section
       id="contact"
-      className="w-full py-12 px-0 lg:px-32 md:py-16 mt-16 gradient-background-top border-t-2 border-white/20"
+      className="w-full py-12 px-0 md:py-16 mt-16 gradient-background-top border-t-2 border-white/20"
     >
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 max-w-4xl">
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -75,7 +75,7 @@ export default function ContactSection({ lng }: { lng: string }) {
             </p>
           </div>
           <form className="space-y-4" onSubmit={submit}>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div className="space-y-2 col-span-1">
                 <Label htmlFor="name">{t("contact.name")}</Label>
                 <Input
@@ -85,7 +85,7 @@ export default function ContactSection({ lng }: { lng: string }) {
                   disabled={isLoading} // Disable input when loading
                 />
               </div>
-              <div className="space-y-2 col-span-2">
+              <div className="space-y-2 col-span-1">
                 <Label htmlFor="email">{t("contact.email")}</Label>
                 <Input
                   id="email"

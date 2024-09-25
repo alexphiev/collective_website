@@ -72,7 +72,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
           <h3 className="text-2xl font-bold mb-6">{t("about.values.title")}</h3>
           <div className="flex flex-row gap-10">
             {values.map(({ icon, title, description }, index) => (
-              <div key={index} className="flex items-start">
+              <div key={index} className="flex items-start w-1/3">
                 <div className="mr-4">{createElement(icon)}</div>
                 <div>
                   <h4 className="text-xl font-semibold mb-2">{title}</h4>
