@@ -47,7 +47,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                         alt="Profile Image"
                         width={300}
                         height={300}
-                        className="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
+                        className="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:scale-[1.01]"
                       />
                     </div>
                   </a>

@@ -22,7 +22,7 @@ import Image from "next/image";
 export const TestimonialSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
   return (
-    <section id="testimonials" className="py-16 gradient-background-top">
+    <section id="testimonials" className="py-16 pt-36 gradient-background-top">
       <div className="text-center mb-8">
         <SectionTitle title={t("testimonials.title")} />
 
@@ -61,7 +61,7 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
                     </Avatar>
 
                     <div className="flex flex-col">
-                      <CardTitle className="text-lg text-accent">
+                      <CardTitle className="text-lg text-primary">
                         {name}
                       </CardTitle>
                       <CardDescription>{title}</CardDescription>

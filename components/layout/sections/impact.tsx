@@ -16,7 +16,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
   ];
 
   return (
-    <section id="impact" className="py-16 gradient-background-top">
+    <section id="impact" className="py-16 pb-16 gradient-background-top">
       <SectionTitle title={t("impact.title")} />
       <ClientsSection />
       <div className="container grid sm:grid-cols-1 lg:grid-cols-2 pt-6">
@@ -46,7 +46,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
             <Link key={name} href={url} target="_blank">
               <Image
                 key={name}
-                className="rounded-lg filter grayscale hover:filter-none transform transition-transform duration-300 ease-linear hover:scale-125  shadow-lg"
+                className="rounded-lg filter opacity-85 hover:filter-none transform transition-transform duration-300 ease-linear hover:scale-125  shadow-lg"
                 src={icon}
                 alt={name}
                 width={100}
