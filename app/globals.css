@@ -164,3 +164,67 @@ html {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  overflow: hidden; /* Hide overflow for smooth scroll */
+  display: flex;
+  justify-content: center;
+  padding: 1rem 4rem; /* Add padding to center the cards and make arrows visible */
+}
+
+/* Project card */
+.project-card {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Center the active project card */
+.project-card.active {
+  transform: scale(1.1);
+  opacity: 1; /* Fully visible */
+}
+
+/* Fade effect for inactive cards */
+.project-card.fade {
+  opacity: 0.5; /* Partially hidden */
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-container .arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5); /* Slightly darker background */
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5); /* Slightly darker background */
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-button.left {
+  left: 1rem;
+}
+
+.arrow-button.right {
+  right: 1rem;
+}

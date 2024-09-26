@@ -24,6 +24,7 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
         code="contactus"
         background="gradient-background-bottom"
       />
+      <ProjectSection lng={lng} />
       <TestimonialSection lng={lng} />
       <AboutSection lng={lng} />
       {/* <PricingSection lng={lng} /> */}

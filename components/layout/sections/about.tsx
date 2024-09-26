@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getValues } from "@/utils/values-utils";
 import { createElement } from "react";
 import { Separator } from "@/components/ui/separator";
+import {SectionTitle} from "@/components/layout/sections/section-title";
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -14,9 +15,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
   return (
     <section id="about" className="py-16 gradient-background-bottom">
       <div className="container px-0">
-        <h2 className="text-3xl md:text-4xl mb-4 text-center font-bold text-accent">
-          {t("about.team.title")}
-        </h2>
+        <SectionTitle title={t("about.team.title")} />
         <h3 className="mx-auto text-xl text-center text-muted-foreground mb-12">
           {t("about.team.description")}
         </h3>

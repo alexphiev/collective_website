@@ -1,17 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { useTranslation } from "@/app/i18n/client";
 import { getProjects, Project } from "@/utils/projects-utils";
 import Image from "next/image";
 import { SectionTitle } from "@/components/layout/sections/section-title";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import placeholderImage from "/public/images/placeholder.jpg"; // Static import for placeholder
 
 // Static imports for project images
@@ -22,14 +16,81 @@ import project3Image from "/public/projects/project3.jpg";
 export const ProjectSection = ({ lng }: { lng: string }) => {
     const { t } = useTranslation(lng);
     const projects = getProjects(t);
+    const initialProjectIndex = Math.floor(projects.length / 2);
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [currentIndex, setCurrentIndex] = useState(initialProjectIndex);
+    const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
-    const handleProjectClick = (project: Project) => {
-        setSelectedProject(project);
+    useEffect(() => {
+        if (scrollContainerRef.current) {
+            const containerWidth = scrollContainerRef.current.offsetWidth;
+            const elementWidth = scrollContainerRef.current.children[0]?.getBoundingClientRect().width || 0;
+            const scrollPosition =
+                currentIndex * (elementWidth + 24) - containerWidth / 2 + elementWidth / 2;
+            scrollContainerRef.current.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth',
+            });
+        }
+    }, [currentIndex]);
+
+    useEffect(() => {
+        if (scrollContainerRef.current && scrollContainerRef.current.children.length > 0) {
+            const containerWidth = scrollContainerRef.current.offsetWidth;
+            const elementWidth = scrollContainerRef.current.children[0]?.getBoundingClientRect().width || 0;
+            const initialScrollPosition =
+                initialProjectIndex * (elementWidth + 24) - containerWidth / 2 + elementWidth / 2;
+            scrollContainerRef.current.scrollTo({
+                left: initialScrollPosition,
+                behavior: 'smooth',
+            });
+        }
+    }, [initialProjectIndex]);
+
+    const handleProjectClick = (project: Project, index: number) => {
+        if (index === currentIndex) {
+            setSelectedProject(project);
+        } else {
+            setCurrentIndex(index);
+        }
     };
 
-    const handleCloseModal = () => {
+    const handleCloseModal = useCallback(() => {
         setSelectedProject(null);
+    }, []);
+
+    // Close modal on click outside
+    const handleOutsideClick = useCallback((event: MouseEvent) => {
+        const modal = document.getElementById("modal");
+        if (modal && !modal.contains(event.target as Node)) {
+            handleCloseModal();
+        }
+    }, [handleCloseModal]);
+
+    // Close modal on ESC key press
+    const handleKeyPress = useCallback((event: KeyboardEvent) => {
+        if (event.key === "Escape") {
+            handleCloseModal();
+        }
+    }, [handleCloseModal]);
+
+    useEffect(() => {
+        if (selectedProject) {
+            document.addEventListener("mousedown", handleOutsideClick);
+            document.addEventListener("keydown", handleKeyPress);
+        }
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+            document.removeEventListener("keydown", handleKeyPress);
+        };
+    }, [selectedProject, handleOutsideClick, handleKeyPress]);
+
+    const handleScroll = (direction: 'left' | 'right') => {
+        if (direction === 'left' && currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        } else if (direction === 'right' && currentIndex < projects.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        }
     };
 
     // Helper function to get static images
@@ -48,11 +109,11 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
 
     return (
         <section className="py-16">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row gap-10">
+            <SectionTitle title={t("projects.title")} />
+            <div className="container grid sm:grid-cols-1 lg:grid-cols-2 gap-10 w-full">
                 {/* Left Section: Project Message */}
-                <div className="md:w-1/2 flex justify-center items-center">
+                <div className="flex flex-col justify-center w-full lg:pr-6 gap-6">
                     <div>
-                        <SectionTitle title={t("projects.title")} />
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">
                             {t("projects.subtitle")}
                         </h2>
@@ -63,45 +124,62 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
                 </div>
 
                 {/* Right Section: Projects Carousel */}
-                <div className="md:w-1/2 relative flex justify-center items-center">
-                    <Carousel className="relative w-full">
-                        <CarouselPrevious className="absolute -left-6 top-1/2 transform -translate-y-1/2" />
-                        <CarouselContent className="flex space-x-4">
-                            {projects.map((project) => (
-                                <CarouselItem key={project.code} className="w-80 cursor-pointer">
-                                    <div
-                                        className="shadow-md rounded-lg p-4 flex flex-col items-center"
-                                        onClick={() => handleProjectClick(project)}
-                                    >
-                                        <Image
-                                            src={getProjectImage(project.code)}
-                                            alt={t(`projects.${project.code}.title`)}
-                                            width={300}
-                                            height={200}
-                                            className="rounded-lg mb-2"
-                                        />
-
-                                        <h3 className="text-xl font-bold mb-2 text-center">
-                                            {t(`projects.${project.code}.title`)}
-                                        </h3>
-                                        <p className="text-sm text-muted-foreground text-center">
-                                            {t(`projects.${project.code}.description`)}
-                                        </p>
+                <div className="carousel-container relative flex justify-center items-center w-full">
+                    <button
+                        onClick={() => handleScroll('left')}
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-2 rounded-full shadow-md"
+                    >
+                        <ChevronLeft className="w-6 h-6" />
+                    </button>
+                    <div
+                        ref={scrollContainerRef}
+                        className="flex overflow-x-auto space-x-6 pb-6 hide-scrollbar"
+                        style={{ scrollBehavior: 'smooth' }}
+                    >
+                        {projects.map((project, index) => (
+                            <div
+                                key={project.code}
+                                className={`project-card ${index === currentIndex ? 'active' : 'fade'} flex-none w-72 bg-card rounded-lg shadow-lg overflow-hidden cursor-pointer transition-transform hover:scale-105`}
+                                onClick={() => handleProjectClick(project, index)}
+                            >
+                                <Image
+                                    src={getProjectImage(project.code)}
+                                    alt={t(`projects.${project.code}.title`)}
+                                    width={300}
+                                    height={200}
+                                    className="w-full h-40 object-cover"
+                                />
+                                <div className="p-4">
+                                    <h3 className="text-xl font-bold mb-2">
+                                        {t(`projects.${project.code}.title`)}
+                                    </h3>
+                                    <p className="text-sm text-muted-foreground">
+                                        {t(`projects.${project.code}.description`)}
+                                    </p>
+                                    <div className="mt-4 flex justify-between items-center">
+                                        <div className="text-sm">
+                                            <span className="font-bold">{project.techSize}</span> Technologies
+                                        </div>
                                     </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselNext className="absolute -right-6 top-1/2 transform -translate-y-1/2" />
-                    </Carousel>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <button
+                        onClick={() => handleScroll('right')}
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-background/80 p-2 rounded-full shadow-md"
+                    >
+                        <ChevronRight className="w-6 h-6" />
+                    </button>
                 </div>
             </div>
 
             {/* Modal for displaying project details */}
             {selectedProject && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-background p-8 rounded-lg shadow-lg max-w-lg w-full relative">
+                    <div id="modal" className="bg-background p-8 rounded-lg shadow-lg max-w-lg w-full relative z-20">
                         <button
-                            className="absolute top-4 right-4 text-gray-700 hover:text-gray-900"
+                            className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 z-30"
                             onClick={handleCloseModal}
                         >
                             &times;
@@ -151,3 +229,5 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
         </section>
     );
 };
+
+export default ProjectSection;
