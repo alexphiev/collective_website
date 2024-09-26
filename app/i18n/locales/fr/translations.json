@@ -22,8 +22,8 @@
       "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l'analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
     },
     "backend": {
-      "title": "Gestion du Backend",
-      "description": "Nous construisons et maintenons le backend de votre application, en veillant à ce qu'il soit sécurisé, évolutif et fiable. Nous utilisons la meilleure technologie disponible pour créer des bases de données solides, des API rapides et une authentification à toute épreuve."
+      "title": "Services Backend",
+      "description": "Notre équipe excelle dans le développement côté serveur, la gestion de bases de données et l'intégration d'APIs, garantissant que votre application soit sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser l'infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à soutenir la croissance."
     }
   },
   "team": {
@@ -68,11 +68,12 @@
     }
   },
   "hero": {
-    "title.1": "Nous développons des produits digitaux",
+    "title.1": "Développer votre vision pour le changement",
     "title.2": {
-      "1": "à impact",
-      "2": "pour un monde meilleur",
-      "3": "pour un changement positif"
+      "1": "Applications Mobiles",
+      "2": "Applications Web et Sites Web",
+      "3": "Services Backend",
+      "4": "Données et Machine Learning"
     },
     "subtitle": "Nous sommes là pour vous aider à réaliser un projet qui fait la différence.",
     "badge": {
