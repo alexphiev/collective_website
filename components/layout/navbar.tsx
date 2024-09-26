@@ -209,7 +209,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
         >
           <Link
             aria-label="LinkedIn"
-            href="https://www.linkedin.com/in/alexandrephiev/"
+            href="https://www.linkedin.com/company/dev-for-good/"
             target="_blank"
             rel="noopener noreferrer"
           >
