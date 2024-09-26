@@ -12,11 +12,11 @@ html {
     /* Base colors */
     --rich-black: 220 40% 8%;
     --pearl-white: 0 0% 95%;
-    --coral: 16 100% 66%;
+    --keppel: 166 39% 50%;
     --dark-slate: 215 30% 13%;
     --muted-lavender: 260 20% 70%;
     --deep-burgundy: 345 50% 30%;
-    --aquamarine: 160 100% 50%;
+    --earthYellow: 35 67% 57%;
 
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
@@ -58,18 +58,18 @@ html {
     --card-foreground: var(--pearl-white);
 
     --popover: var(--rich-black);
-    --popover-foreground: var(--aquamarine);
+    --popover-foreground: var(--earthYellow);
 
-    --primary: var(--coral);
+    --primary: var(--keppel);
     --primary-foreground: var(--pearl-white);
 
     --secondary: var(--dark-slate);
-    --secondary-foreground: var(--aquamarine);
+    --secondary-foreground: var(--earthYellow);
 
     --muted: var(--dark-slate);
     --muted-foreground: var(--muted-lavender);
 
-    --accent: var(--aquamarine);
+    --accent: var(--earthYellow);
     --accent-foreground: var(--pearl-white);
 
     --destructive: var(--deep-burgundy);

@@ -67,7 +67,7 @@ export default function ContactSection({ lng }: { lng: string }) {
       <div className="container px-4 md:px-6 max-w-4xl">
         <div className="space-y-4">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-accent">
               {t("contact.getInTouch")}
             </h1>
             <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">

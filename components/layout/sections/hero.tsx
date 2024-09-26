@@ -8,9 +8,9 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
 
   return (
-    <section className="flex items-center justify-center w-full h-screen">
+    <section className="relative flex items-center justify-center w-full h-screen">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0" z-index="1">
+      <div className="absolute top-[-56px] inset-0 z-2" z-index="0">
         <Image
           src={heroBackground}
           alt="Hero Background"
@@ -25,10 +25,10 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
 
       <div className="flex relative z-10 w-full max-w-screen-xl mx-auto px-4 items-center justify-center">
         <div className="flex flex-col text-start space-y-8 items-start justify-start">
-          <div className="max-w-screen-xl mx-auto text-start text-4xl md:text-6xl font-bold">
+          <div className="max-w-screen-xl mx-auto text-start text-4xl md:text-6xl font-semibold">
             <h1 className="pb-3">{t("hero.title.1")}</h1>
             <h1>
-              <span className="text-transparent bg-gradient-to-tr from-accent to-primary bg-clip-text">
+              <span className="text-transparent bg-gradient-to-tr from-primary to-accent bg-clip-text">
                 <TypewritterComponent
                   words={[1, 2, 3, 4].map((i) => t(`hero.title.2.${i}`))}
                 />

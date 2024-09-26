@@ -61,14 +61,14 @@
     }
   },
   "hero": {
-    "title.1": "Developers for a better world",
+    "title.1": "Developing your vision for change",
     "title.2": {
       "1": "Mobile Applications",
-      "2": "Websites",
-      "3": "Backend, DB & Automations",
+      "2": "Web Applications & Websites",
+      "3": "Backend Solutions",
       "4": "Data & Machine Learning"
     },
-    "subtitle": "We're here to help you build a project that makes a difference.",
+    "subtitle": "We develop the change you want to see in the world",
     "badge": {
       "label": "Availability",
       "title": "September 2024"

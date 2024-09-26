@@ -1,7 +1,7 @@
 "use client";
 import { useTranslation } from "@/app/i18n/client";
 import { getServiceList } from "@/utils/services-utils";
-import { Linkedin, Menu, Sprout } from "lucide-react";
+import { ChevronRight, Linkedin, Menu, Sprout } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
@@ -131,10 +131,10 @@ export const Navbar = ({ lng }: { lng: string }) => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          {/* Advanced navigation item */}
+          {/* Advanced navigation item 
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent hover:bg-transparent/20 focus:bg-transparent/20">
-              Services
+            {t("services.title")}
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
@@ -155,30 +155,31 @@ export const Navbar = ({ lng }: { lng: string }) => {
                   </NavigationMenuLink>
                 </li>
                 <li className="row-span-3">
-                  <ul className="flex flex-col flex-1 justify-between space-y-2">
+                  <ul className="flex flex-col flex-1 justify-between">
                     {serviceList.map(({ title, description }) => (
-                      <li
-                        key={title}
-                        className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
-                      >
-                        <Link href={"#service-list"}>
-                          <p className="mb-1 font-semibold text-foreground">
-                            {title}
-                          </p>
-                          <p className="line-clamp-2 text-muted-foreground">
-                            {description}
-                          </p>
-                        </Link>
-                      </li>
+                      <>
+                        <li
+                          key={title}
+                          className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
+                        >
+                          <Link href={"#service-list"} className="flex items-center justify-between">
+                            <p className="font-semibold text-foreground">
+                              {title}
+                            </p>
+                            <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                          </Link>
+                        </li>
+                        <Separator className="my-2" />
+                      </>
                     ))}
                   </ul>
                 </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-
+          */}
           {/* Simple navigation links */}
-          {routeList.slice(1).map(({ href, label }) => (
+          {routeList.map(({ href, label }) => (
             <NavigationMenuItem key={label}>
               <NavigationMenuLink
                 href={href}
