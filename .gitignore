@@ -40,3 +40,5 @@ next-env.d.ts
 *.iml
 *.iws
 out/
+
+.env

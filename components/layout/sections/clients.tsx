@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const ClientsSection = () => {
   return (
-    <section id="clients" className="py-16">
+    <section id="clients" className="py-10">
       <div className="container">
         <Marquee
           className="gap-[3rem]"

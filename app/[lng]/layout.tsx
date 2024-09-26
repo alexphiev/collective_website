@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { dir } from "i18next";
 import { languages } from "../i18n/settings";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           <Navbar lng={lng} />
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
