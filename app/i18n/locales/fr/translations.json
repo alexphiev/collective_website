@@ -205,20 +205,23 @@
     "section": {
       "title": "À propos de nous"
     },
-    "title": "Amis et développeurs depuis 8 ans",
-    "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur.",
+    "team": {
+      "title": "Qui nous sommes",
+      "description": "Amis et développeurs depuis plus de 8 ans, nous combinons nos compétences complémentaires pour l'impact."
+    },
     "values": {
-      "quality": {
-        "title": "Qualité",
-        "description": "Nous nous efforçons de fournir des produits de la plus haute qualité."
+      "title": "Le Collectif Dev For Good",
+      "1": {
+        "title": "Compétences complémentaires",
+        "description": "Nous sommes quatre développeurs avec des parcours complémentaires en génie logiciel, développement Web, applications mobiles et science des données. Nous pouvons prendre votre idée et construire un produit complet prêt pour la production à partir de zéro ou vous aider à améliorer et automatiser un service existant, afin que vous puissiez vous concentrer sur ce qui compte le plus."
       },
-      "impact": {
-        "title": "Impact",
-        "description": "Notre objectif est de créer un impact positif sur la société."
+      "2": {
+        "title": "Pour un changement positif",
+        "description": "Notre collectif a été construit sur la conviction que notre travail devrait s'aligner sur nos valeurs. Nous choisissons soigneusement des projets qui résonnent avec notre engagement à créer un changement significatif, en veillant à ce que chaque ligne de code que nous écrivons serve un objectif plus grand."
       },
-      "communication": {
-        "title": "Communication",
-        "description": "Nous valorisons une communication claire et efficace avec nos clients."
+      "3": {
+        "title": "Communication fluide",
+        "description": "Ayant travaillé ensemble pendant des années, nous avons développé une collaboration sans faille qui nous rend hautement efficaces et organisés. Lorsque vous vous associez à nous, vous pouvez être sûr que nous écouterons attentivement vos besoins tout en apportant de nouvelles idées à la table."
       }
     }
   }

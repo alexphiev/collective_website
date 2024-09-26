@@ -23,7 +23,7 @@ export const ContactUsButton = ({
       className={`w-full ${background} flex ${
         startAlignment
           ? "py-4 justify-start items-start"
-          : "container py-4 justify-center items-center"
+          : "mt-0 justify-center items-center"
       }`}
     >
       <div className="relative inline-block group">
