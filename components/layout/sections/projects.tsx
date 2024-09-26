@@ -108,7 +108,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
     };
 
     return (
-        <section className="py-16">
+        <section id="projects" className="py-32">
             <SectionTitle title={t("projects.title")} />
             <div className="container grid sm:grid-cols-1 lg:grid-cols-2 gap-10 w-full">
                 {/* Left Section: Project Message */}

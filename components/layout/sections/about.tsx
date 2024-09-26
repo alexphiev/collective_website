@@ -13,7 +13,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
   const values = getValues(t); // Get the translated values
 
   return (
-    <section id="about" className="py-16 gradient-background-bottom">
+    <section id="about" className="py-16 pt-32 gradient-background-bottom">
       <div className="container px-0">
         <SectionTitle title={t("about.team.title")} />
         <h3 className="mx-auto text-xl text-center text-muted-foreground mb-12">

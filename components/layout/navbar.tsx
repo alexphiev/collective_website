@@ -48,16 +48,16 @@ export const Navbar = ({ lng }: { lng: string }) => {
       label: t("impact.section.title"),
     },
     {
-      href: "#about",
-      label: t("about.section.title"),
-    },
-    {
       href: "#projects",
       label: t("projects.title"),
     },
     {
+      href: "#about",
+      label: t("about.section.title"),
+    },
+    {
       href: "#contact",
-      label: t("contact"),
+      label: t("contact.title"),
     },
   ];
 

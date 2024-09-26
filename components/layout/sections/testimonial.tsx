@@ -22,7 +22,7 @@ import {SectionTitle} from "@/components/layout/sections/section-title";
 export const TestimonialSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
   return (
-    <section id="testimonials" className="py-16 pt-36 gradient-background-top">
+    <section id="testimonials" className="gradient-background-top">
       <div className="mb-8">
           <SectionTitle title={t("testimonials.subtitle")} />
       </div>
