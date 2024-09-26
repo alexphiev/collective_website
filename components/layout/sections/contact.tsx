@@ -9,6 +9,8 @@ import { sendMessageToSlack } from "@/utils/contact-utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react"; // Add this import
 import { Spinner } from "@/components/ui/spinner";
+import { SectionTitle } from "./section-title";
+import { SectionDivider } from "./section-divider";
 
 export default function ContactSection({ lng }: { lng: string }) {
   const { t } = useTranslation(lng);
@@ -62,14 +64,13 @@ export default function ContactSection({ lng }: { lng: string }) {
   return (
     <section
       id="contact"
-      className="w-full py-12 px-0 md:py-16 mt-16 gradient-background-top border-t-2 border-white/20"
+      className="w-full pb-12 px-0 md:pb-16 gradient-background-top"
     >
+      <SectionDivider />
       <div className="container px-4 md:px-6 max-w-4xl">
         <div className="space-y-4">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-accent">
-              {t("contact.getInTouch")}
-            </h1>
+            <SectionTitle title={t("contact.getInTouch")} textAlign="left" />
             <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               {t("contact.contactDescription")}
             </p>
