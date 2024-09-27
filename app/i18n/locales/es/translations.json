@@ -1,56 +1,49 @@
 {
   "contactus": "Contáctanos",
-  "getintouch": "Ponte en contacto",
+  "getintouch": "Contáctanos",
   "day": "día",
   "month": "mes",
   "services": {
     "title": "Servicios",
     "section": {
       "title": "Productos digitales para un mundo mejor",
-      "description": "Usamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
+      "description": "Utilizamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
     },
     "webapp": {
       "title": "Aplicaciones Web y Sitios Web",
-      "description": "Creando aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un alto rendimiento y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
+      "description": "Creamos aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un rendimiento mejorado y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
     },
     "mobileapp": {
       "title": "Aplicaciones Móviles Nativas e Híbridas",
-      "description": "Aplicaciones centradas en el usuario para iOS y Android que impulsan el compromiso. Construimos aplicaciones móviles nativas e híbridas que son rápidas, confiables y seguras con gran atención a los detalles."
+      "description": "Aplicaciones iOS y Android centradas en el usuario que impulsan el compromiso. Construimos aplicaciones móviles nativas e híbridas que son rápidas, confiables y seguras con gran atención a los detalles."
     },
     "data": {
-      "title": "Ciencia de Datos y Aprendizaje Automático",
-      "description": "Te ayudamos a extraer valor y descubrir nuevos conocimientos a partir de tus datos. Esto incluye la implementación de sistemas para el procesamiento automatizado de datos y su visualización, así como el análisis de datos y el despliegue de aprendizaje automático. También nos especializamos en las técnicas más recientes de mejora de la privacidad para garantizar que los datos se puedan procesar de manera segura, mientras se protege la información sensible."
+      "title": "Data Science y Machine Learning",
+      "description": "Podemos ayudarlo a extraer valor y descubrir nuevos conocimientos de sus datos. Esto incluye la implementación de sistemas para el procesamiento y visualización automatizados de datos, así como el análisis de datos y la implementación de aprendizaje automático. También nos especializamos en las últimas técnicas de mejora de la privacidad para garantizar que los datos se puedan procesar de manera segura, mientras la información sensible permanece protegida."
     },
     "backend": {
       "title": "Gestión de Backend",
-      "description": "Construimos y mantenemos el backend de tu aplicación, asegurando que sea seguro, escalable y confiable. Usamos la mejor tecnología disponible para crear bases de datos sólidas, APIs rápidas y autenticación a prueba de balas."
+      "description": "Construimos y mantenemos el backend de su aplicación, asegurando que sea seguro, escalable y confiable. Utilizamos la mejor tecnología disponible para crear bases de datos sólidas, APIs rápidas y autenticación a prueba de balas."
     }
-  },
-  "team": {
-    "section": {
-      "title": "Equipo"
-    },
-    "title": "Amigos y desarrolladores desde hace 8 años",
-    "description": "Creemos en el poder de la tecnología para hacer del mundo un lugar mejor."
   },
   "contact": {
     "title": "Contacto",
-    "getInTouch": "Ponte en contacto",
-    "contactDescription": "¿Tienes alguna pregunta o quieres trabajar juntos? Rellena el formulario y te responderemos lo antes posible.",
+    "getInTouch": "Contacto",
+    "contactDescription": "¿Tienes una pregunta o quieres trabajar juntos? Completa el formulario y nos pondremos en contacto contigo lo antes posible.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
-    "namePlaceholder": "Introduce tu nombre",
-    "emailPlaceholder": "Introduce tu correo electrónico",
-    "messagePlaceholder": "Introduce tu mensaje",
+    "namePlaceholder": "Ingresa tu nombre",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
+    "messagePlaceholder": "Ingresa tu mensaje",
     "submit": "Enviar",
     "newContactRequest": "¡Nueva solicitud de contacto recibida!",
-    "successTitle": "¡Gracias por tu mensaje!",
+    "successTitle": "¡Gracias por su mensaje!",
     "successDescription": "Nos pondremos en contacto contigo pronto.",
     "errorMessage": "No se pudo enviar tu mensaje",
-    "errorDescription": "Lo sentimos por los inconvenientes. Por favor, inténtalo de nuevo más tarde o contáctanos a través de LinkedIn.",
-    "validationErrorTitle": "Por favor, rellena todos los campos",
-    "validationErrorDescription": "Todos los campos son requeridos."
+    "errorDescription": "Lamentamos las molestias. Por favor, inténtelo de nuevo más tarde o contáctenos a través de LinkedIn.",
+    "validationErrorTitle": "Por favor, completa todos los campos",
+    "validationErrorDescription": "Todos los campos son obligatorios."
   },
   "projects": "Proyectos",
   "lang": {
@@ -68,42 +61,42 @@
     }
   },
   "hero": {
-    "title.1": "Desarrollando tu visión para el cambio",
+    "title.1": "Desarrollando tu visión de cambio",
     "title.2": {
       "1": "Aplicaciones Móviles",
       "2": "Aplicaciones Web y Sitios Web",
       "3": "Soluciones de Backend",
-      "4": "Datos y Machine Learning"
+      "4": "Datos y Aprendizaje Automático"
     },
     "subtitle": "Desarrollamos el cambio que quieres ver en el mundo",
     "badge": {
       "label": "Disponibilidad",
       "title": "Septiembre 2024"
     },
-    "cta1": "Ponte en contacto",
+    "cta1": "Póngase en contacto",
     "cta2": "Ver proyectos"
   },
   "pricing": {
     "title": "Precios",
-    "subtitle": "Un precio transparente y competitivo para más impacto",
-    "description": "Estamos orgullosos de ofrecer un gran valor por nuestra experiencia senior y trabajo en equipo altamente eficiente para ayudarte a lograr objetivos positivos.",
-    "cta": "Contáctanos",
+    "subtitle": "Transparentes y competitivos para un mayor impacto",
+    "description": "Estamos orgullosos de ofrecer un gran valor por nuestra experiencia senior y trabajo en equipo altamente eficiente para ayudarlo a lograr objetivos positivos.",
+    "cta": "Contáctenos",
     "nonprofit": {
       "title": "Sin fines de lucro",
-      "description": "Ayudamos a las ONG a alcanzar sus objetivos a un costo reducido.",
+      "description": "Ayudamos a las ONG a lograr sus objetivos a un costo reducido.",
       "unit": "día",
       "benefits": {
-        "1": "1 líder de equipo para una comunicación sencilla",
+        "1": "1 líder de equipo para una comunicación simple",
         "2": "Hasta 2 desarrolladores simultáneos",
         "3": "1 mes de soporte gratuito"
       }
     },
     "pro": {
       "title": "Pro",
-      "description": "Nuestro colectivo completo dedicado a tu éxito.",
+      "description": "Nuestro colectivo completo dedicado a su éxito.",
       "unit": "día",
       "benefits": {
-        "1": "1 líder de equipo para una comunicación sencilla",
+        "1": "1 líder de equipo para una comunicación simple",
         "2": "Hasta 4 desarrolladores simultáneos",
         "3": "1 mes de soporte gratuito",
         "4": "Soporte prioritario"
@@ -111,13 +104,13 @@
     },
     "support": {
       "title": "Soporte Ilimitado",
-      "description": "A tu lado para pequeños cambios y corrección de errores.",
+      "description": "A su lado para pequeños cambios y corrección de errores.",
       "unit": "mes (primeros 5 clientes)",
       "benefits": {
         "1": "Tiempo de respuesta rápido",
         "2": "1 solicitud a la vez",
         "3": "Cantidad fija para siempre",
-        "4": "Cancela en cualquier momento"
+        "4": "Cancele en cualquier momento"
       }
     }
   },
@@ -129,14 +122,14 @@
     "clients": "Clientes ayudados",
     "sdgs": "ODS explorados",
     "years": "Años de experiencia",
-    "description": "Estamos orgullosos de haber ayudado a nuestros clientes a acercarse de sus Objetivos de Desarrollo Sostenible."
+    "description": "Estamos orgullosos de haber ayudado a nuestros clientes a acercarse a sus Objetivos de Desarrollo Sostenible de la ONU."
   },
   "testimonials": {
     "title": "Testimonios",
     "subtitle": "Lo que dicen nuestros clientes",
-    "henrik": "Trabajé con el Colectivo Dev for Good durante años. Siempre entregaron un trabajo excelente con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en ellos para hacer lo necesario para que el trabajo se haga.",
+    "henrik": "Trabajé con colectivo Dev for Good durante años. Constantemente entregaron un gran trabajo con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en que harán lo necesario para hacer el trabajo.",
     "jaime": "Destacaría la comunicación y la responsabilidad de su parte, lo que nos ayudó a conocer siempre el estado del proyecto.",
-    "kyrre": "He tenido el placer de trabajar con este equipo durante varios años, y son competentes, trabajadores, honestos y encantadores para trabajar. Tu proyecto estará seguro en manos de un equipo que realmente se preocupa por hacer un gran trabajo. Mis más cálidas recomendaciones."
+    "kyrre": "He tenido el placer de trabajar con este equipo durante varios años, y son competentes, trabajadores, honestos y encantadores para trabajar. Su proyecto estará seguro en manos de un equipo que realmente se preocupa por hacer un gran trabajo. Mis más cálidas recomendaciones."
   },
   "about": {
     "section": {
@@ -144,13 +137,13 @@
     },
     "team": {
       "title": "Quiénes somos",
-      "description": "Amigos y desarrolladores durante más de 8 años, combinamos nuestras habilidades complementarias para generar impacto."
+      "description": "Amigos y desarrolladores durante más de 8 años, combinamos nuestras habilidades complementarias para lograr un impacto."
     },
     "values": {
       "title": "El Colectivo Dev For Good",
       "1": {
         "title": "Habilidades complementarias",
-        "description": "Somos cuatro desarrolladores con experiencias complementarias en ingeniería de software, desarrollo web, aplicaciones móviles y ciencia de datos. Podemos tomar tu idea y construir un producto completo listo para producción desde cero o ayudarte a mejorar y automatizar un servicio existente, para que puedas concentrarte en lo más importante."
+        "description": "Somos cuatro desarrolladores con antecedentes complementarios en ingeniería de software, desarrollo web, aplicaciones móviles y data science. Podemos tomar su idea y construir un producto completo listo para producción desde cero o ayudarlo a mejorar y automatizar un servicio existente, para que pueda concentrarse en lo que más importa."
       },
       "2": {
         "title": "Impulsados por un propósito",
@@ -158,7 +151,7 @@
       },
       "3": {
         "title": "Comunicación fluida",
-        "description": "Habiendo trabajado juntos durante años, hemos desarrollado una colaboración sin fisuras que nos hace altamente eficientes y organizados. Cuando te asocias con nosotros, puedes confiar en que escucharemos atentamente tus necesidades mientras aportamos ideas frescas a la mesa."
+        "description": "Habiendo trabajado juntos durante años, hemos desarrollado una colaboración sin problemas que nos hace altamente eficientes y organizados. Cuando se asocia con nosotros, puedes confiar en que escucharemos atentamente tus necesidades mientras también aportamos ideas frescas a la mesa."
       }
     }
   }
