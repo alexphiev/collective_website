@@ -5,6 +5,9 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { getServiceList, Service } from "@/utils/services-utils";
 import Image from "next/image";
 import { useState } from "react";
+import { SectionTitle } from "./section-title";
+import { SectionDivider } from "./section-divider";
+import { ContactUsButton } from "../contact-us-button";
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
@@ -16,10 +19,9 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="services" className="py-16 px-2 bg-card text-accent">
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        {t("services.section.title")}
-      </h2>
+    <section id="services" className="gradient-background-bottom text-accent">
+      <SectionDivider />
+      <SectionTitle title={t("services.section.title")} />
       <h3
         id="service-list"
         className="mx-auto text-xl text-center text-muted-foreground mb-16"
@@ -36,6 +38,9 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
             onClick={() => handleCardClick(index)}
           />
         ))}
+      </div>
+      <div className="pt-[80px]">
+        <ContactUsButton lng={lng} code="explainyourneeds" />
       </div>
     </section>
   );
@@ -55,17 +60,19 @@ const ServiceCard = ({
   return (
     <Card
       key={href}
-      className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer"
+      className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer group/hoverimg scroll-reveal-up"
       onClick={onClick}
     >
       <div className="absolute inset-0 overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          style={{ objectFit: "cover", objectPosition: "center top" }}
-          className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110"
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            style={{ objectFit: "cover", objectPosition: "center top" }}
+            className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 group-hover:saturate-100"
+          />
+        </div>
       </div>
       <CardContent
         className={`relative z-20 h-full flex flex-col justify-end transition-all duration-500 ease-in-out ${

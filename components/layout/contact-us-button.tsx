@@ -8,19 +8,17 @@ import { useTranslation } from "@/app/i18n/client";
 export const ContactUsButton = ({
   lng,
   code,
-  background,
   startAlignment,
 }: {
   lng: string;
   code: string;
   startAlignment?: boolean;
-  background: string;
 }) => {
   const { t } = useTranslation(lng);
   const router = useRouter();
   return (
     <div
-      className={`w-full ${background} flex ${
+      className={`w-full flex ${
         startAlignment
           ? "py-4 justify-start items-start"
           : "mt-0 justify-center items-center"

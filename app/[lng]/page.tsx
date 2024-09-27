@@ -18,11 +18,6 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
       <HeroSection lng={lng} />
       <ImpactSection lng={lng} />
       <ServicesSection lng={lng} />
-      <ContactUsButton
-        lng={lng}
-        code="contactus"
-        background="gradient-background-bottom"
-      />
       <TestimonialSection lng={lng} />
       <AboutSection lng={lng} />
       {/* <PricingSection lng={lng} /> */}

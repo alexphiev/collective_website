@@ -1,8 +1,8 @@
 import { TFunction } from "i18next";
-import data from "@/public/data.jpg";
-import mobile from "@/public/mobile.jpg";
-import webapp from "@/public/web.jpg";
-import backend from "@/public/backend.jpg";
+import data from "@/public/data-primary.jpg";
+import mobile from "@/public/mobile-primary.jpg";
+import webapp from "@/public/web-primary.jpg";
+import backend from "@/public/backend-primary.jpg";
 import { StaticImageData } from "next/image";
 
 export interface Service {

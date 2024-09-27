@@ -14,9 +14,10 @@ html {
     --pearl-white: 0 0% 95%;
     --keppel: 166 39% 50%;
     --dark-slate: 215 30% 13%;
-    --muted-lavender: 260 20% 70%;
+    --muted-white: 0 0% 80%;
     --deep-burgundy: 345 50% 30%;
     --earthYellow: 35 67% 57%;
+    --lapiz-lazuli: 215 30% 19%;
 
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
@@ -54,7 +55,7 @@ html {
     --background: var(--rich-black);
     --foreground: var(--pearl-white);
 
-    --card: var(--dark-slate);
+    --card: var(--lapiz-lazuli);
     --card-foreground: var(--pearl-white);
 
     --popover: var(--rich-black);
@@ -67,7 +68,7 @@ html {
     --secondary-foreground: var(--earthYellow);
 
     --muted: var(--dark-slate);
-    --muted-foreground: var(--muted-lavender);
+    --muted-foreground: var(--muted-white);
 
     --accent: var(--earthYellow);
     --accent-foreground: var(--pearl-white);
@@ -163,4 +164,7 @@ html {
   animation: fadeInUp linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+}
+.text-gradient {
+  @apply text-transparent bg-gradient-to-tr from-primary to-accent bg-clip-text;
 }
