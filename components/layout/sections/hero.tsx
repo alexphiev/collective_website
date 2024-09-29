@@ -3,6 +3,7 @@ import { ContactUsButton } from "../contact-us-button";
 import { TypewritterComponent } from "../typewritter-component";
 import heroBackground from "@/public/hero-background.jpg";
 import Image from "next/image";
+import ScrollDownArrow from "../scroll-down-arrow";
 
 export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -46,6 +47,8 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           />
         </div>
       </div>
+      {/* Scroll down arrow */}
+      <ScrollDownArrow />
     </section>
   );
 };

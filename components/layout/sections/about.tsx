@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getValues } from "@/utils/values-utils";
 import { createElement } from "react";
 import { Separator } from "@/components/ui/separator";
+import { Linkedin } from "lucide-react";
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -25,7 +26,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
         <div className="px-0 grid grid-cols-2 lg:grid-cols-4 mb-16">
           {team.map(
             (
-              { imageUrl, imageLinkUrl, firstName, lastName, position, flagIconUrl },
+              { imageUrl, imageLinkUrl, firstName, lastName, position, flagIconUrl, socialNetworks },
               index
             ) => (
               <Card
@@ -53,13 +54,24 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                       {firstName}
                       <span className="text-primary">{lastName}</span>
                     </CardTitle>
-                    <Image
-                      src={flagIconUrl}
-                      alt={`${firstName} ${lastName}'s flag`}
-                      width={24}
-                      height={24}
-                      className="w-6 h-6 object-cover"
-                    />
+                    <div className="flex items-center space-x-2">
+                      <Image
+                        src={flagIconUrl}
+                        alt={`${firstName} ${lastName}'s flag`}
+                        width={24}
+                        height={24}
+                        className="w-6 h-6 object-cover"
+                      />
+                      {socialNetworks.find(network => network.name === "LinkedIn") && (
+                        <a
+                          href={socialNetworks.find(network => network.name === "LinkedIn")?.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Linkedin className="w-5 h-5" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent
