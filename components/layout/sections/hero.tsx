@@ -28,7 +28,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           <div className="max-w-screen-xl mx-auto text-start text-4xl md:text-6xl font-semibold">
             <h1 className="pb-3">{t("hero.title.1")}</h1>
             <h1>
-              <span className="text-transparent bg-gradient-to-tr from-primary to-accent bg-clip-text">
+              <span className="text-gradient">
                 <TypewritterComponent
                   words={[1, 2, 3, 4].map((i) => t(`hero.title.2.${i}`))}
                 />
@@ -40,9 +40,8 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           </p>
           <ContactUsButton
             lng={lng}
-            code="getintouch"
+            code="contact.getInTouch"
             startAlignment={true}
-            background={""}
           />
         </div>
       </div>
