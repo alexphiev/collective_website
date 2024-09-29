@@ -16,10 +16,8 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
   ];
 
   return (
-    <section id="impact" className="py-16 pb-16 gradient-background-top">
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 text-accent">
-        {t("impact.title")}
-      </h2>
+    <section id="impact" className="pt-[120px] gradient-background-top">
+      <SectionTitle title={t("impact.title")} />
       <ClientsSection />
       <div className="container grid sm:grid-cols-1 lg:grid-cols-2 pt-6">
         {/* Left */}
@@ -38,9 +36,9 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
             ))}
           </div>
 
-          <h3 className="mx-auto text-xl text-muted-foreground">
+          <p className="mx-auto text-muted-foreground">
             {t("impact.description")}
-          </h3>
+          </p>
         </div>
 
         {/* Right */}
@@ -49,11 +47,11 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
             <Link key={name} href={url} target="_blank">
               <Image
                 key={name}
-                className="rounded-lg filter opacity-85 hover:filter-none transform transition-transform duration-300 ease-linear hover:scale-125  shadow-lg"
+                className="rounded-lg filter opacity-85 saturate-[0.65] transform transition-all duration-300 ease-linear hover:scale-110 hover:saturate-100 hover:opacity-100 shadow-lg"
                 src={icon}
                 alt={name}
-                width={80}
-                height={80}
+                width={100}
+                height={100}
               />
             </Link>
           ))}
