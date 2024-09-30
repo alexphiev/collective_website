@@ -62,11 +62,8 @@ export default function ContactSection({ lng }: { lng: string }) {
   };
 
   return (
-    <section
-      id="contact"
-      className="w-full pb-12 px-0 md:pb-16 gradient-background-top"
-    >
-      <SectionDivider />
+    <section className="w-full pb-12 px-0 md:pb-16 gradient-background-top">
+      <SectionDivider id="contact" />
       <div className="container px-4 md:px-6 max-w-4xl">
         <div className="space-y-4">
           <div className="space-y-2">

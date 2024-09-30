@@ -40,12 +40,12 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   const routeList: RouteProps[] = [
     {
-      href: "#services",
-      label: t("services.title"),
-    },
-    {
       href: "#impact",
       label: t("impact.section.title"),
+    },
+    {
+      href: "#services",
+      label: t("services.title"),
     },
     {
       href: "#about",
