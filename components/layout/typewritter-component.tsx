@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { Typewriter } from "react-simple-typewriter";
+import { Typewriter } from 'react-simple-typewriter'
 
 export const TypewritterComponent = ({ words }: { words: string[] }) => {
   return (
@@ -13,5 +13,5 @@ export const TypewritterComponent = ({ words }: { words: string[] }) => {
       deleteSpeed={50}
       delaySpeed={1000}
     />
-  );
-};
+  )
+}

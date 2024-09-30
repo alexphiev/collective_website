@@ -1,34 +1,34 @@
-import Image from "next/image";
-import { sdgs } from "@/utils/sdg-utils";
-import { useTranslation } from "@/app/i18n";
-import { clients } from "@/utils/clients-utils";
-import { ClientsSection } from "./clients";
-import { Card } from "@/components/ui/card";
-import Link from "next/link";
-import { SectionTitle } from "./section-title";
+import Image from 'next/image'
+import { sdgs } from '@/utils/sdg-utils'
+import { useTranslation } from '@/app/i18n'
+import { clients } from '@/utils/clients-utils'
+import { ClientsSection } from './clients'
+import { Card } from '@/components/ui/card'
+import Link from 'next/link'
+import { SectionTitle } from './section-title'
 
 export const ImpactSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng);
+  const { t } = await useTranslation(lng)
   const cardData = [
-    { value: 8, label: t("impact.years") },
-    { value: clients.length, label: t("impact.clients") },
-    { value: sdgs.length, label: t("impact.sdgs") },
-  ];
+    { value: 8, label: t('impact.years') },
+    { value: clients.length, label: t('impact.clients') },
+    { value: sdgs.length, label: t('impact.sdgs') },
+  ]
 
   return (
-    <section id="impact" className="pt-[120px] gradient-background-top">
-      <SectionTitle title={t("impact.title")} />
+    <section id="impact" className="gradient-background-top pt-[120px]">
+      <SectionTitle title={t('impact.title')} />
       <ClientsSection />
-      <div className="container grid sm:grid-cols-1 lg:grid-cols-2 pt-6">
+      <div className="container grid pt-6 sm:grid-cols-1 lg:grid-cols-2">
         {/* Left */}
-        <div className="flex flex-col justify-start w-full lg:pr-6 gap-6">
-          <div className="grid grid-cols-3 w-full">
+        <div className="flex w-full flex-col justify-start gap-6 lg:pr-6">
+          <div className="grid w-full grid-cols-3">
             {cardData.map((data, index) => (
               <Card
                 key={index}
-                className="flex flex-col justify-center items-center text-center p-4 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg border border-white border-opacity-20"
+                className="flex flex-col items-center justify-center rounded-lg border border-white border-opacity-20 bg-white bg-opacity-5 p-4 text-center shadow-lg backdrop-blur-lg backdrop-filter"
               >
-                <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-bl from-accent to-primary">
+                <h1 className="bg-gradient-to-bl from-accent to-primary bg-clip-text text-6xl text-transparent">
                   {data.value}
                 </h1>
                 <h2>{data.label}</h2>
@@ -37,17 +37,17 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
           </div>
 
           <p className="mx-auto text-muted-foreground">
-            {t("impact.description")}
+            {t('impact.description')}
           </p>
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-3 lg:grid-cols-5 h-min relative">
+        <div className="relative grid h-min grid-cols-3 lg:grid-cols-5">
           {sdgs.map(({ icon, name, url }) => (
             <Link key={name} href={url} target="_blank">
               <Image
                 key={name}
-                className="rounded-lg filter opacity-85 saturate-[0.65] transform transition-all duration-300 ease-linear hover:scale-110 hover:saturate-100 hover:opacity-100 shadow-lg"
+                className="transform rounded-lg opacity-85 shadow-lg saturate-[0.65] filter transition-all duration-300 ease-linear hover:scale-110 hover:opacity-100 hover:saturate-100"
                 src={icon}
                 alt={name}
                 width={100}
@@ -58,5 +58,5 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

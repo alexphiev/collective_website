@@ -1,10 +1,10 @@
-"use client";
-import { useTranslation } from "@/app/i18n/client";
-import { getServiceList } from "@/utils/services-utils";
-import { ChevronRight, Linkedin, Menu, Sprout } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
+'use client'
+import { useTranslation } from '@/app/i18n/client'
+import { getServiceList } from '@/utils/services-utils'
+import { ChevronRight, Linkedin, Menu, Sprout } from 'lucide-react'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { Button } from '../ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,8 +13,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "../ui/navigation-menu";
-import { Separator } from "../ui/separator";
+} from '../ui/navigation-menu'
+import { Separator } from '../ui/separator'
 import {
   Sheet,
   SheetContent,
@@ -22,67 +22,67 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { ToggleLanguage } from "./toogle-language";
-import { ToggleTheme } from "./toogle-theme";
+} from '../ui/sheet'
+import { ToggleLanguage } from './toogle-language'
+import { ToggleTheme } from './toogle-theme'
 
 interface RouteProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 export const Navbar = ({ lng }: { lng: string }) => {
-  const { t } = useTranslation(lng);
-  const [isOpen, setIsOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const { t } = useTranslation(lng)
+  const [isOpen, setIsOpen] = useState(false)
+  const [hasScrolled, setHasScrolled] = useState(false)
 
-  const serviceList = getServiceList(t);
+  const serviceList = getServiceList(t)
 
   const routeList: RouteProps[] = [
     {
-      href: "#services",
-      label: t("services.title"),
+      href: '#services',
+      label: t('services.title'),
     },
     {
-      href: "#impact",
-      label: t("impact.section.title"),
+      href: '#impact',
+      label: t('impact.section.title'),
     },
     {
-      href: "#projects",
-      label: t("projects.title"),
+      href: '#projects',
+      label: t('projects.title'),
     },
     {
-      href: "#about",
-      label: t("about.section.title"),
+      href: '#about',
+      label: t('about.section.title'),
     },
     {
-      href: "#contact",
-      label: t("contact.title"),
+      href: '#contact',
+      label: t('contact.title'),
     },
-  ];
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setHasScrolled(scrollTop > 10);
-    };
+      const scrollTop = window.scrollY
+      setHasScrolled(scrollTop > 10)
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <header
-      className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 transition-all duration-500 ${
+      className={`sticky top-0 z-40 mx-auto flex w-full items-center justify-between bg-opacity-15 px-10 py-2 transition-all duration-500 ${
         hasScrolled
-          ? "bg-gradient-to-b from-secondary to-transparent backdrop-blur-md border-b"
-          : "bg-transparent border-transparent"
+          ? 'border-b bg-gradient-to-b from-secondary to-transparent backdrop-blur-md'
+          : 'border-transparent bg-transparent'
       }`}
     >
-      <Link href="/" className="hidden lg:flex font-bold text-lg items-center">
+      <Link href="/" className="hidden items-center text-lg font-bold lg:flex">
         Dev For Good
       </Link>
       {/* <!-- Mobile --> */}
@@ -97,7 +97,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
           <SheetContent
             side="left"
-            className="flex flex-col justify-between w-52 rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+            className="flex w-52 flex-col justify-between rounded-br-2xl rounded-tr-2xl border-secondary bg-card"
           >
             <div>
               <SheetHeader className="mb-4 ml-4">
@@ -123,7 +123,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
               </div>
             </div>
 
-            <SheetFooter className="flex-col sm:flex-col justify-start items-start">
+            <SheetFooter className="flex-col items-start justify-start sm:flex-col">
               <Separator className="mb-2" />
               <ToggleLanguage lng={lng} />
               <ToggleTheme lng={lng} />
@@ -133,7 +133,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
       </div>
 
       {/* <!-- Desktop --> */}
-      <NavigationMenu className="hidden lg:block mx-auto">
+      <NavigationMenu className="mx-auto hidden lg:block">
         <NavigationMenuList>
           {/* Advanced navigation item 
           <NavigationMenuItem>
@@ -187,7 +187,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             <NavigationMenuItem key={label}>
               <NavigationMenuLink
                 href={href}
-                className={`bg-transparent hover:bg-transparent/20 w-24 ${navigationMenuTriggerStyle()}`}
+                className={`w-24 bg-transparent hover:bg-transparent/20 ${navigationMenuTriggerStyle()}`}
               >
                 {label}
               </NavigationMenuLink>
@@ -218,5 +218,5 @@ export const Navbar = ({ lng }: { lng: string }) => {
         </Button>
       </div>
     </header>
-  );
-};
+  )
+}

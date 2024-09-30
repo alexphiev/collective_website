@@ -1,35 +1,35 @@
-"use client";
+'use client'
 
-import { useTranslation } from "@/app/i18n/client";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { getServiceList, Service } from "@/utils/services-utils";
-import Image from "next/image";
-import { useState } from "react";
-import { SectionTitle } from "./section-title";
-import { SectionDivider } from "./section-divider";
-import { ContactUsButton } from "../contact-us-button";
+import { useTranslation } from '@/app/i18n/client'
+import { Card, CardContent, CardTitle } from '@/components/ui/card'
+import { getServiceList, Service } from '@/utils/services-utils'
+import Image from 'next/image'
+import { useState } from 'react'
+import { SectionTitle } from './section-title'
+import { SectionDivider } from './section-divider'
+import { ContactUsButton } from '../contact-us-button'
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
-  const { t } = useTranslation(lng);
-  const serviceList = getServiceList(t);
-  const [clickedIndex, setClickedIndex] = useState<number | null>(null);
+  const { t } = useTranslation(lng)
+  const serviceList = getServiceList(t)
+  const [clickedIndex, setClickedIndex] = useState<number | null>(null)
 
   const handleCardClick = (index: number) => {
-    setClickedIndex(clickedIndex === index ? null : index);
-  };
+    setClickedIndex(clickedIndex === index ? null : index)
+  }
 
   return (
     <section id="services" className="gradient-background-bottom text-accent">
       <SectionDivider />
-      <SectionTitle title={t("services.section.title")} />
+      <SectionTitle title={t('services.section.title')} />
       <h3
         id="service-list"
-        className="mx-auto text-xl text-center text-muted-foreground mb-16"
+        className="mx-auto mb-16 text-center text-xl text-muted-foreground"
       >
-        {t("services.section.description")}
+        {t('services.section.description')}
       </h3>
 
-      <div className="container px-0 grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="container grid grid-cols-1 gap-4 px-0 lg:grid-cols-4">
         {serviceList.map((service, index) => (
           <ServiceCard
             key={index}
@@ -43,59 +43,59 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
         <ContactUsButton lng={lng} code="explainyourneeds" />
       </div>
     </section>
-  );
-};
+  )
+}
 
 const ServiceCard = ({
   service,
   isClicked,
   onClick,
 }: {
-  service: Service;
-  isClicked: boolean;
-  onClick: () => void;
+  service: Service
+  isClicked: boolean
+  onClick: () => void
 }) => {
-  const { title, href, description, image } = service;
+  const { title, href, description, image } = service
 
   return (
     <Card
       key={href}
-      className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer group/hoverimg scroll-reveal-up"
+      className="group/hoverimg scroll-reveal-up group relative h-[300px] cursor-pointer overflow-hidden border-0 lg:h-[440px]"
       onClick={onClick}
     >
       <div className="absolute inset-0 overflow-hidden">
-        <div className="relative w-full h-full">
+        <div className="relative h-full w-full">
           <Image
             src={image}
             alt={title}
             fill
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-            className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 group-hover:saturate-100"
+            style={{ objectFit: 'cover', objectPosition: 'center top' }}
+            className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:transform group-hover:saturate-100"
           />
         </div>
       </div>
       <CardContent
-        className={`relative z-20 h-full flex flex-col justify-end transition-all duration-500 ease-in-out ${
+        className={`relative z-20 flex h-full flex-col justify-end transition-all duration-500 ease-in-out ${
           isClicked
-            ? "opacity-0 transform translate-y-4"
-            : "opacity-100 transform translate-y-0"
+            ? 'translate-y-4 transform opacity-0'
+            : 'translate-y-0 transform opacity-100'
         }`}
       >
-        <CardTitle className="text-white mb-2">{title}</CardTitle>
+        <CardTitle className="mb-2 text-white">{title}</CardTitle>
       </CardContent>
       <div
         className={`absolute inset-0 bg-background/90 transition-all duration-300 ease-in-out ${
-          isClicked ? "z-30 opacity-100" : "opacity-0 pointer-events-none"
+          isClicked ? 'z-30 opacity-100' : 'pointer-events-none opacity-0'
         }`}
       ></div>
       <div
-        className={`absolute inset-x-0 bottom-0 overflow-y-auto text-white p-6 transition-all duration-300 ease-in-out z-30 ${
-          isClicked ? "h-full" : "h-0 opacity-0"
+        className={`absolute inset-x-0 bottom-0 z-30 overflow-y-auto p-6 text-white transition-all duration-300 ease-in-out ${
+          isClicked ? 'h-full' : 'h-0 opacity-0'
         }`}
       >
         <CardTitle className="mb-4">{title}</CardTitle>
         <p>{description}</p>
       </div>
     </Card>
-  );
-};
+  )
+}

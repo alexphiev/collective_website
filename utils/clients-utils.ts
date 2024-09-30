@@ -1,4 +1,4 @@
-import sdg3 from "@/public/logos/sdgs/sdg-3-healthwellbeing.png";
+import sdg3 from '@/public/logos/sdgs/sdg-3-healthwellbeing.png'
 
 export const clients = [
   // {
@@ -7,39 +7,39 @@ export const clients = [
   //   url: "https://www.iknl.nl/",
   // },
   {
-    name: "Bridge for Billions",
+    name: 'Bridge for Billions',
     icon: sdg3,
-    url: "https://www.bridgeforbillions.org/",
+    url: 'https://www.bridgeforbillions.org/',
   },
   {
-    name: "Blue Komune",
+    name: 'Blue Komune',
     icon: sdg3,
-    url: "https://www.bluekomune.org/",
+    url: 'https://www.bluekomune.org/',
   },
   {
-    name: "Code Carbon",
+    name: 'Code Carbon',
     icon: sdg3,
-    url: "https://www.codecarbon.io/",
+    url: 'https://www.codecarbon.io/',
   },
   {
-    name: "Enel X",
+    name: 'Enel X',
     icon: sdg3,
-    url: "https://www.enelx.com/",
+    url: 'https://www.enelx.com/',
   },
   {
-    name: "Learning Planet Institute",
+    name: 'Learning Planet Institute',
     icon: sdg3,
-    url: "https://www.learningplanetinstitute.org/",
+    url: 'https://www.learningplanetinstitute.org/',
   },
   {
-    name: "Edumiam",
+    name: 'Edumiam',
     icon: sdg3,
-    url: "https://www.edumiam.com/",
+    url: 'https://www.edumiam.com/',
   },
   {
-    name: "Cancer Registry of Norway",
+    name: 'Cancer Registry of Norway',
     icon: sdg3,
-    url: "https://www.kreftregisteret.no/",
+    url: 'https://www.kreftregisteret.no/',
   },
   // {
   //   name: "Privitar",
@@ -47,17 +47,17 @@ export const clients = [
   //   url: "https://www.privitar.com/",
   // },
   {
-    name: "Reusa’m",
+    name: 'Reusa’m',
     icon: sdg3,
-    url: "https://www.linkedin.com/company/reusam/",
+    url: 'https://www.linkedin.com/company/reusam/',
   },
   {
-    name: "Viva Labs",
+    name: 'Viva Labs',
     icon: sdg3,
-    url: "https://www.linkedin.com/company/viva-labs/",
+    url: 'https://www.linkedin.com/company/viva-labs/',
   },
   {
-    name: "ClimaTalk",
+    name: 'ClimaTalk',
     icon: sdg3,
   },
-];
+]

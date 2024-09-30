@@ -1,16 +1,15 @@
-import { ContactUsButton } from "@/components/layout/contact-us-button";
-import { AboutSection } from "@/components/layout/sections/about";
-import ContactSection from "@/components/layout/sections/contact";
-import { FooterSection } from "@/components/layout/sections/footer";
-import { HeroSection } from "@/components/layout/sections/hero";
-import { ImpactSection } from "@/components/layout/sections/impact";
-import { ServicesSection } from "@/components/layout/sections/services";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
-import { ProjectSection } from "@/components/layout/sections/projects";
-import { languages } from "../i18n/settings";
+import { AboutSection } from '@/components/layout/sections/about'
+import ContactSection from '@/components/layout/sections/contact'
+import { FooterSection } from '@/components/layout/sections/footer'
+import { HeroSection } from '@/components/layout/sections/hero'
+import { ImpactSection } from '@/components/layout/sections/impact'
+import { ServicesSection } from '@/components/layout/sections/services'
+import { TestimonialSection } from '@/components/layout/sections/testimonial'
+import { ProjectSection } from '@/components/layout/sections/projects'
+import { languages } from '../i18n/settings'
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
+  return languages.map((lng) => ({ lng }))
 }
 
 export default function Home({ params: { lng } }: { params: { lng: string } }) {
@@ -30,5 +29,5 @@ export default function Home({ params: { lng } }: { params: { lng: string } }) {
       <ContactSection lng={lng} />
       <FooterSection lng={lng} />
     </>
-  );
+  )
 }
