@@ -20,7 +20,8 @@ export function middleware(req: NextRequest) {
   // Check if the path starts with a locale
   const pathname = req.nextUrl.pathname;
   const pathnameIsMissingLocale = languages.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    (locale) =>
+      !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
   // Redirect if there is no locale
@@ -28,8 +29,8 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(
       new URL(
         `/${lng}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-        req.url
-      )
+        req.url,
+      ),
     );
   }
 
@@ -42,15 +43,15 @@ export function middleware(req: NextRequest) {
         `/${fallbackLng}${
           pathname.startsWith("/") ? "" : "/"
         }${pathname.substring(3)}`,
-        req.url
-      )
+        req.url,
+      ),
     );
   }
 
   if (req.headers.has("referer")) {
     const refererUrl = new URL(req.headers.get("referer")!);
     const lngInReferer = languages.find((l) =>
-      refererUrl.pathname.startsWith(`/${l}`)
+      refererUrl.pathname.startsWith(`/${l}`),
     );
     const response = NextResponse.next();
     if (lngInReferer) response.cookies.set(cookieName, lngInReferer);

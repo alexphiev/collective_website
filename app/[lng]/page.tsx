@@ -6,7 +6,7 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { ImpactSection } from "@/components/layout/sections/impact";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
-import { ProjectSection } from '@/components/layout/sections/projects';
+import { ProjectSection } from "@/components/layout/sections/projects";
 import { languages } from "../i18n/settings";
 
 export async function generateStaticParams() {

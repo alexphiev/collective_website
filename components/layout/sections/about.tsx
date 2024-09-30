@@ -33,7 +33,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 position,
                 flagIcon,
               },
-              index
+              index,
             ) => (
               <div
                 key={index}
@@ -84,7 +84,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                   </CardContent>
                 </Card>
               </div>
-            )
+            ),
           )}
         </div>
 
