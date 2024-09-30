@@ -4,6 +4,8 @@ import { getTeam } from "@/utils/team-utils";
 import { getValues } from "@/utils/values-utils";
 import Image from "next/image";
 import { createElement } from "react";
+import { Separator } from "@/components/ui/separator";
+import { Linkedin } from "lucide-react";
 import { SectionDivider } from "./section-divider";
 import { SectionTitle } from "./section-title";
 import Link from "next/link";
@@ -14,8 +16,8 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
   const values = getValues(t); // Get the translated values
 
   return (
-    <section id="about" className="gradient-background-bottom">
-      <SectionDivider />
+    <section className="gradient-background-bottom">
+      <SectionDivider id="about" />
       <div className="container px-0">
         <SectionTitle title={t("about.team.title")} />
         <h3 className="mx-auto text-xl text-center text-muted-foreground mb-12">
@@ -33,6 +35,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 lastName,
                 position,
                 flagIcon,
+                socialNetworks,
               },
               index
             ) => (
@@ -66,14 +69,23 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                         {firstName}
                         <span className="text-primary">{lastName}</span>
                       </CardTitle>
-                      <div className="w-9 h-9 overflow-hidden flex-shrink-0 absolute top-4 right-4">
+                      <div className="flex items-center space-x-2">
                         <Image
                           src={flagIcon}
                           alt={`${firstName} ${lastName}'s flag`}
-                          width={36}
+                          width={32}
                           height={24}
-                          className="object-cover w-full "
+                          className="object-cover"
                         />
+                        {socialNetworks.find(network => network.name === "LinkedIn") && (
+                          <a
+                            href={socialNetworks.find(network => network.name === "LinkedIn")?.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Linkedin className="w-6 h-6" />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardHeader>

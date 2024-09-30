@@ -19,8 +19,8 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="services" className="gradient-background-bottom text-accent">
-      <SectionDivider />
+    <section className="gradient-background-bottom text-accent">
+      <SectionDivider id="services" />
       <SectionTitle title={t("services.section.title")} />
       <h3
         id="service-list"
