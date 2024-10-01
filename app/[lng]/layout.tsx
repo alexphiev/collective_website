@@ -15,9 +15,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Dev For Good collective",
+  title: "Dev For Good Collective",
   description:
-    "We are a collective of freelance developers working for projects with positive impact on the environment and society.",
+    "Freelance collective of developers working for projects with positive impact on the environment and society.",
 };
 
 export default function RootLayout({

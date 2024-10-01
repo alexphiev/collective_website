@@ -1,7 +1,7 @@
 import { TFunction } from "i18next";
-import jaime from "@/public/jaime.jpeg";
-import henrik from "@/public/henrik.jpeg";
-import kyrre from "@/public/kyrre.jpeg";
+import jaime from "@/public/testimonials/jaime.jpeg";
+import henrik from "@/public/testimonials/henrik.jpeg";
+import kyrre from "@/public/testimonials/kyrre.jpeg";
 import { StaticImageData } from "next/image";
 
 export interface ReviewProps {
