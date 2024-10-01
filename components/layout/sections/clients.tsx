@@ -4,7 +4,6 @@ import { clients } from "@/utils/clients-utils";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export const ClientsSection = () => {
   return (
@@ -16,7 +15,7 @@ export const ClientsSection = () => {
           innerClassName="gap-[3rem]"
           pauseOnHover
         >
-          {clients.map(({ url, name, icon }) => (
+          {clients.map(({ url, name }) => (
             <div
               key={name}
               className="flex items-center text-xl md:text-xl font-medium filter grayscale hover:filter-none"

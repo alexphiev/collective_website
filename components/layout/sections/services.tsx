@@ -8,6 +8,7 @@ import { useState } from "react";
 import { SectionTitle } from "./section-title";
 import { SectionDivider } from "./section-divider";
 import { ContactUsButton } from "../contact-us-button";
+import { InfoIcon } from "lucide-react";
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
@@ -81,6 +82,10 @@ const ServiceCard = ({
             : "opacity-100 transform translate-y-0"
         }`}
       >
+        <InfoIcon
+          onClick={onClick}
+          className="w-6 h-6 absolute top-2 right-2 text-transparent transition-all duration-500 ease-in-out group-hover/hoverimg:text-foreground"
+        />
         <CardTitle className="text-white mb-2">{title}</CardTitle>
       </CardContent>
       <div
