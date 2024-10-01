@@ -194,7 +194,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
       <div className="hidden lg:flex">
         <ToggleLanguage lng={lng} />
-        <ToggleTheme lng={lng} />
+        {/*<ToggleTheme lng={lng} />*/}
 
         <Button
           asChild

@@ -1,12 +1,13 @@
+import { Navbar } from "@/components/layout/navbar";
+import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
+import { cn } from "@/lib/utils";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/layout/navbar";
-import { ThemeProvider } from "@/components/layout/theme-provider";
-import { dir } from "i18next";
 import { languages } from "../i18n/settings";
-import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +16,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Dev For Good collective",
+  title: "Dev For Good Collective",
   description:
-    "We are a collective of freelance developers working for projects with positive impact on the environment and society.",
+    "Freelance collective of developers working for projects with positive impact on the environment and society.",
 };
 
 export default function RootLayout({
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Navbar lng={lng} />
           {children}
           <Toaster />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

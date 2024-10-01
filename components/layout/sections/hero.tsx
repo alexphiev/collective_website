@@ -1,7 +1,7 @@
 import { useTranslation } from "@/app/i18n";
 import { ContactUsButton } from "../contact-us-button";
 import { TypewritterComponent } from "../typewritter-component";
-import heroBackground from "@/public/hero-background.jpg";
+import heroBackground from "@/public/hero-background.avif";
 import Image from "next/image";
 import ScrollDownArrow from "../scroll-down-arrow";
 
@@ -16,15 +16,16 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           src={heroBackground}
           alt="Hero Background"
           fill
+          sizes="100vw"
           style={{ objectFit: "cover" }}
-          quality={100}
+          quality={50}
           className="opacity-40"
         />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
 
-      <div className="flex relative z-10 w-full max-w-screen-xl mx-auto px-4 items-center justify-center">
+      <div className="container flex relative z-10 w-full max-w-screen-xl mx-auto lg:px-4 items-center justify-center">
         <div className="flex flex-col text-start space-y-8 items-start justify-start">
           <div className="max-w-screen-xl mx-auto text-start text-4xl md:text-6xl font-semibold">
             <h1 className="pb-3">{t("hero.title.1")}</h1>

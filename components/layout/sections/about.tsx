@@ -48,7 +48,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 <div className="absolute w-full h-full bg-accent/50 blur-[50px] left-1/2 top-1/2"></div>
 
                 <Card className="flex flex-col relative w-[calc(100%-2px)] h-[calc(100%-2px)] drop-shadow-xl overflow-hidden bg-card opacity-90 rounded-xl inset-[1px]">
-                  <CardHeader className="p-0 gap-0">
+                  <CardHeader className="p-0 gap-0 relative">
                     <div className="h-full overflow-hidden">
                       <a
                         href={imageLinkUrl}
@@ -57,36 +57,45 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                       >
                         <Image
                           src={imageUrl}
-                          alt="Profile Image"
+                          alt={`${firstName} ${lastName} profile image`}
                           width={300}
                           height={300}
                           className="w-full aspect-square object-cover transition-all duration-200 ease-linear size-full group-hover/hoverimg:scale-[1.05]"
                         />
                       </a>
+                      {socialNetworks.find(
+                        (network) => network.name === "LinkedIn"
+                      ) && (
+                        <a
+                          className="absolute top-2 right-2"
+                          href={
+                            socialNetworks.find(
+                              (network) => network.name === "LinkedIn"
+                            )?.url
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="p-2 rounded-full bg-background/15 hover:bg-background/40 text-foreground/80 hover:text-foreground">
+                            <Linkedin className="w-6 h-6 " />
+                          </div>
+                        </a>
+                      )}
                     </div>
                     <div className="flex justify-between relative items-center p-4">
-                      <CardTitle className="flex flex-col">
+                      <CardTitle className="relative flex flex-col w-full">
                         {firstName}
                         <span className="text-primary">{lastName}</span>
+                        <div className="absolute top-0 right-0">
+                          <Image
+                            src={flagIcon}
+                            alt={`${firstName} ${lastName}'s flag`}
+                            width={32}
+                            height={24}
+                            className="object-cover"
+                          />
+                        </div>
                       </CardTitle>
-                      <div className="flex items-center space-x-2">
-                        <Image
-                          src={flagIcon}
-                          alt={`${firstName} ${lastName}'s flag`}
-                          width={32}
-                          height={24}
-                          className="object-cover"
-                        />
-                        {socialNetworks.find(network => network.name === "LinkedIn") && (
-                          <a
-                            href={socialNetworks.find(network => network.name === "LinkedIn")?.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Linkedin className="w-6 h-6" />
-                          </a>
-                        )}
-                      </div>
                     </div>
                   </CardHeader>
                   <CardContent

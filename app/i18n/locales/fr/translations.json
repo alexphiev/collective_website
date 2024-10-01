@@ -6,24 +6,24 @@
   "services": {
     "title": "Services",
     "section": {
-      "title": "Des produits numériques pour un monde meilleur",
-      "description": "Nous utilisons la meilleure technologie disponible pour aider vos idées à avoir l'impact qu'elles méritent."
+      "title": "Des solutions technologiques pour un monde meilleur",
+      "description": "Nous utilisons les technologies les plus avancées pour aider vos idées à avoir l'impact qu'elles méritent."
     },
     "webapp": {
       "title": "Applications Web et Sites Web",
-      "description": "Création d'applications web et de sites web beaux et ultra-rapides. Nous nous concentrons sur un design centré sur l'utilisateur avec des performances améliorées et un SEO optimisé, depuis le MVP jusqu'aux produits prêts pour la production à grande échelle."
+      "description": "Création d'applications Web et de sites Web élégants et performants. Nous réalisons des solutions sur mesure centrées sur l'expérience utilisateur, le design et le SEO, du MVP jusqu'au produit fini déployé en production."
     },
     "mobileapp": {
       "title": "Applications Mobiles Natives et Hybrides",
       "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement. Nous construisons des applications mobiles natives et hybrides qui sont rapides, fiables et sécurisées avec une grande attention aux détails."
     },
     "data": {
-      "title": "Science des Données et Apprentissage Automatique",
-      "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l'analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
+      "title": "Data Science et Machine Learning",
+      "description": "Nous pouvons vous aider à extraire de la valeur et découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement et la visualisation automatisés des données, l'analyse et le déploiement de modèles de machine learning.\nNous sommes aussi spécialisés dans les techniques récentes de protection de la vie privée, assurant un traitement sécurisé des données tout en préservant les informations sensibles."
     },
     "backend": {
-      "title": "Services Backend",
-      "description": "Notre équipe excelle dans le développement côté serveur, la gestion de bases de données et l'intégration d'APIs, garantissant que votre application soit sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser l'infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à soutenir la croissance."
+      "title": "Solutions Backend",
+      "description": "Notre équipe excelle dans le développement backend, la gestion de bases de données et l'intégration d'APIs, garantissant une solution sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services Cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser une infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à grandir."
     }
   },
   "team": {
@@ -35,8 +35,8 @@
   },
   "contact": {
     "title": "Contact",
-    "getInTouch": "Prenez contact",
-    "contactDescription": "Vous avez une question ou vous voulez travailler ensemble ? Remplissez le formulaire et nous vous répondrons dès que possible.",
+    "getInTouch": "Décrivez votre projet",
+    "contactDescription": "Une question, une suggestion ou une idée de projet ? Remplissez ce formulaire et nous vous reviendrons vers vous sous peu.",
     "name": "Nom",
     "email": "Email",
     "message": "Message",
@@ -68,14 +68,14 @@
     }
   },
   "hero": {
-    "title.1": "Développer votre vision pour le changement",
+    "title.1": "Développons votre vision du changement",
     "title.2": {
       "1": "Applications Mobiles",
       "2": "Applications Web et Sites Web",
       "3": "Services Backend",
       "4": "Données et Machine Learning"
     },
-    "subtitle": "Nous sommes là pour vous aider à réaliser un projet qui fait la différence.",
+    "subtitle": "Partenaire d'un collectif dédié à un impact durable et positif. Nous sommes impatients de découvrir votre prochain projet.",
     "badge": {
       "label": "Disponibilité",
       "title": "Septembre 2024"
@@ -126,31 +126,31 @@
       "title": "Impact"
     },
     "title": "Notre Impact",
-    "clients": "Clients aidés",
-    "sdgs": "ODD explorés",
+    "clients": "Clients accompagnés",
+    "sdgs": "ODDs explorés",
     "years": "Années d'expérience",
     "description": "Nous sommes fiers d'avoir aidé nos clients à se rapprocher de leurs Objectifs de Développement Durable."
   },
   "testimonials": {
     "title": "Témoignages",
     "subtitle": "Ce que disent nos clients",
-    "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour faire ce qu'il faut pour que le travail soit fait.",
-    "jaime": "Je soulignerais la communication et la responsabilité de leur part, ce qui nous a aidés à toujours connaître l'état du projet.",
-    "kyrre": "J'ai eu le plaisir de travailler avec cette équipe pendant plusieurs années, et ils sont compétents, travailleurs, honnêtes et agréables à travailler. Votre projet sera en sécurité entre les mains d'une équipe qui se soucie vraiment de faire un excellent travail. Mes plus chaleureuses recommandations."
+    "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour que le travail soit fait.",
+    "jaime": "Le collectif a été engagé pour rendre notre application Web basée sur React entièrement réactive en utilisant Ant Design. Leur souci du détail, leur communication claire et leur ponctualité étaient remarquables. Nos utilisateurs continuent de bénéficier des améliorations qu'ils ont mises en œuvre avec succès.",
+    "kyrre": "J'ai eu le plaisir de travailler avec cette équipe pendant plusieurs années, et ils sont compétents, travailleurs, honnêtes et agréables. Votre projet sera entre les mains d'une équipe qui se soucie vraiment de faire du bon travail. Mes recommandations les plus chaleureuses."
   },
   "about": {
     "section": {
-      "title": "À propos de nous"
+      "title": "Équipe"
     },
     "team": {
-      "title": "Qui nous sommes",
+      "title": "Découvrez notre équipe et notre vision",
       "description": "Amis et développeurs depuis plus de 8 ans, nous combinons nos compétences complémentaires pour l'impact."
     },
     "values": {
       "title": "Le Collectif Dev For Good",
       "1": {
         "title": "Compétences complémentaires",
-        "description": "Nous sommes quatre développeurs avec des parcours complémentaires en génie logiciel, développement Web, applications mobiles et science des données. Nous pouvons prendre votre idée et construire un produit complet prêt pour la production à partir de zéro ou vous aider à améliorer et automatiser un service existant, afin que vous puissiez vous concentrer sur ce qui compte le plus."
+        "description": "Nous sommes quatre développeurs avec des parcours complémentaires en génie logiciel, développement Web, applications mobiles et data science. Nous pouvons construire un produit complet prêt pour la production de zéro ou vous aider à améliorer et automatiser un service existant, afin que vous puissiez vous concentrer sur ce qui compte le plus."
       },
       "2": {
         "title": "Pour un changement positif",

@@ -69,7 +69,7 @@
       "3": "Servicios Backend",
       "4": "Datos y Aprendizaje Automático"
     },
-    "subtitle": "Desarrollamos el cambio que quieres ver en el mundo",
+    "subtitle": "Colabora con un colectivo dedicado a un impacto sostenible y positivo. Estamos deseando explorar tu próximo proyecto.",
     "badge": {
       "label": "Disponibilidad",
       "title": "Septiembre 2024"
@@ -120,7 +120,7 @@
       "title": "Impacto"
     },
     "title": "Nuestro Impacto",
-    "clients": "Clientes ayudados",
+    "clients": "Clientes apoyados",
     "sdgs": "ODS explorados",
     "years": "Años de experiencia",
     "description": "Estamos orgullosos de haber ayudado a nuestros clientes a acercarse a sus Objetivos de Desarrollo Sostenible de la ONU."
@@ -129,7 +129,7 @@
     "title": "Testimonios",
     "subtitle": "Lo que dicen nuestros clientes",
     "henrik": "Trabajé con colectivo Dev for Good durante años. Constantemente entregaron un gran trabajo con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en que harán lo necesario para hacer el trabajo.",
-    "jaime": "Destacaría la comunicación y la responsabilidad de su parte, lo que nos ayudó a conocer siempre el estado del proyecto.",
+    "jaime": "El colectivo fue contratado para hacer que nuestra aplicación web basada en React fuera completamente receptiva utilizando Ant Design. Su atención al detalle, comunicación clara y puntualidad fueron notables. Nuestros usuarios continúan beneficiándose de las mejoras que implementaron con éxito.",
     "kyrre": "He tenido el placer de trabajar con este equipo durante varios años, y son competentes, trabajadores, honestos y encantadores para trabajar. Su proyecto estará seguro en manos de un equipo que realmente se preocupa por hacer un gran trabajo. Mis más cálidas recomendaciones."
   },
   "about": {
@@ -144,7 +144,7 @@
       "title": "El Colectivo Dev For Good",
       "1": {
         "title": "Habilidades complementarias",
-        "description": "Somos cuatro desarrolladores con antecedentes complementarios en ingeniería de software, desarrollo web, aplicaciones móviles y data science. Podemos tomar tu idea y construir un producto completo listo para producción desde cero o ayudarte a mejorar y automatizar un servicio existente, para que puedas concentrarse en lo que más importa."
+        "description": "Somos cuatro desarrolladores con antecedentes complementarios en ingeniería de software, desarrollo web, aplicaciones móviles y data science. Podemos tomar tu idea y construir un producto completo listo para producción desde cero o ayudarte a mejorar y automatizar un servicio existente, para que puedas concentrarte en lo que más importa."
       },
       "2": {
         "title": "Impulsados por un propósito",
