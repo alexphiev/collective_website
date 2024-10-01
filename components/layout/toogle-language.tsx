@@ -30,13 +30,17 @@ export const ToggleLanguage = ({ lng }: { lng: string }) => {
         router.push(newPath);
       }}
     >
-      <SelectTrigger className="px-2 font-bold text-xs border-none focus:ring-0 focus:ring-offset-0 h-[36px] w-[55px] m-0 hover:bg-accent hover:text-accent-foreground">
+      <SelectTrigger className="relative px-2 font-bold text-xs border-none focus:ring-0 focus:ring-offset-0 h-[36px] w-[55px] m-0 hover:bg-transparent/20 hover:text-accent-foreground">
         {t(`lang.${lng}.code`)}
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="relative bg-muted text-accent-foreground">
         <SelectGroup>
           {languages.map((language) => (
-            <SelectItem key={language} value={language}>
+            <SelectItem
+              key={language}
+              value={language}
+              className="focus:bg-transparent/20"
+            >
               <div className="flex items-center gap-2">
                 {languageNames[language]}
               </div>

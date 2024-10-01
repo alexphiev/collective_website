@@ -1,10 +1,8 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
-import Link from "next/link";
 
 export const FooterSection = ({ lng }: { lng: string }) => {
   return (
-    <footer id="footer" className="pt-24">
+    <footer id="footer" className="pt-24 gradient-background-bottom">
       <div className="container p-6 sm:max-w-[90%] xl:max-w-[80%]">
         {/* <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">

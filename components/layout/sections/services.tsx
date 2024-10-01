@@ -4,8 +4,10 @@ import { useTranslation } from "@/app/i18n/client";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { getServiceList, Service } from "@/utils/services-utils";
 import Image from "next/image";
-import { SectionTitle } from "./section-title";
 import { useState } from "react";
+import { SectionTitle } from "./section-title";
+import { SectionDivider } from "./section-divider";
+import { ContactUsButton } from "../contact-us-button";
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
@@ -17,20 +19,17 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
   };
 
   return (
-    <section id="services" className="py-16">
-      <SectionTitle title={t("services.title")} />
-
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        {t("services.section.title")}
-      </h2>
+    <section className="gradient-background-bottom text-accent">
+      <SectionDivider id="services" />
+      <SectionTitle title={t("services.section.title")} />
       <h3
         id="service-list"
-        className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-16"
+        className="mx-auto text-xl text-center text-muted-foreground mb-16"
       >
         {t("services.section.description")}
       </h3>
 
-      <div className="container px-0 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="container px-0 grid grid-cols-1 lg:grid-cols-4 gap-4">
         {serviceList.map((service, index) => (
           <ServiceCard
             key={index}
@@ -39,6 +38,9 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
             onClick={() => handleCardClick(index)}
           />
         ))}
+      </div>
+      <div className="pt-[80px]">
+        <ContactUsButton lng={lng} code="explainyourneeds" />
       </div>
     </section>
   );
@@ -58,22 +60,22 @@ const ServiceCard = ({
   return (
     <Card
       key={href}
-      className="border-0 group relative overflow-hidden h-[440px] cursor-pointer"
+      className="border-0 group relative overflow-hidden h-[300px] lg:h-[440px] cursor-pointer group/hoverimg scroll-reveal-up"
       onClick={onClick}
     >
-      <div className="absolute inset-0 bg-gradient-to-tr from-primary from-25% to-accent opacity-80 z-10 bg-fixed"></div>
-      <div className="absolute z-10 inset-0 overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center top"
-          className="transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 saturate-0"
-        />
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="relative w-full h-full">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            style={{ objectFit: "cover", objectPosition: "center top" }}
+            className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:transform group-hover:scale-110 group-hover:saturate-100"
+          />
+        </div>
       </div>
       <CardContent
-        className={`relative z-20 h-full flex flex-col justify-end p-6 transition-all duration-500 ease-in-out ${
+        className={`relative z-20 h-full flex flex-col justify-end transition-all duration-500 ease-in-out ${
           isClicked
             ? "opacity-0 transform translate-y-4"
             : "opacity-100 transform translate-y-0"
@@ -87,12 +89,12 @@ const ServiceCard = ({
         }`}
       ></div>
       <div
-        className={`absolute inset-x-0 bottom-0 text-white p-6 transition-all duration-300 ease-in-out z-30 ${
+        className={`absolute inset-x-0 bottom-0 overflow-y-auto text-white p-6 transition-all duration-300 ease-in-out z-30 ${
           isClicked ? "h-full" : "h-0 opacity-0"
         }`}
       >
-        <CardTitle className="text-white mb-4">{title}</CardTitle>
-        <p className="text-white/80">{description}</p>
+        <CardTitle className="mb-4">{title}</CardTitle>
+        <p>{description}</p>
       </div>
     </Card>
   );

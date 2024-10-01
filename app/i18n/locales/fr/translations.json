@@ -1,6 +1,6 @@
 {
   "contactus": "Contactez-nous",
-  "getintouch": "Prenez contact",
+  "explainyourneeds": "Expliquez vos besoins",
   "day": "jour",
   "month": "mois",
   "services": {
@@ -10,20 +10,20 @@
       "description": "Nous utilisons la meilleure technologie disponible pour aider vos idées à avoir l'impact qu'elles méritent."
     },
     "webapp": {
-      "title": "Applications Web à impact",
-      "description": "Création de solutions web belles et ultra-rapides qui favorisent le changement positif. 8 ans d'expertise en UI/UX et optimisation des performances pour l'impact social."
-    },
-    "website": {
-      "title": "Des sites Web pour toutes les cause",
-      "description": "Du no-code de base au full-code d'entreprise : des sites web optimisés pour le SEO et responsifs qui amplifient votre mission et résonnent avec votre audience."
+      "title": "Applications Web et Sites Web",
+      "description": "Création d'applications web et de sites web beaux et ultra-rapides. Nous nous concentrons sur un design centré sur l'utilisateur avec des performances améliorées et un SEO optimisé, depuis le MVP jusqu'aux produits prêts pour la production à grande échelle."
     },
     "mobileapp": {
-      "title": "Applications mobiles pour un changement positif",
-      "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement et créent des connexions significatives. Exploiter la technologie pour faire la différence, un tap à la fois."
+      "title": "Applications Mobiles Natives et Hybrides",
+      "description": "Applications centrées sur l'utilisateur pour iOS et Android qui stimulent l'engagement. Nous construisons des applications mobiles natives et hybrides qui sont rapides, fiables et sécurisées avec une grande attention aux détails."
     },
     "data": {
-      "title": "Data Science & Machine Learning",
-      "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l’analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
+      "title": "Science des Données et Apprentissage Automatique",
+      "description": "Nous pouvons vous aider à extraire de la valeur et à découvrir de nouveaux insights à partir de vos données. Cela inclut la mise en place de systèmes pour le traitement automatisé des données et leur visualisation, ainsi que l'analyse des données et le déploiement de modèles de machine learning. Nous sommes également spécialisés dans les techniques les plus récentes de protection de la vie privée, garantissant un traitement sécurisé des données tout en préservant les informations sensibles."
+    },
+    "backend": {
+      "title": "Services Backend",
+      "description": "Notre équipe excelle dans le développement côté serveur, la gestion de bases de données et l'intégration d'APIs, garantissant que votre application soit sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser l'infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à soutenir la croissance."
     }
   },
   "team": {
@@ -33,7 +33,25 @@
     "title": "Amis et développeurs depuis 8 ans",
     "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur."
   },
-  "contact": "Contact",
+  "contact": {
+    "title": "Contact",
+    "getInTouch": "Prenez contact",
+    "contactDescription": "Vous avez une question ou vous voulez travailler ensemble ? Remplissez le formulaire et nous vous répondrons dès que possible.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre email",
+    "messagePlaceholder": "Entrez votre message",
+    "submit": "Envoyer",
+    "newContactRequest": "Nouvelle demande de contact reçue !",
+    "successTitle": "Merci pour votre message !",
+    "successDescription": "Nous vous répondrons bientôt.",
+    "errorMessage": "Échec de l'envoi de votre message",
+    "errorDescription": "Nous sommes désolés pour le désagrément. Veuillez réessayer plus tard ou nous contacter via LinkedIn.",
+    "validationErrorTitle": "Veuillez remplir tous les champs",
+    "validationErrorDescription": "Tous les champs sont requis."
+  },
   "projects": "Projets",
   "lang": {
     "en": {
@@ -50,11 +68,12 @@
     }
   },
   "hero": {
-    "title.1": "Nous développons des produits digitaux",
+    "title.1": "Développer votre vision pour le changement",
     "title.2": {
-      "1": "à impact",
-      "2": "pour un monde meilleur",
-      "3": "pour un changement positif"
+      "1": "Applications Mobiles",
+      "2": "Applications Web et Sites Web",
+      "3": "Services Backend",
+      "4": "Données et Machine Learning"
     },
     "subtitle": "Partenaire d'un collectif dédié à un impact durable et positif. Nous sommes impatients de découvrir votre prochain projet.",
     "badge": {
@@ -103,10 +122,44 @@
     }
   },
   "impact": {
+    "section": {
+      "title": "Impact"
+    },
     "title": "Notre Impact",
     "clients": "Clients aidés",
     "sdgs": "ODD explorés",
     "years": "Années d'expérience",
     "description": "Nous sommes fiers d'avoir aidé nos clients à se rapprocher de leurs Objectifs de Développement Durable."
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Ce que disent nos clients",
+    "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour faire ce qu'il faut pour que le travail soit fait.",
+    "jaime": "Je soulignerais la communication et la responsabilité de leur part, ce qui nous a aidés à toujours connaître l'état du projet.",
+    "kyrre": "J'ai eu le plaisir de travailler avec cette équipe pendant plusieurs années, et ils sont compétents, travailleurs, honnêtes et agréables à travailler. Votre projet sera en sécurité entre les mains d'une équipe qui se soucie vraiment de faire un excellent travail. Mes plus chaleureuses recommandations."
+  },
+  "about": {
+    "section": {
+      "title": "À propos de nous"
+    },
+    "team": {
+      "title": "Qui nous sommes",
+      "description": "Amis et développeurs depuis plus de 8 ans, nous combinons nos compétences complémentaires pour l'impact."
+    },
+    "values": {
+      "title": "Le Collectif Dev For Good",
+      "1": {
+        "title": "Compétences complémentaires",
+        "description": "Nous sommes quatre développeurs avec des parcours complémentaires en génie logiciel, développement Web, applications mobiles et science des données. Nous pouvons prendre votre idée et construire un produit complet prêt pour la production à partir de zéro ou vous aider à améliorer et automatiser un service existant, afin que vous puissiez vous concentrer sur ce qui compte le plus."
+      },
+      "2": {
+        "title": "Pour un changement positif",
+        "description": "Notre collectif a été construit sur la conviction que notre travail devrait s'aligner sur nos valeurs. Nous choisissons soigneusement des projets qui résonnent avec notre engagement à créer un changement significatif, en veillant à ce que chaque ligne de code que nous écrivons serve un objectif plus grand."
+      },
+      "3": {
+        "title": "Communication fluide",
+        "description": "Ayant travaillé ensemble pendant des années, nous avons développé une collaboration sans faille qui nous rend hautement efficaces et organisés. Lorsque vous vous associez à nous, vous pouvez être sûr que nous écouterons attentivement vos besoins tout en apportant de nouvelles idées à la table."
+      }
+    }
   }
 }
