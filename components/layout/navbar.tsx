@@ -53,10 +53,6 @@ export const Navbar = ({ lng }: { lng: string }) => {
     },
     {
       href: '#about',
-      label: t("about.section.title"),
-    },
-    {
-      href: '#about',
       label: t('about.section.title'),
     },
     {
