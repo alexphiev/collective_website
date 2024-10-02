@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
-import { useRouter } from "next/navigation";
-import { saEvent } from '@/utils/analytics-utils';
+import { useRouter } from 'next/navigation';
+import { saEvent } from '@/utils/analytics-utils'
 
 const ScrollDownArrow = () => {
   const router = useRouter();
