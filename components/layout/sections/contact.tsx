@@ -7,15 +7,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { sendMessageToSlack } from "@/utils/contact-utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react"; // Add this import
+import { useState } from "react";
 import { Spinner } from "@/components/ui/spinner";
 import { SectionTitle } from "./section-title";
 import { SectionDivider } from "./section-divider";
+import { saEvent } from "@/utils/analytics-utils";
 
 export default function ContactSection({ lng }: { lng: string }) {
   const { t } = useTranslation(lng);
   const { toast } = useToast();
-  const [isLoading, setIsLoading] = useState(false); // Add this state
+  const [isLoading, setIsLoading] = useState(false);
 
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -104,7 +105,13 @@ export default function ContactSection({ lng }: { lng: string }) {
                 disabled={isLoading} // Disable textarea when loading
               />
             </div>
-            <Button variant="default" disabled={isLoading}>
+            <Button
+              variant="default"
+              disabled={isLoading}
+              onClick={() => {
+                saEvent(`click_contact_button`);
+              }}
+            >
               {isLoading ? (
                 <Spinner className="w-4 h-4" />
               ) : (

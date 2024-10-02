@@ -9,6 +9,7 @@ import { SectionTitle } from "./section-title";
 import { SectionDivider } from "./section-divider";
 import { ContactUsButton } from "../contact-us-button";
 import { InfoIcon } from "lucide-react";
+import { saEvent } from "@/utils/analytics-utils";
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng);
@@ -36,7 +37,10 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
             key={index}
             service={service}
             isClicked={clickedIndex === index}
-            onClick={() => handleCardClick(index)}
+            onClick={() => {
+              saEvent(`click_services_${service.href}}`);
+              handleCardClick(index);
+            }}
           />
         ))}
       </div>

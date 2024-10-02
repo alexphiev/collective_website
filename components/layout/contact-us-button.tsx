@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "@/app/i18n/client";
+import { saEvent } from "@/utils/analytics-utils";
 
 export const ContactUsButton = ({
   lng,
@@ -29,7 +30,10 @@ export const ContactUsButton = ({
         <Button
           variant="default"
           className="p-8 text-lg relative group/arrow"
-          onClick={() => router.push("/#contact")}
+          onClick={() => {
+            saEvent(`click_${code}`);
+            router.push("/#contact");
+          }}
         >
           {t(code)}
           <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />

@@ -1,14 +1,15 @@
+"use client";
+
 import { useTranslation } from "@/app/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getTeam } from "@/utils/team-utils";
 import { getValues } from "@/utils/values-utils";
 import Image from "next/image";
 import { createElement } from "react";
-import { Separator } from "@/components/ui/separator";
 import { Linkedin } from "lucide-react";
 import { SectionDivider } from "./section-divider";
 import { SectionTitle } from "./section-title";
-import Link from "next/link";
+import { saEvent } from "@/utils/analytics-utils";
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng);
@@ -75,6 +76,9 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                           }
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => {
+                            saEvent(`click_about_card_${firstName}}`);
+                          }}
                         >
                           <div className="p-2 rounded-full bg-background/15 hover:bg-background/40 text-foreground/80 hover:text-foreground">
                             <Linkedin className="w-6 h-6 " />

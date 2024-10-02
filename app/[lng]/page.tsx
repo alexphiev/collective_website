@@ -1,4 +1,3 @@
-import { ContactUsButton } from "@/components/layout/contact-us-button";
 import { AboutSection } from "@/components/layout/sections/about";
 import ContactSection from "@/components/layout/sections/contact";
 import { FooterSection } from "@/components/layout/sections/footer";
