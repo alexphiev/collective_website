@@ -38,8 +38,8 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
             service={service}
             isClicked={clickedIndex === index}
             onClick={() => {
-              saEvent(`click_services_${service.href}}`);
-              handleCardClick(index);
+              saEvent(`click_services_${service.href}}`)
+              handleCardClick(index)
             }}
           />
         ))}

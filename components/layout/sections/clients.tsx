@@ -34,7 +34,7 @@ export const ClientsSection = () => {
                 rel="noopener noreferrer"
                 className="hover:text-primary"
                 onClick={() => {
-                  saEvent(`click_clients_${name}}`);
+                  saEvent(`click_clients_${name}}`)
                 }}
               >
                 {name}

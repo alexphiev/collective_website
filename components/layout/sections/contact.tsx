@@ -11,7 +11,7 @@ import { useState } from 'react'
 import { Spinner } from '@/components/ui/spinner'
 import { SectionTitle } from './section-title'
 import { SectionDivider } from './section-divider'
-import { saEvent } from "@/utils/analytics-utils";
+import { saEvent } from '@/utils/analytics-utils'
 
 export default function ContactSection({ lng }: { lng: string }) {
   const { t } = useTranslation(lng)
@@ -109,7 +109,7 @@ export default function ContactSection({ lng }: { lng: string }) {
               variant="default"
               disabled={isLoading}
               onClick={() => {
-                saEvent(`click_contact_button`);
+                saEvent('click_contact_button')
               }}
             >
               {isLoading ? (

@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import { useTranslation } from '@/app/i18n'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -79,7 +79,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => {
-                            saEvent(`click_about_card_${firstName}}`);
+                            saEvent(`click_about_card_${firstName}}`)
                           }}
                         >
                           <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">

@@ -25,7 +25,7 @@ import {
 } from '../ui/sheet'
 import { ToggleLanguage } from './toogle-language'
 import { ToggleTheme } from './toogle-theme'
-import { saEvent } from "@/utils/analytics-utils";
+import { saEvent } from '@/utils/analytics-utils'
 
 interface RouteProps {
   href: string

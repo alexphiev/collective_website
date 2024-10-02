@@ -31,8 +31,8 @@ export const ContactUsButton = ({
           variant="default"
           className="group/arrow relative p-8 text-lg"
           onClick={() => {
-            saEvent(`click_${code}`);
-            router.push('/#contact');
+            saEvent(`click_${code}`)
+            router.push('/#contact')
           }}
         >
           {t(code)}

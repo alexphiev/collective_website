@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import Image from 'next/image'
 import { sdgs } from '@/utils/sdg-utils'
@@ -52,7 +52,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
               href={url}
               target="_blank"
               onClick={() => {
-                saEvent(`click_impact_${icon}}`);
+                saEvent(`click_impact_${icon}}`)
               }}
             >
               <Image
