@@ -45,7 +45,90 @@
     "validationErrorTitle": "Please fill in all fields",
     "validationErrorDescription": "All fields are required."
   },
-  "projects": "Projects",
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Innovative solutions for modern challenges",
+    "description": "We believe in harnessing the power of technology and creativity to drive positive change. Our projects are dedicated to addressing social, environmental, and community challenges with sustainable and innovative solutions. From empowering local communities to creating platforms for environmental advocacy, we are committed to building a better world for everyone. Together, let's turn ideas into actions that make a real difference",
+    "overview": "Overview",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results",
+    "technologies": "Technologies Used",
+    "testimonial": "Client Testimonial",
+    "closeButton": "Close",
+    "duration": "{{count}} months",
+    "project1": {
+      "title": "Lorem Ipsum Project",
+      "company": "Lorem Industries",
+      "industry": "Technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "challenge": "Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur, nisl eget fermentum tincidunt, sapien libero bibendum justo.",
+      "solution": "Donec pretium vulputate sapien nec sagittis. Phasellus suscipit, purus in sagittis lobortis, justo velit vestibulum turpis, eget tincidunt metus erat vel orci.",
+      "results": {
+        "1": "Increased efficiency by 50%",
+        "2": "Reduced costs by 30%",
+        "3": "Enhanced customer satisfaction",
+        "4": "Improved scalability and performance"
+      },
+      "technologies": {
+        "1": "JavaScript",
+        "2": "Node.js",
+        "3": "React",
+        "4": "AWS"
+      },
+      "testimonial": {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "author": "John Doe, CEO of Lorem Industries"
+      }
+    },
+    "project2": {
+      "title": "Sed Do Eiusmod Project",
+      "company": "Consectetur Ltd.",
+      "industry": "Finance",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "challenge": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "solution": "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "results": {
+        "1": "Decreased error rate by 20%",
+        "2": "Increased customer retention",
+        "3": "Optimized transaction processing",
+        "4": "Boosted operational efficiency"
+      },
+      "technologies": {
+        "1": "Python",
+        "2": "Django",
+        "3": "PostgreSQL",
+        "4": "AWS"
+      },
+      "testimonial": {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+        "author": "Jane Smith, CFO of Consectetur Ltd."
+      }
+    },
+    "project3": {
+      "title": "Dolor Sit Amet Project",
+      "company": "Adipiscing Elit Inc.",
+      "industry": "Healthcare",
+      "description": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "challenge": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.",
+      "solution": "In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.",
+      "results": {
+        "1": "Increased patient satisfaction by 25%",
+        "2": "Reduced hospital readmissions by 15%",
+        "3": "Enhanced data security and compliance",
+        "4": "Improved healthcare provider efficiency"
+      },
+      "technologies": {
+        "1": "React Native",
+        "2": "Firebase",
+        "3": "Node.js"
+      },
+      "testimonial": {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "author": "Dr. Emily Johnson, Chief Medical Officer of Adipiscing Elit Inc."
+      }
+    }
+  },
   "lang": {
     "en": {
       "code": "EN",

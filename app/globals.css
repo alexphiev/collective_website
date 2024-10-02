@@ -127,25 +127,25 @@ html {
 .gradient-background-top {
   background-image: linear-gradient(
     to top,
-    theme("colors.secondary.DEFAULT"),
-    theme("colors.background")
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
 .gradient-background {
   background-image: linear-gradient(
     to top,
-    theme("colors.background"),
-    theme("colors.secondary.DEFAULT"),
-    theme("colors.background")
+    theme('colors.background'),
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
 .gradient-background-bottom {
   background-image: linear-gradient(
     to bottom,
-    theme("colors.secondary.DEFAULT"),
-    theme("colors.background")
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
@@ -166,5 +166,5 @@ html {
   animation-range: entry 0% cover 40%;
 }
 .text-gradient {
-  @apply text-transparent bg-gradient-to-tr from-primary to-accent bg-clip-text;
+  @apply bg-gradient-to-tr from-primary to-accent bg-clip-text text-transparent;
 }

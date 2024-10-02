@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
@@ -6,37 +6,37 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Check } from "lucide-react";
-import { getPlans } from "@/utils/pricing-utils";
-import { Badge } from "@/components/ui/badge";
-import { useTranslation } from "@/app/i18n";
-import { createNumberArray } from "@/lib/utils";
-import { SectionTitle } from "./section-title";
+} from '@/components/ui/card'
+import { Check } from 'lucide-react'
+import { getPlans } from '@/utils/pricing-utils'
+import { Badge } from '@/components/ui/badge'
+import { useTranslation } from '@/app/i18n'
+import { createNumberArray } from '@/lib/utils'
+import { SectionTitle } from './section-title'
 
 export const PricingSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng);
-  const plans = getPlans(t);
+  const { t } = await useTranslation(lng)
+  const plans = getPlans(t)
   return (
-    <section id="pricing" className="py-24 sm:py-32 gradient-background">
-      <SectionTitle title={t("pricing.title")} />
+    <section id="pricing" className="gradient-background py-24 sm:py-32">
+      <SectionTitle title={t('pricing.title')} />
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        {t("pricing.subtitle")}
+      <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
+        {t('pricing.subtitle')}
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-24">
-        {t("pricing.description")}
+      <h3 className="mx-auto pb-24 text-center text-xl text-muted-foreground md:w-1/2">
+        {t('pricing.description')}
       </h3>
 
-      <div className="container grid px-0 w-[85%] md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+      <div className="container grid w-[85%] gap-8 px-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
         {plans.map(({ code, popular, isNew, price, benefitSize }) => (
           <Card
             key={code}
             className={
               popular
-                ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
-                : ""
+                ? 'border-[1.5px] border-primary shadow-black/10 drop-shadow-xl dark:shadow-white/10 lg:scale-[1.1]'
+                : ''
             }
           >
             <CardHeader>
@@ -58,7 +58,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
               <div>
                 <span className="text-3xl font-bold">${price}</span>
                 <span className="text-muted-foreground">
-                  {" "}
+                  {' '}
                   /{t(`pricing.${code}.unit`)}
                 </span>
               </div>
@@ -68,7 +68,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
               <div className="space-y-4">
                 {createNumberArray(benefitSize).map((index) => (
                   <span key={`${code}-${index}`} className="flex">
-                    <Check className="text-primary mr-2" />
+                    <Check className="mr-2 text-primary" />
                     <h3>{t(`pricing.${code}.benefits.${index}`)}</h3>
                   </span>
                 ))}
@@ -77,7 +77,7 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
 
             <CardFooter>
               <Button
-                variant={popular ? "default" : "secondary"}
+                variant={popular ? 'default' : 'secondary'}
                 className="w-full"
               >
                 {t(`pricing.cta`)}
@@ -87,5 +87,5 @@ export const PricingSection = async ({ lng }: { lng: string }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
