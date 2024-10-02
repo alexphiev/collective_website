@@ -7,6 +7,8 @@ import { ThemeProvider } from '@/components/layout/theme-provider'
 import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 import { Toaster } from '@/components/ui/toaster'
+import Script from 'next/script'
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +19,7 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: 'Dev For Good collective',
   description:
-    'We are a collective of freelance developers working for projects with positive impact on the environment and society.',
+    'Freelance collective of developers working for projects with positive impact on the environment and society.',
 }
 
 export default function RootLayout({
@@ -39,8 +41,10 @@ export default function RootLayout({
           <Navbar lng={lng} />
           {children}
           <Toaster />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   )
 }

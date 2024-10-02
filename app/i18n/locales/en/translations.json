@@ -22,8 +22,8 @@
       "description": "We can help you to extract value and discover new insights from your data. This includes the implementation of systems for automated data processing and visualization, as well as data analysis and machine learning deployment. We also specialize in the latest privacy-enhancing techniques to ensure data can be processed, safely, while sensitive information remains protected."
     },
     "backend": {
-      "title": "Backend Management",
-      "description": "We build and maintain the backend of your application, ensuring it is secure, scalable and reliable. We use the best available technology to create solid databases, fast APIs and bulletproof authentication."
+      "title": "Backend Services",
+      "description": "Our team excels in server-side development, database management, and API integration, ensuring your application is secure, scalable, and high-performing. We apply best practices in server management, cloud services, and security to support seamless data flow. Whether optimizing existing infrastructure or building a new backend, we ensure your systems are resilient and growth-ready."
     }
   },
   "contact": {
@@ -148,10 +148,10 @@
     "title.2": {
       "1": "Mobile Applications",
       "2": "Web Applications & Websites",
-      "3": "Backend Solutions",
+      "3": "Backend Services",
       "4": "Data & Machine Learning"
     },
-    "subtitle": "We develop the change you want to see in the world",
+    "subtitle": "Partner with a collective dedicated to sustainable and positive impact. We’re eager to explore your next project.",
     "badge": {
       "label": "Availability",
       "title": "September 2024"
@@ -202,16 +202,16 @@
       "title": "Impact"
     },
     "title": "Our Impact",
-    "clients": "Clients helped",
+    "clients": "Clients supported",
     "sdgs": "SDGs explored",
     "years": "Years of experience",
-    "description": "We are proud to have helped our clients get closer to their UN Sustainable Development Goals."
+    "description": "We are proud to have empowered our clients to advance towards their UN Sustainable Development Goals."
   },
   "testimonials": {
     "title": "Testimonials",
     "subtitle": "What our clients say",
     "henrik": "I worked with the Dev for Good Collective for years. They consistently delivered great work with an eye for quality and design. They are proactive, see opportunities, and you can trust them to do what's needed to get the job done.",
-    "jaime": "I would highlight the communication and accountability from their side which helped us to always know the status of the project.",
+    "jaime": "The collective was hired to make our React-based web application fully responsive using Ant Design. Their attention to detail, clear communication, and punctuality were remarkable. Our users continue to benefit from the improvements they successfully implemented.",
     "kyrre": "I've had the pleasure of working with this team over several years, and they are competent, hard-working, honest and delightful to work with. Your project will be safe in the hands of a team that really cares about doing great work. My warmest recommendations."
   },
   "about": {

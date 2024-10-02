@@ -40,16 +40,20 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   const routeList: RouteProps[] = [
     {
-      href: '#services',
-      label: t('services.title'),
+      href: "#impact",
+      label: t("impact.section.title"),
     },
     {
-      href: '#impact',
-      label: t('impact.section.title'),
+      href: "#services",
+      label: t("services.title"),
     },
     {
       href: '#projects',
       label: t('projects.title'),
+    },
+    {
+      href: '#about',
+      label: t("about.section.title"),
     },
     {
       href: '#about',
@@ -198,7 +202,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
       <div className="hidden lg:flex">
         <ToggleLanguage lng={lng} />
-        <ToggleTheme lng={lng} />
+        {/*<ToggleTheme lng={lng} />*/}
 
         <Button
           asChild

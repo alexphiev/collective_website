@@ -24,6 +24,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.2.1",
     "@slack/web-api": "^7.5.0",
+    "@vercel/speed-insights": "^1.0.12",
     "accept-language": "^3.0.18",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

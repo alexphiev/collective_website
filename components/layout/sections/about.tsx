@@ -4,8 +4,11 @@ import { getTeam } from '@/utils/team-utils'
 import { getValues } from '@/utils/values-utils'
 import Image from 'next/image'
 import { createElement } from 'react'
+import { Separator } from '@/components/ui/separator'
+import { Linkedin } from 'lucide-react'
 import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
+import Link from 'next/link'
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -13,8 +16,8 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
   const values = getValues(t) // Get the translated values
 
   return (
-    <section id="about" className="gradient-background-bottom">
-      <SectionDivider />
+    <section className="gradient-background-bottom">
+      <SectionDivider id="about" />
       <div className="container px-0">
         <SectionTitle title={t('about.team.title')} />
         <h3 className="mx-auto mb-12 text-center text-xl text-muted-foreground">
@@ -32,6 +35,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 lastName,
                 position,
                 flagIcon,
+                socialNetworks,
               },
               index
             ) => (
@@ -44,7 +48,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 <div className="absolute left-1/2 top-1/2 h-full w-full bg-accent/50 blur-[50px]"></div>
 
                 <Card className="relative inset-[1px] flex h-[calc(100%-2px)] w-[calc(100%-2px)] flex-col overflow-hidden rounded-xl bg-card opacity-90 drop-shadow-xl">
-                  <CardHeader className="gap-0 p-0">
+                  <CardHeader className="relative gap-0 p-0">
                     <div className="h-full overflow-hidden">
                       <a
                         href={imageLinkUrl}
@@ -53,27 +57,45 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                       >
                         <Image
                           src={imageUrl}
-                          alt="Profile Image"
+                          alt={`${firstName} ${lastName} profile image`}
                           width={300}
                           height={300}
                           className="aspect-square size-full w-full object-cover transition-all duration-200 ease-linear group-hover/hoverimg:scale-[1.05]"
                         />
                       </a>
+                      {socialNetworks.find(
+                        (network) => network.name === 'LinkedIn'
+                      ) && (
+                        <a
+                          className="absolute right-2 top-2"
+                          href={
+                            socialNetworks.find(
+                              (network) => network.name === 'LinkedIn'
+                            )?.url
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">
+                            <Linkedin className="h-6 w-6" />
+                          </div>
+                        </a>
+                      )}
                     </div>
                     <div className="relative flex items-center justify-between p-4">
-                      <CardTitle className="flex flex-col">
+                      <CardTitle className="relative flex w-full flex-col">
                         {firstName}
                         <span className="text-primary">{lastName}</span>
+                        <div className="absolute right-0 top-0">
+                          <Image
+                            src={flagIcon}
+                            alt={`${firstName} ${lastName}'s flag`}
+                            width={32}
+                            height={24}
+                            className="object-cover"
+                          />
+                        </div>
                       </CardTitle>
-                      <div className="absolute right-4 top-4 h-9 w-9 flex-shrink-0 overflow-hidden">
-                        <Image
-                          src={flagIcon}
-                          alt={`${firstName} ${lastName}'s flag`}
-                          width={36}
-                          height={24}
-                          className="w-full object-cover"
-                        />
-                      </div>
                     </div>
                   </CardHeader>
                   <CardContent

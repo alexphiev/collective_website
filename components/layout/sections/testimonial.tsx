@@ -23,8 +23,8 @@ import { SectionDivider } from './section-divider'
 export const TestimonialSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
   return (
-    <section id="testimonials" className="gradient-background-top">
-      <SectionDivider />
+    <section className="gradient-background-top">
+      <SectionDivider id="testimonials" />
       <SectionTitle title={t('testimonials.subtitle')} className="mb-8" />
 
       <Carousel
@@ -49,6 +49,7 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
                           src={image}
                           alt="radix"
                           fill
+                          quality={10}
                           style={{ objectFit: 'cover' }}
                         />
                         <AvatarFallback>{name.split(' ')[0][0]}</AvatarFallback>

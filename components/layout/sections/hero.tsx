@@ -1,8 +1,9 @@
 import { useTranslation } from '@/app/i18n'
 import { ContactUsButton } from '../contact-us-button'
 import { TypewritterComponent } from '../typewritter-component'
-import heroBackground from '@/public/hero-background.jpg'
+import heroBackground from '@/public/hero-background.avif'
 import Image from 'next/image'
+import ScrollDownArrow from '../scroll-down-arrow'
 
 export const HeroSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -15,15 +16,16 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           src={heroBackground}
           alt="Hero Background"
           fill
+          sizes="100vw"
           style={{ objectFit: 'cover' }}
-          quality={100}
+          quality={50}
           className="opacity-40"
         />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-screen-xl items-center justify-center px-4">
+      <div className="container relative z-10 mx-auto flex w-full max-w-screen-xl items-center justify-center lg:px-4">
         <div className="flex flex-col items-start justify-start space-y-8 text-start">
           <div className="mx-auto max-w-screen-xl text-start text-4xl font-semibold md:text-6xl">
             <h1 className="pb-3">{t('hero.title.1')}</h1>
@@ -45,6 +47,8 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           />
         </div>
       </div>
+      {/* Scroll down arrow */}
+      <ScrollDownArrow />
     </section>
   )
 }
