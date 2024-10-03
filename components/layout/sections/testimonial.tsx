@@ -31,7 +31,7 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
         opts={{
           align: 'start',
         }}
-        className="relative mx-auto w-[85%] lg:max-w-screen-xl"
+        className="relative mx-auto w-[80%] lg:w-[85%] lg:max-w-screen-xl"
       >
         <CarouselContent>
           {getTestimonials(t).map(({ name, comment, title, image }) => (
@@ -70,8 +70,8 @@ export const TestimonialSection = ({ lng }: { lng: string }) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="ml-3" />
+        <CarouselNext className="mr-3" />
       </Carousel>
     </section>
   )
