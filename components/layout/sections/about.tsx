@@ -25,7 +25,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
         </h3>
 
         {/* Team */}
-        <div className="mb-16 grid grid-cols-2 gap-6 px-0 lg:grid-cols-4">
+        <div className="mb-16 grid grid-cols-1 gap-6 px-0 sm:grid-cols-2 lg:grid-cols-4">
           {team.map(
             (
               {
@@ -115,9 +115,10 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
           <h3 className="mb-6 text-2xl font-bold text-foreground">
             {t('about.values.title')}
           </h3>
-          <div className="flex flex-row gap-10">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Change here */}
             {values.map(({ icon, title, description }, index) => (
-              <div key={index} className="flex w-1/3 items-start">
+              <div key={index} className="flex items-start">
                 <div className="mr-4">{createElement(icon)}</div>
                 <div>
                   <h4 className="mb-2 text-xl font-semibold">{title}</h4>
