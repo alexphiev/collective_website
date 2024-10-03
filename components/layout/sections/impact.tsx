@@ -16,13 +16,16 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
   ]
 
   return (
-    <section id="impact" className="gradient-background-top pt-[120px]">
+    <section
+      id="impact"
+      className="gradient-background-top pt-[40px] md:pt-[120px]"
+    >
       <SectionTitle title={t('impact.title')} />
       <ClientsSection />
       <div className="container grid pt-6 sm:grid-cols-1 lg:grid-cols-2">
         {/* Left */}
         <div className="flex w-full flex-col justify-start gap-6 lg:pr-6">
-          <div className="grid w-full grid-cols-3">
+          <div className="grid w-full grid-cols-1 sm:grid-cols-3">
             {cardData.map((data, index) => (
               <Card
                 key={index}

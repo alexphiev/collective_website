@@ -4,11 +4,9 @@ import { getTeam } from '@/utils/team-utils'
 import { getValues } from '@/utils/values-utils'
 import Image from 'next/image'
 import { createElement } from 'react'
-import { Separator } from '@/components/ui/separator'
 import { Linkedin } from 'lucide-react'
 import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
-import Link from 'next/link'
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
