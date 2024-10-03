@@ -25,19 +25,19 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
 
-      <div className="container relative z-10 mx-auto flex w-full max-w-screen-xl items-center justify-center lg:px-4">
-        <div className="flex flex-col items-start justify-start space-y-8 text-start">
+      <div className="container relative z-10 mx-auto flex w-full max-w-screen-xl items-center justify-center px-0 lg:px-4">
+        <div className="flex flex-col items-start justify-start space-y-4 text-start sm:space-y-4">
           <div className="mx-auto max-w-screen-xl text-start text-4xl font-semibold md:text-6xl">
-            <h1 className="pb-3">{t('hero.title.1')}</h1>
+            <h1 className="pb-3 text-3xl md:text-6xl">{t('hero.title.1')}</h1>
             <h1>
-              <span className="text-gradient">
+              <span className="text-gradient text-[16pt] md:text-6xl">
                 <TypewritterComponent
                   words={[1, 2, 3, 4].map((i) => t(`hero.title.2.${i}`))}
                 />
               </span>
             </h1>
           </div>
-          <p className="w-full max-w-screen-sm text-start text-xl text-muted-foreground">
+          <p className="w-full max-w-screen-sm text-start text-[11pt] text-muted-foreground md:text-xl">
             {t('hero.subtitle')}
           </p>
           <ContactUsButton
