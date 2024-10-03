@@ -45,7 +45,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
         </div>
 
         {/* Right */}
-        <div className="relative grid h-min grid-cols-3 lg:grid-cols-5">
+        <div className="relative grid h-min grid-cols-3 justify-items-center lg:grid-cols-5">
           {sdgs.map(({ icon, name, url }) => (
             <Link key={name} href={url} target="_blank">
               <Image
