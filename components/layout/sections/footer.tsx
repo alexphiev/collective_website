@@ -1,6 +1,9 @@
+import { useTranslation } from '@/app/i18n'
 import { Separator } from '@/components/ui/separator'
 
-export const FooterSection = ({ lng }: { lng: string }) => {
+export const FooterSection = async ({ lng }: { lng: string }) => {
+  const { t } = await useTranslation(lng)
+
   return (
     <footer id="footer" className="gradient-background-bottom pt-24">
       <div className="container p-6 sm:max-w-[90%] xl:max-w-[80%]">
@@ -101,8 +104,9 @@ export const FooterSection = ({ lng }: { lng: string }) => {
         <Separator className="my-6" />
         <section>
           <h3>
-            &copy;2024 Designed and developed by the
-            <span className="text-primary"> Dev For Good </span>Collective
+            &copy;{new Date().getFullYear()} {t('footer.signature')}
+            <span className="text-primary"> Dev For Good </span>
+            {lng === 'en' && t('footer.collective')}
           </h3>
         </section>
       </div>
