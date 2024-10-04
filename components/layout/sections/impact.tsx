@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { sdgs } from '@/utils/sdg-utils'
-import { useTranslation } from '@/app/i18n'
+import { useTranslation } from '@/app/i18n/client'
 import { clients } from '@/utils/clients-utils'
 import { ClientsSection } from './clients'
 import { Card } from '@/components/ui/card'
@@ -10,8 +10,8 @@ import Link from 'next/link'
 import { SectionTitle } from './section-title'
 import { saEvent } from '@/utils/analytics-utils'
 
-export const ImpactSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng)
+export const ImpactSection = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng)
   const cardData = [
     { value: 8, label: t('impact.years') },
     { value: clients.length, label: t('impact.clients') },

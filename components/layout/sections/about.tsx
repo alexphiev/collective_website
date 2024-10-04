@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslation } from '@/app/i18n'
+import { useTranslation } from '@/app/i18n/client'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { getTeam } from '@/utils/team-utils'
 import { getValues } from '@/utils/values-utils'
@@ -11,8 +11,8 @@ import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
 import { saEvent } from '@/utils/analytics-utils'
 
-export const AboutSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng)
+export const AboutSection = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng)
   const team = getTeam(t)
   const values = getValues(t) // Get the translated values
 
