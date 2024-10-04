@@ -25,6 +25,7 @@ import {
 } from '../ui/sheet'
 import { ToggleLanguage } from './toogle-language'
 import { ToggleTheme } from './toogle-theme'
+import { saEvent } from '@/utils/analytics-utils'
 
 interface RouteProps {
   href: string
@@ -40,12 +41,12 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   const routeList: RouteProps[] = [
     {
-      href: "#impact",
-      label: t("impact.section.title"),
+      href: '#impact',
+      label: t('impact.section.title'),
     },
     {
-      href: "#services",
-      label: t("services.title"),
+      href: '#services',
+      label: t('services.title'),
     },
     {
       href: '#projects',
@@ -188,6 +189,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
               <NavigationMenuLink
                 href={href}
                 className={`w-24 bg-transparent hover:bg-transparent/20 ${navigationMenuTriggerStyle()}`}
+                onClick={() => saEvent(`click_navbar_${href}}`)}
               >
                 {label}
               </NavigationMenuLink>
@@ -212,6 +214,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             href="https://www.linkedin.com/company/dev-for-good/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => saEvent(`click_navbar_linkedin}`)}
           >
             <Linkedin className="size-5" />
           </Link>

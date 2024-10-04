@@ -1,5 +1,5 @@
 interface SectionDividerProps {
-  id?: string;
+  id?: string
 }
 
 export const SectionDivider = ({ id }: SectionDividerProps) => {

@@ -1,3 +1,5 @@
+'use client'
+
 import { useTranslation } from '@/app/i18n'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { getTeam } from '@/utils/team-utils'
@@ -9,6 +11,7 @@ import { Linkedin } from 'lucide-react'
 import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
 import Link from 'next/link'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -75,6 +78,9 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                           }
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => {
+                            saEvent(`click_about_card_${firstName}}`)
+                          }}
                         >
                           <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">
                             <Linkedin className="h-6 w-6" />

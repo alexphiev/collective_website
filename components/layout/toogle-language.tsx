@@ -10,6 +10,7 @@ import {
   SelectItem,
   SelectTrigger,
 } from '../ui/select'
+import { saEvent } from '@/utils/analytics-utils'
 
 const languageNames: { [key in (typeof languages)[number]]: string } = {
   en: 'English',
@@ -26,6 +27,7 @@ export const ToggleLanguage = ({ lng }: { lng: string }) => {
     <Select
       defaultValue={lng}
       onValueChange={(value: string) => {
+        saEvent(`click_language_${value}}`)
         const newPath = pathname.replace(/\/[a-z]{2}\/?/, `/${value}/`)
         router.push(newPath)
       }}

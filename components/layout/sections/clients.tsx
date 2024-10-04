@@ -4,6 +4,7 @@ import { clients } from '@/utils/clients-utils'
 import { Marquee } from '@devnomic/marquee'
 import '@devnomic/marquee/dist/index.css'
 import Link from 'next/link'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const ClientsSection = () => {
   return (
@@ -32,6 +33,9 @@ export const ClientsSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
+                onClick={() => {
+                  saEvent(`click_clients_${name}}`)
+                }}
               >
                 {name}
               </Link>
