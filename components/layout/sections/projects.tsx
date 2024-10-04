@@ -28,62 +28,64 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
   return (
     <section>
       <SectionDivider id="projects" />
-      <SectionTitle title={t('projects.subtitle')} />
-      <div className="container flex w-full gap-10 pt-16 sm:grid-cols-1 sm:flex-col lg:grid-cols-2 lg:flex-row">
-        {/* Left Section: Project Message */}
-        <div className="col-span-1 flex w-full flex-col justify-start gap-6 lg:pr-6">
-          <div>
-            <p className="text-lg text-muted-foreground">
-              {t('projects.description')}
-            </p>
+      <div className="container flex flex-col gap-4 px-0 lg:gap-16">
+        <SectionTitle title={t('projects.subtitle')} />
+        <div className="grid w-full grid-cols-1 lg:grid-cols-2">
+          {/* Left Section: Project Message */}
+          <div className="col-span-1 mb-10 flex w-full flex-col justify-start gap-6 lg:mb-0 lg:pr-6">
+            <div>
+              <p className="whitespace-pre-line text-lg text-muted-foreground">
+                {t('projects.description')}
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Right Section: Projects Carousel */}
-        <div>
-          <Carousel
-            className="w-full"
-            opts={{
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnMouseEnter: true,
-              }) as any,
-            ]}
-          >
-            <CarouselContent>
-              {projects.map(({ code, techList, images }, index) => (
-                <CarouselItem key={code}>
-                  <div
-                    className="group relative flex w-full cursor-pointer flex-col"
-                    onClick={() => setSelectedProject(index)}
-                  >
-                    <InfoIcon className="absolute right-4 top-4 z-10 h-6 w-6 text-transparent transition-all duration-300 ease-in-out group-hover:text-foreground/80" />
-                    <Image
-                      src={images.length > 0 ? images[0] : placeholderImage}
-                      alt={`Project image for ${t(`projects.${code}.title`)}`}
-                      width={500}
-                      height={400}
-                      className="h-[400px] w-full rounded-md object-cover transition-all duration-300 hover:scale-105"
-                    />
-                    <div className="flex flex-col gap-0 pt-4">
-                      <h3 className="text-xl font-semibold">
-                        {t(`projects.${code}.title`)}
-                      </h3>
-                      <p className="pb-2 text-lg text-primary">
-                        {t(`projects.${code}.company`)}
-                      </p>
-                      <TechList techList={techList} limit={5} />
+          {/* Right Section: Projects Carousel */}
+          <div className="col-span-1 w-full">
+            <Carousel
+              className="w-full"
+              opts={{
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                  stopOnMouseEnter: true,
+                }) as any,
+              ]}
+            >
+              <CarouselContent>
+                {projects.map(({ code, techList, images }, index) => (
+                  <CarouselItem key={code}>
+                    <div
+                      className="group relative flex w-full cursor-pointer flex-col"
+                      onClick={() => setSelectedProject(index)}
+                    >
+                      <InfoIcon className="absolute right-4 top-4 z-10 h-6 w-6 text-transparent transition-all duration-300 ease-in-out group-hover:text-foreground/80" />
+                      <Image
+                        src={images.length > 0 ? images[0] : placeholderImage}
+                        alt={`Project image for ${t(`projects.${code}.title`)}`}
+                        width={500}
+                        height={400}
+                        className="h-[200px] w-full rounded-md object-cover transition-all duration-300 hover:scale-105 lg:h-[400px]"
+                      />
+                      <div className="flex flex-col gap-0 pt-4">
+                        <h3 className="text-xl font-semibold">
+                          {t(`projects.${code}.title`)}
+                        </h3>
+                        <p className="pb-2 text-lg text-primary">
+                          {t(`projects.${code}.company`)}
+                        </p>
+                        <TechList techList={techList} limit={5} />
+                      </div>
                     </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="ml-2" />
+              <CarouselNext className="mr-2" />
+            </Carousel>
+          </div>
         </div>
       </div>
 
@@ -97,7 +99,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
             }
           }}
         >
-          <DialogContent className="gradient-background-top h-[95vh] w-[95vw] max-w-[95vw] overflow-hidden p-0 sm:max-w-[90vw] md:max-w-[80vw] lg:h-[90vh] lg:max-h-[700px] lg:w-[70vw] lg:max-w-[600px]">
+          <DialogContent className="gradient-background-top h-[95vh] w-[95vw] max-w-[95vw] overflow-hidden rounded-lg p-0 sm:max-w-[90vw] md:max-w-[80vw] lg:h-[90vh] lg:max-h-[700px] lg:w-[70vw] lg:max-w-[600px]">
             <div className="h-full overflow-y-auto">
               <ProjectDetails project={projects[selectedProject]} lng={lng} />
             </div>
