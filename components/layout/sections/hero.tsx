@@ -30,14 +30,14 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
           <div className="mx-auto max-w-screen-xl text-start text-4xl font-semibold md:text-6xl">
             <h1 className="pb-3 text-3xl md:text-6xl">{t('hero.title.1')}</h1>
             <h1>
-              <span className="text-gradient text-[16pt] md:text-6xl">
+              <span className="text-gradient text-xl md:text-6xl">
                 <TypewritterComponent
                   words={[1, 2, 3, 4].map((i) => t(`hero.title.2.${i}`))}
                 />
               </span>
             </h1>
           </div>
-          <p className="w-full max-w-screen-sm text-start text-[11pt] text-muted-foreground md:text-xl">
+          <p className="text-md w-full max-w-screen-sm text-start text-muted-foreground md:text-xl">
             {t('hero.subtitle')}
           </p>
           <ContactUsButton
