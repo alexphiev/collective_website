@@ -10,9 +10,9 @@ const ScrollDownArrow = () => {
 
   return (
     <div
-      className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-10 animate-bounce cursor-pointer"
+      className="absolute bottom-16 z-10 -translate-x-1/2 transform animate-bounce cursor-pointer"
       onClick={() => {
-        saEvent(`click_hero_scroll_down_arrow}`)
+        saEvent('click_hero_scroll_down_arrow')
         router.push('/#impact')
       }}
     >

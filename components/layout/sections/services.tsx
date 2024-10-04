@@ -26,7 +26,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
       <SectionTitle title={t('services.section.title')} />
       <h3
         id="service-list"
-        className="mx-auto mb-16 text-center text-xl text-muted-foreground"
+        className="text-l mx-auto mb-16 px-4 text-center text-muted-foreground md:text-xl"
       >
         {t('services.section.description')}
       </h3>

@@ -77,7 +77,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   return (
     <header
-      className={`sticky top-0 z-40 mx-auto flex w-full items-center justify-between bg-opacity-15 px-10 py-2 transition-all duration-500 ${
+      className={`sticky top-0 z-40 mx-auto flex w-full items-center justify-between bg-opacity-15 px-4 py-2 transition-all duration-500 lg:px-10 ${
         hasScrolled
           ? 'border-b bg-gradient-to-b from-secondary to-transparent backdrop-blur-md'
           : 'border-transparent bg-transparent'
@@ -127,7 +127,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             <SheetFooter className="flex-col items-start justify-start sm:flex-col">
               <Separator className="mb-2" />
               <ToggleLanguage lng={lng} />
-              <ToggleTheme lng={lng} />
+              {/*<ToggleTheme lng={lng} />*/}
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -214,7 +214,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             href="https://www.linkedin.com/company/dev-for-good/"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => saEvent(`click_navbar_linkedin}`)}
+            onClick={() => saEvent('click_navbar_linkedin')}
           >
             <Linkedin className="size-5" />
           </Link>
