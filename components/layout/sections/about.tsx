@@ -1,14 +1,15 @@
+'use client'
+
 import { useTranslation } from '@/app/i18n'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { getTeam } from '@/utils/team-utils'
 import { getValues } from '@/utils/values-utils'
 import Image from 'next/image'
 import { createElement } from 'react'
-import { Separator } from '@/components/ui/separator'
 import { Linkedin } from 'lucide-react'
 import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
-import Link from 'next/link'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const AboutSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -25,7 +26,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
         </h3>
 
         {/* Team */}
-        <div className="mb-16 grid grid-cols-2 gap-6 px-0 lg:grid-cols-4">
+        <div className="mb-16 grid grid-cols-1 gap-6 px-0 sm:grid-cols-2 lg:grid-cols-4">
           {team.map(
             (
               {
@@ -75,6 +76,9 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                           }
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => {
+                            saEvent(`click_about_card_${firstName}}`)
+                          }}
                         >
                           <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">
                             <Linkedin className="h-6 w-6" />
@@ -115,9 +119,10 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
           <h3 className="mb-6 text-2xl font-bold text-foreground">
             {t('about.values.title')}
           </h3>
-          <div className="flex flex-row gap-10">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Change here */}
             {values.map(({ icon, title, description }, index) => (
-              <div key={index} className="flex w-1/3 items-start">
+              <div key={index} className="flex items-start">
                 <div className="mr-4">{createElement(icon)}</div>
                 <div>
                   <h4 className="mb-2 text-xl font-semibold">{title}</h4>

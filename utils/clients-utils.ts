@@ -47,4 +47,12 @@ export const clients = [
     name: 'ClimaTalk',
     url: 'https://climatalk.org/',
   },
+  {
+    name: 'Kokopelli',
+    url: 'https://kokopelli-semences.fr/fr/',
+  },
+  {
+    name: 'Cornell Lab of Ornithology',
+    url: 'https://www.birds.cornell.edu/',
+  },
 ]

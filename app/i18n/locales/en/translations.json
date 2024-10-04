@@ -179,7 +179,7 @@
       "title": "The Dev For Good Collective",
       "1": {
         "title": "Complementary skills",
-        "description": "We are four developers with complementary backgrounds in software engineering, Web development, mobile apps and data science. We can take take your idea and build a complete production-ready product from scratch or help you improve and automate an existing service, so you can focus on what matters most."
+        "description": "We are four developers with complementary backgrounds in software engineering, Web development, mobile apps and data science. We can take your idea and build a complete production-ready product from scratch or help you improve and automate an existing service, so you can focus on what matters most."
       },
       "2": {
         "title": "Purpose driven",
@@ -190,5 +190,9 @@
         "description": "Having worked together for years, we've developed a seamless collaboration that makes us highly efficient and organized. When you partner with us, you can trust that we'll listen carefully to your needs while also bringing fresh ideas to the table."
       }
     }
+  },
+  "footer": {
+    "signature": "Designed and developed by the",
+    "collective": "Collective"
   }
 }

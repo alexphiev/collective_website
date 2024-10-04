@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { sdgs } from '@/utils/sdg-utils'
 import { useTranslation } from '@/app/i18n'
@@ -6,6 +8,7 @@ import { ClientsSection } from './clients'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import { SectionTitle } from './section-title'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const ImpactSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -16,13 +19,16 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
   ]
 
   return (
-    <section id="impact" className="gradient-background-top pt-[120px]">
+    <section
+      id="impact"
+      className="gradient-background-top pt-[40px] md:pt-[120px]"
+    >
       <SectionTitle title={t('impact.title')} />
       <ClientsSection />
       <div className="container grid pt-6 sm:grid-cols-1 lg:grid-cols-2">
         {/* Left */}
         <div className="flex w-full flex-col justify-start gap-6 lg:pr-6">
-          <div className="grid w-full grid-cols-3">
+          <div className="grid w-full grid-cols-1 sm:grid-cols-3">
             {cardData.map((data, index) => (
               <Card
                 key={index}
@@ -42,9 +48,16 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
         </div>
 
         {/* Right */}
-        <div className="relative grid h-min grid-cols-3 lg:grid-cols-5">
+        <div className="relative grid h-min grid-cols-3 justify-items-center lg:grid-cols-5">
           {sdgs.map(({ icon, name, url }) => (
-            <Link key={name} href={url} target="_blank">
+            <Link
+              key={name}
+              href={url}
+              target="_blank"
+              onClick={() => {
+                saEvent(`click_impact_${icon}}`)
+              }}
+            >
               <Image
                 key={name}
                 className="transform rounded-lg opacity-85 shadow-lg saturate-[0.65] filter transition-all duration-300 ease-linear hover:scale-110 hover:opacity-100 hover:saturate-100"

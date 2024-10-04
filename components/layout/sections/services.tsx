@@ -9,6 +9,7 @@ import { SectionTitle } from './section-title'
 import { SectionDivider } from './section-divider'
 import { ContactUsButton } from '../contact-us-button'
 import { InfoIcon } from 'lucide-react'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
@@ -25,7 +26,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
       <SectionTitle title={t('services.section.title')} />
       <h3
         id="service-list"
-        className="mx-auto mb-16 text-center text-xl text-muted-foreground"
+        className="text-l mx-auto mb-16 px-4 text-center text-muted-foreground md:text-xl"
       >
         {t('services.section.description')}
       </h3>
@@ -36,7 +37,10 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
             key={index}
             service={service}
             isClicked={clickedIndex === index}
-            onClick={() => handleCardClick(index)}
+            onClick={() => {
+              saEvent(`click_services_${service.href}}`)
+              handleCardClick(index)
+            }}
           />
         ))}
       </div>
