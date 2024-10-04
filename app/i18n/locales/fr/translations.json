@@ -26,94 +26,33 @@
       "description": "Notre équipe excelle dans le développement backend, la gestion de bases de données et l'intégration d'APIs, garantissant une solution sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services Cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser une infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à grandir."
     }
   },
-  "team": {
-    "section": {
-      "title": "Équipe"
-    },
-    "title": "Amis et développeurs depuis 8 ans",
-    "description": "Nous croyons au pouvoir de la technologie pour rendre le monde meilleur."
-  },
   "projects": {
-    "title": "Our Projects",
-    "subtitle": "Innovative solutions for modern challenges",
-    "overview": "Overview",
-    "challenge": "Challenge",
-    "solution": "Solution",
-    "results": "Results",
-    "technologies": "Technologies Used",
-    "testimonial": "Client Testimonial",
-    "closeButton": "Close",
-    "duration": "{{count}} months",
-    "project1": {
-      "title": "Lorem Ipsum Project",
-      "company": "Lorem Industries",
-      "industry": "Technology",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "challenge": "Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur, nisl eget fermentum tincidunt, sapien libero bibendum justo.",
-      "solution": "Donec pretium vulputate sapien nec sagittis. Phasellus suscipit, purus in sagittis lobortis, justo velit vestibulum turpis, eget tincidunt metus erat vel orci.",
-      "results": {
-        "1": "Increased efficiency by 50%",
-        "2": "Reduced costs by 30%",
-        "3": "Enhanced customer satisfaction",
-        "4": "Improved scalability and performance"
-      },
-      "technologies": {
-        "1": "JavaScript",
-        "2": "Node.js",
-        "3": "React",
-        "4": "AWS"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "author": "John Doe, CEO of Lorem Industries"
-      }
+    "title": "Projets",
+    "subtitle": "Nos solutions innovantes pour des défis modernes",
+    "description": "Nous croyons au pouvoir de la technologie et de la créativité pour conduire un changement positif. Nos projets sont dédiés à relever les défis sociaux, environnementaux et communautaires avec des solutions durables et innovantes. De l'autonomisation des communautés locales à la création de plateformes pour la défense de l'environnement, nous nous engageons à construire un monde meilleur pour tous. Ensemble, transformons les idées en actions qui font une réelle différence.",
+    "overview": "Aperçu",
+    "challenges": "Défis",
+    "solutions": "Solutions",
+    "features": "Fonctionnalités",
+    "technologies": "Technologies utilisées",
+    "testimonial": "Témoignage client",
+    "duration": "{{count}} mois",
+    "teamSize": "{{count}} membres impliqués",
+    "bluekomune": {
+      "title": "Application Web Full Stack pour la collaboration d'experts océaniques",
+      "company": "Blue Komune",
+      "description": "Développement d'une application web à partir de zéro pour la collaboration d'experts océaniques, en mettant l'accent sur la facilité d'utilisation et l'engagement. Le moteur de recherche IA permet aux utilisateurs de trouver des projets et des experts de manière puissante.",
+      "features": "Authentification, messagerie instantanée et directe, moteur de recherche instantané, intégration de cartes, appels vidéo personnalisés en direct avec enregistrements, transcription d'appels par IA, composants serveur et design responsive.",
+      "challenges": "Blue Komune avait besoin d'une application web complète et alimentée par l'IA avec une expérience utilisateur engageante pour connecter les experts et les projets liés à la conservation des océans de la manière la plus efficace possible.",
+      "solutions": "Nous avons choisi les technologies les plus innovantes et populaires disponibles pour construire un produit de pointe. La dernière technologie webRTC pour les appels vidéo et l'IA pour la transcription et l'analyse des appels nous ont permis de livrer un produit répondant aux plus hauts standards de qualité et d'expérience utilisateur."
     },
-    "project2": {
-      "title": "Sed Do Eiusmod Project",
-      "company": "Consectetur Ltd.",
-      "industry": "Finance",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "challenge": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "solution": "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
-      "results": {
-        "1": "Decreased error rate by 20%",
-        "2": "Increased customer retention",
-        "3": "Optimized transaction processing",
-        "4": "Boosted operational efficiency"
-      },
-      "technologies": {
-        "1": "Python",
-        "2": "Django",
-        "3": "PostgreSQL",
-        "4": "AWS"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        "author": "Jane Smith, CFO of Consectetur Ltd."
-      }
-    },
-    "project3": {
-      "title": "Dolor Sit Amet Project",
-      "company": "Adipiscing Elit Inc.",
-      "industry": "Healthcare",
-      "description": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      "challenge": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.",
-      "solution": "In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.",
-      "results": {
-        "1": "Increased patient satisfaction by 25%",
-        "2": "Reduced hospital readmissions by 15%",
-        "3": "Enhanced data security and compliance",
-        "4": "Improved healthcare provider efficiency"
-      },
-      "technologies": {
-        "1": "React Native",
-        "2": "Firebase",
-        "3": "Node.js"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "author": "Dr. Emily Johnson, Chief Medical Officer of Adipiscing Elit Inc."
-      }
+    "bridgeforbillions": {
+      "title": "Refonte d'une application web complexe pour une responsivité totale",
+      "company": "Bridge For Billions",
+      "features": "Version mobile du site web, plus de cinquante pages adaptées, structure commune pour chaque nouvelle page",
+      "description": "Donner accès à la plateforme aux personnes dans les régions reculées du monde sans accès à un ordinateur, en développant une version mobile du site web.",
+      "challenges": "L'application React n'était pas du tout responsive et utilisait des graphiques complexes et des éléments visuels qui nécessitaient une refonte complète.",
+      "solutions": "Nous avons adapté plus de cinquante pages pour rendre l'application web entièrement responsive et créé une structure commune pour chaque nouvelle page afin d'assurer la cohérence et la facilité d'utilisation à l'avenir."
     }
   },
   "contact": {
@@ -222,10 +161,10 @@
   },
   "about": {
     "section": {
-      "title": "Équipe"
+      "title": "À propos de nous"
     },
     "team": {
-      "title": "Découvrez notre équipe et notre vision",
+      "title": "Qui sommes-nous",
       "description": "Amis et développeurs depuis plus de 8 ans, nous combinons nos compétences complémentaires pour l'impact."
     },
     "values": {
