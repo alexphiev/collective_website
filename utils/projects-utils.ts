@@ -10,10 +10,17 @@ import { SiReact as ReactIcon } from 'react-icons/si'
 import { SiAntdesign as AntDesignIcon } from 'react-icons/si'
 import { SiHtml5 as Html5Icon } from 'react-icons/si'
 import { SiCss3 as Css3Icon } from 'react-icons/si'
+import { SiSupabase as SupabaseIcon } from 'react-icons/si'
+import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
+import { MdForest as ForestAdminIcon } from 'react-icons/md'
+import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
+import { SiPython as PythonIcon } from 'react-icons/si'
 
 import BlueKomuneImage1 from '@/public/projects/bluekomune-1.png'
 import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
 import BridgeImage1 from '@/public/projects/bridgeforbillions-1.png'
+import EdumiamImage1 from '@/public/projects/edumiam-1.png'
+import EdumiamImage2 from '@/public/projects/edumiam-2.png'
 
 export interface Tech {
   name: string
@@ -85,8 +92,38 @@ export const getProjects = (t: TFunction): Project[] => {
         },
       ],
       featured: true,
-      isNew: true,
-      teamSize: 4,
+      isNew: false,
+      teamSize: 2,
+    },
+    {
+      code: 'edumiam',
+      images: [EdumiamImage1, EdumiamImage2],
+      clientName: 'Edumiam',
+      techList: [
+        {
+          name: 'Supabase',
+          icon: SupabaseIcon,
+        },
+        {
+          name: 'PostgreSQL',
+          icon: PostgresqlIcon,
+        },
+        {
+          name: 'Forest Admin',
+          icon: ForestAdminIcon,
+        },
+        {
+          name: 'Node.js',
+          icon: NodeJsIcon,
+        },
+        {
+          name: 'Python',
+          icon: PythonIcon,
+        },
+      ],
+      featured: true,
+      isNew: false,
+      teamSize: 2,
     },
   ]
 }

@@ -61,7 +61,7 @@ export default function ProjectDetails({
         <div className="align-center flex flex-wrap items-center justify-between gap-4">
           <div className="min-w-[200px] flex-1">
             <h2 className="break-words text-2xl font-bold">
-              AI-Powered Customer Service Platform
+              {t(`projects.${project.code}.title`)}
             </h2>
           </div>
           <div className="flex flex-shrink-0 items-center gap-2">
@@ -71,7 +71,9 @@ export default function ProjectDetails({
             </span>
           </div>
         </div>
-        <p className="pb-4 text-primary">TechCorp Solutions</p>
+        <p className="pb-4 text-primary">
+          {t(`projects.${project.code}.company`)}
+        </p>
 
         <TechList techList={techList} />
 

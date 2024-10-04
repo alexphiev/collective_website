@@ -72,6 +72,14 @@
       "description": "Give access to the platform to people in remote areas of the world without access to a computer, by developing a mobile-friendly version of the website.",
       "challenges": "The React application was not responsive at all and used complex graphs and visual elements that required a full redesign.",
       "solutions": "We adapted more than fifty pages to make the web application fully responsive and created a common structure for every new page to ensure consistency and ease of use in the future."
+    },
+    "edumiam": {
+      "title": "Backend and database full restructuration",
+      "company": "Edumiam",
+      "features": "PostgreSQL database hosted on Supabase backend, database triggers and automations, Forest Admin panel, Python script for data migration and business algorithms.",
+      "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
+      "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
+      "solutions": "Meticulous data migration from Airtable and Excel to a PostgreSQL database hosted on Supabase in several phases, with the addition of triggers and automations to ensure data consistency and integrity. Creation of a Python script to automate the business algorithms to optimize the internal processes of the company."
     }
   },
   "lang": {

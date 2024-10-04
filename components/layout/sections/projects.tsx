@@ -29,7 +29,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
     <section>
       <SectionDivider id="projects" />
       <SectionTitle title={t('projects.subtitle')} />
-      <div className="container flex w-full gap-10 pt-6 sm:grid-cols-1 sm:flex-col lg:grid-cols-2 lg:flex-row">
+      <div className="container flex w-full gap-10 pt-16 sm:grid-cols-1 sm:flex-col lg:grid-cols-2 lg:flex-row">
         {/* Left Section: Project Message */}
         <div className="col-span-1 flex w-full flex-col justify-start gap-6 lg:pr-6">
           <div>
@@ -81,8 +81,8 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="bg-transparent hover:bg-card" />
-            <CarouselNext className="bg-transparent hover:bg-card" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
         </div>
       </div>
