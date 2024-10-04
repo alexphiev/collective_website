@@ -8,7 +8,7 @@ import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 import { Toaster } from '@/components/ui/toaster'
 import Script from 'next/script'
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { sdgs } from '@/utils/sdg-utils'
 import { useTranslation } from '@/app/i18n'
@@ -6,6 +8,7 @@ import { ClientsSection } from './clients'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 import { SectionTitle } from './section-title'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const ImpactSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
@@ -47,7 +50,14 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
         {/* Right */}
         <div className="relative grid h-min grid-cols-3 justify-items-center lg:grid-cols-5">
           {sdgs.map(({ icon, name, url }) => (
-            <Link key={name} href={url} target="_blank">
+            <Link
+              key={name}
+              href={url}
+              target="_blank"
+              onClick={() => {
+                saEvent(`click_impact_${icon}}`)
+              }}
+            >
               <Image
                 key={name}
                 className="transform rounded-lg opacity-85 shadow-lg saturate-[0.65] filter transition-all duration-300 ease-linear hover:scale-110 hover:opacity-100 hover:saturate-100"
