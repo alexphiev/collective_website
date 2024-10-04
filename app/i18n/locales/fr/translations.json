@@ -243,5 +243,9 @@
         "description": "Ayant travaillé ensemble pendant des années, nous avons développé une collaboration sans faille qui nous rend hautement efficaces et organisés. Lorsque vous vous associez à nous, vous pouvez être sûr que nous écouterons attentivement vos besoins tout en apportant de nouvelles idées à la table."
       }
     }
+  },
+  "footer": {
+    "signature": "Conçu et développé par le Collectif",
+    "collective": "Collectif"
   }
 }

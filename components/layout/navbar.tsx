@@ -41,12 +41,12 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
   const routeList: RouteProps[] = [
     {
-      href: "#impact",
-      label: t("impact.section.title"),
+      href: '#impact',
+      label: t('impact.section.title'),
     },
     {
-      href: "#services",
-      label: t("services.title"),
+      href: '#services',
+      label: t('services.title'),
     },
     {
       href: '#projects',
@@ -54,7 +54,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     },
     {
       href: '#about',
-      label: t("about.section.title"),
+      label: t('about.section.title'),
     },
     {
       href: '#contact',
