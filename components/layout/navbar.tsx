@@ -1,17 +1,17 @@
 'use client'
+
 import { useTranslation } from '@/app/i18n/client'
+import { saEvent } from '@/utils/analytics-utils'
 import { getServiceList } from '@/utils/services-utils'
-import { ChevronRight, Linkedin, Menu, Sprout } from 'lucide-react'
+import { Linkedin, Menu } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '../ui/navigation-menu'
 import { Separator } from '../ui/separator'
@@ -24,8 +24,6 @@ import {
   SheetTrigger,
 } from '../ui/sheet'
 import { ToggleLanguage } from './toogle-language'
-import { ToggleTheme } from './toogle-theme'
-import { saEvent } from '@/utils/analytics-utils'
 
 interface RouteProps {
   href: string
@@ -136,53 +134,6 @@ export const Navbar = ({ lng }: { lng: string }) => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="mx-auto hidden lg:block">
         <NavigationMenuList>
-          {/* Advanced navigation item 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent hover:bg-transparent/20 focus:bg-transparent/20">
-            {t("services.title")}
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-accent/50 to-primary/50 p-6 no-underline outline-none focus:shadow-md"
-                      href="#services"
-                    >
-                      <Sprout className="h-6 w-6 text-accent-foreground" />
-                      <div className="mb-2 mt-4 text-lg font-medium text-accent-foreground">
-                        {t("services.section.title")}
-                      </div>
-                      <p className="text-sm leading-tight text-accent-foreground/80">
-                        {t("services.section.description")}
-                      </p>
-                    </a>
-                  </NavigationMenuLink>
-                </li>
-                <li className="row-span-3">
-                  <ul className="flex flex-col flex-1 justify-between">
-                    {serviceList.map(({ title, description }) => (
-                      <>
-                        <li
-                          key={title}
-                          className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
-                        >
-                          <Link href={"#service-list"} className="flex items-center justify-between">
-                            <p className="font-semibold text-foreground">
-                              {title}
-                            </p>
-                            <ChevronRight className="h-4 w-4 text-muted-foreground" />
-                          </Link>
-                        </li>
-                        <Separator className="my-2" />
-                      </>
-                    ))}
-                  </ul>
-                </li>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          */}
           {/* Simple navigation links */}
           {routeList.map(({ href, label }) => (
             <NavigationMenuItem key={label}>

@@ -1,4 +1,3 @@
-'use client'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import {
   Card,
@@ -14,14 +13,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
-import { useTranslation } from '@/app/i18n/client'
+import { useTranslation } from '@/app/i18n'
 import { getTestimonials } from '@/utils/testimonials-utils'
 import Image from 'next/image'
 import { SectionTitle } from './section-title'
 import { SectionDivider } from './section-divider'
 
-export const TestimonialSection = ({ lng }: { lng: string }) => {
-  const { t } = useTranslation(lng)
+export const TestimonialSection = async ({ lng }: { lng: string }) => {
+  const { t } = await useTranslation(lng)
   return (
     <section className="gradient-background-top">
       <SectionDivider id="testimonials" />
