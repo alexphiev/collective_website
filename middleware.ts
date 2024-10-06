@@ -5,12 +5,33 @@ import { fallbackLng, languages } from './app/i18n/settings'
 acceptLanguage.languages(languages)
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)'],
+  matcher: [
+    '/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|sitemap.xml|sitemap-*.xml|robots.txt).*)',
+  ],
 }
 
 const cookieName = 'i18next'
 
+function shouldExcludePath(pathname: string): boolean {
+  const excludedPatterns = [
+    /^\/api\//,
+    /^\/_next\//,
+    /^\/assets\//,
+    /^\/favicon\.ico$/,
+    /^\/sw\.js$/,
+    /^\/sitemap(-\d+)?\.xml$/,
+    /^\/robots\.txt$/,
+  ]
+  return excludedPatterns.some((pattern) => pattern.test(pathname))
+}
+
 export function middleware(req: NextRequest) {
+  const pathname = req.nextUrl.pathname
+
+  if (shouldExcludePath(pathname)) {
+    return NextResponse.next()
+  }
+
   let lng
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName)?.value)
@@ -18,7 +39,6 @@ export function middleware(req: NextRequest) {
   if (!lng) lng = fallbackLng
 
   // Check if the path starts with a locale
-  const pathname = req.nextUrl.pathname
   const pathnameIsMissingLocale = languages.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://devforgoodcollective.com
+
+# Sitemaps
+Sitemap: https://devforgoodcollective.com/sitemap.xml
