@@ -22,7 +22,9 @@ function shouldExcludePath(pathname: string): boolean {
     /^\/site\.webmanifest$/,
     /^\/sw\.js$/,
     /^\/sitemap(-\d+)?\.xml$/,
+    /^\/sitemap\.xml$/,
     /^\/robots\.txt$/,
+    /^\/opengraph-image\.png$/,
   ]
   return excludedPatterns.some((pattern) => pattern.test(pathname))
 }
