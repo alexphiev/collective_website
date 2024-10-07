@@ -6,8 +6,8 @@ import { ClientsSection } from './clients'
 import { ImpactLink } from './impact-sdg-link'
 import { SectionTitle } from './section-title'
 
-export const ImpactSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng)
+export const ImpactSection = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng)
   const cardData = [
     { value: 8, label: t('impact.years') },
     { value: clients.length, label: t('impact.clients') },

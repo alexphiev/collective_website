@@ -10,8 +10,8 @@ import { SectionTitle } from './section-title'
 import { saEvent } from '@/utils/analytics-utils'
 import LinkedInLink from './team-linkedin-link'
 
-export const AboutSection = async ({ lng }: { lng: string }) => {
-  const { t } = await useTranslation(lng)
+export const AboutSection = ({ lng }: { lng: string }) => {
+  const { t } = useTranslation(lng)
   const team = getTeam(t)
   const values = getValues(t) // Get the translated values
 
