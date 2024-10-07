@@ -67,10 +67,10 @@ export async function generateMetadata({
       siteName: 'Dev For Good',
       images: [
         {
-          url: '/path-to-your-og-image.jpg',
+          url: `${process.env.NEXT_PUBLIC_URL}/opengraph-image.png`,
           width: 1200,
           height: 630,
-          alt: 'Dev For Good - Freelance Developers for Positive Impact',
+          alt: 'Dev For Good - Developers for Positive Impact',
         },
       ],
       locale: lng,
@@ -80,7 +80,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/path-to-your-og-image.jpg'],
+      images: [`${process.env.NEXT_PUBLIC_URL}/opengraph-image.png`],
     },
     other: {
       'google-site-verification': 'your-google-site-verification-code',
@@ -100,7 +100,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'Dev For Good',
     url: 'https://devforgoodcollective.com',
-    logo: 'https://devforgoodcollective.com/logo.png',
+    logo: `${process.env.NEXT_PUBLIC_URL}/logo.png`,
     sameAs: [
       'https://www.linkedin.com/company/dev-for-good',
       'https://github.com/devforgoodcollective',
@@ -116,6 +116,21 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-48x48.png"
+          sizes="48x48"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Dev For Good" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={cn('min-h-screen bg-background', inter.className)}>
         <ThemeProvider
