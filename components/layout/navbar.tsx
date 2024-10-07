@@ -4,6 +4,7 @@ import { useTranslation } from '@/app/i18n/client'
 import { saEvent } from '@/utils/analytics-utils'
 import { getServiceList } from '@/utils/services-utils'
 import { Linkedin, Menu } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
@@ -24,6 +25,7 @@ import {
   SheetTrigger,
 } from '../ui/sheet'
 import { ToggleLanguage } from './toogle-language'
+import logoWhite from '@/public/logo-white-transparent.png'
 
 interface RouteProps {
   href: string
@@ -81,6 +83,16 @@ export const Navbar = ({ lng }: { lng: string }) => {
           : 'border-transparent bg-transparent'
       }`}
     >
+      <Link href="/" className="flex items-center">
+        <Image
+          src={logoWhite}
+          alt="Dev For Good Logo"
+          width={40}
+          height={40}
+          className="mr-2"
+        />
+        <span className="text-lg font-bold lg:hidden">Dev For Good</span>
+      </Link>
       <Link href="/" className="hidden items-center text-lg font-bold lg:flex">
         Dev For Good
       </Link>

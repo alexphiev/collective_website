@@ -18,6 +18,8 @@ function shouldExcludePath(pathname: string): boolean {
     /^\/_next\//,
     /^\/assets\//,
     /^\/favicon\.ico$/,
+    /^\/favicon\.svg$/,
+    /^\/site\.webmanifest$/,
     /^\/sw\.js$/,
     /^\/sitemap(-\d+)?\.xml$/,
     /^\/robots\.txt$/,

@@ -48,6 +48,7 @@ export const TestimonialSection = async ({ lng }: { lng: string }) => {
                           src={image}
                           alt="radix"
                           fill
+                          sizes="40px"
                           quality={10}
                           style={{ objectFit: 'cover' }}
                         />

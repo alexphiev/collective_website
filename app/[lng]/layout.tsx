@@ -57,7 +57,7 @@ export async function generateMetadata({
     description,
     keywords,
     alternates: {
-      canonical: `https://devforgoodcollective.com/${lng}`,
+      canonical: `https://devforgoodcollective.com`,
       languages: alternateLanguages,
     },
     openGraph: {
@@ -119,18 +119,28 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/png"
-          href="/favicon-48x48.png"
+          href={`${process.env.NEXT_PUBLIC_URL}/favicon-48x48.png`}
           sizes="48x48"
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`${process.env.NEXT_PUBLIC_URL}/favicon.svg`}
+        />
+        <link
+          rel="shortcut icon"
+          href={`${process.env.NEXT_PUBLIC_URL}/favicon.ico`}
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href={`${process.env.NEXT_PUBLIC_URL}/apple-touch-icon.png`}
         />
         <meta name="apple-mobile-web-app-title" content="Dev For Good" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link
+          rel="manifest"
+          href={`${process.env.NEXT_PUBLIC_URL}/site.webmanifest`}
+        />
       </head>
       <body className={cn('min-h-screen bg-background', inter.className)}>
         <ThemeProvider
