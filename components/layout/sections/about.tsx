@@ -1,18 +1,15 @@
-'use client'
-
-import { useTranslation } from '@/app/i18n/client'
+import { useTranslation } from '@/app/i18n'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { getTeam } from '@/utils/team-utils'
 import { getValues } from '@/utils/values-utils'
 import Image from 'next/image'
 import { createElement } from 'react'
-import { Linkedin } from 'lucide-react'
 import { SectionDivider } from './section-divider'
 import { SectionTitle } from './section-title'
-import { saEvent } from '@/utils/analytics-utils'
+import LinkedInLink from './team-linkedin-link'
 
-export const AboutSection = ({ lng }: { lng: string }) => {
-  const { t } = useTranslation(lng)
+export const AboutSection = async ({ lng }: { lng: string }) => {
+  const { t } = await useTranslation(lng)
   const team = getTeam(t)
   const values = getValues(t) // Get the translated values
 
@@ -67,23 +64,14 @@ export const AboutSection = ({ lng }: { lng: string }) => {
                       {socialNetworks.find(
                         (network) => network.name === 'LinkedIn'
                       ) && (
-                        <a
-                          className="absolute right-2 top-2"
-                          href={
+                        <LinkedInLink
+                          url={
                             socialNetworks.find(
                               (network) => network.name === 'LinkedIn'
                             )?.url
                           }
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => {
-                            saEvent(`click_about_card_${firstName}}`)
-                          }}
-                        >
-                          <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">
-                            <Linkedin className="h-6 w-6" />
-                          </div>
-                        </a>
+                          firstName={firstName}
+                        />
                       )}
                     </div>
                     <div className="relative flex items-center justify-between p-4">

@@ -46,87 +46,40 @@
     "validationErrorDescription": "All fields are required."
   },
   "projects": {
-    "title": "Our Projects",
-    "subtitle": "Innovative solutions for modern challenges",
-    "description": "We believe in harnessing the power of technology and creativity to drive positive change. Our projects are dedicated to addressing social, environmental, and community challenges with sustainable and innovative solutions. From empowering local communities to creating platforms for environmental advocacy, we are committed to building a better world for everyone. Together, let's turn ideas into actions that make a real difference",
+    "title": "Projects",
+    "subtitle": "Our innovative solutions for modern challenges",
+    "description": "We believe in harnessing the power of technology and creativity to drive positive change.\n\nOur projects are dedicated to addressing social, environmental, and community challenges with sustainable and innovative solutions.\n\nFrom empowering local communities to creating platforms for environmental advocacy, we are committed to building a better world for everyone. Together, let's turn ideas into actions that make a real difference",
     "overview": "Overview",
-    "challenge": "Challenge",
-    "solution": "Solution",
-    "results": "Results",
+    "challenges": "Challenges",
+    "solutions": "Solutions",
+    "features": "Features",
     "technologies": "Technologies Used",
     "testimonial": "Client Testimonial",
-    "closeButton": "Close",
     "duration": "{{count}} months",
-    "project1": {
-      "title": "Lorem Ipsum Project",
-      "company": "Lorem Industries",
-      "industry": "Technology",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "challenge": "Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur, nisl eget fermentum tincidunt, sapien libero bibendum justo.",
-      "solution": "Donec pretium vulputate sapien nec sagittis. Phasellus suscipit, purus in sagittis lobortis, justo velit vestibulum turpis, eget tincidunt metus erat vel orci.",
-      "results": {
-        "1": "Increased efficiency by 50%",
-        "2": "Reduced costs by 30%",
-        "3": "Enhanced customer satisfaction",
-        "4": "Improved scalability and performance"
-      },
-      "technologies": {
-        "1": "JavaScript",
-        "2": "Node.js",
-        "3": "React",
-        "4": "AWS"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "author": "John Doe, CEO of Lorem Industries"
-      }
+    "teamSize": "{{count}} members involved",
+    "bluekomune": {
+      "title": "Full Stack Web application for ocean experts collaboration",
+      "company": "Blue Komune",
+      "description": "Development of a web application from scratch for ocean experts collaboration, with a focus on ease of use and engagement. The AI search engine enables users to find projects and experts in a powerful manner.",
+      "features": "Authentication, instant and direct messaging, instant search engine, map integration, customlive video calls with recordings, AI call transcription, server components and responsive design.",
+      "challenges": "Blue Komune needed a fully featured and AI-powered web application with an engaging user experience to connect experts and projects related to ocean conservation as efficiently as possible.",
+      "solutions": "We chose the most innovative and popular tech available to build a cutting-edge product. The latest webRTC technology for the video calls and AI for the call transcription and analysis allowed us to deliver a product that met the highest standards of quality and user experience."
     },
-    "project2": {
-      "title": "Sed Do Eiusmod Project",
-      "company": "Consectetur Ltd.",
-      "industry": "Finance",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "challenge": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "solution": "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
-      "results": {
-        "1": "Decreased error rate by 20%",
-        "2": "Increased customer retention",
-        "3": "Optimized transaction processing",
-        "4": "Boosted operational efficiency"
-      },
-      "technologies": {
-        "1": "Python",
-        "2": "Django",
-        "3": "PostgreSQL",
-        "4": "AWS"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        "author": "Jane Smith, CFO of Consectetur Ltd."
-      }
+    "bridgeforbillions": {
+      "title": "Redesign of a complex web application for full responsiveness",
+      "company": "Bridge For Billions",
+      "features": "Mobile-friendly version of the website, more than fifty pages adapted, common structure for every new page",
+      "description": "Give access to the platform to people in remote areas of the world without access to a computer, by developing a mobile-friendly version of the website.",
+      "challenges": "The React application was not responsive at all and used complex graphs and visual elements that required a full redesign.",
+      "solutions": "We adapted more than fifty pages to make the web application fully responsive and created a common structure for every new page to ensure consistency and ease of use in the future."
     },
-    "project3": {
-      "title": "Dolor Sit Amet Project",
-      "company": "Adipiscing Elit Inc.",
-      "industry": "Healthcare",
-      "description": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      "challenge": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.",
-      "solution": "In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.",
-      "results": {
-        "1": "Increased patient satisfaction by 25%",
-        "2": "Reduced hospital readmissions by 15%",
-        "3": "Enhanced data security and compliance",
-        "4": "Improved healthcare provider efficiency"
-      },
-      "technologies": {
-        "1": "React Native",
-        "2": "Firebase",
-        "3": "Node.js"
-      },
-      "testimonial": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "author": "Dr. Emily Johnson, Chief Medical Officer of Adipiscing Elit Inc."
-      }
+    "edumiam": {
+      "title": "Backend and database full restructuration",
+      "company": "Edumiam",
+      "features": "PostgreSQL database hosted on Supabase backend, database triggers and automations, Forest Admin panel, Python script for data migration and business algorithms.",
+      "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
+      "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
+      "solutions": "Meticulous data migration from Airtable and Excel to a PostgreSQL database hosted on Supabase in several phases, with the addition of triggers and automations to ensure data consistency and integrity. Creation of a Python script to automate the business algorithms to optimize the internal processes of the company."
     }
   },
   "lang": {
