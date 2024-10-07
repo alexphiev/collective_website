@@ -53,7 +53,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
     },
     {
       imageUrl: stefano,
-      imageLinkUrl: 'https://www.linkedin.com/in/stefano-ventrudo-64742783/',
+      imageLinkUrl: 'https://www.linkedin.com/in/stefano-ventrudo/',
       flagIcon: italy,
       firstName: 'Stefano',
       lastName: 'Ventrudo',
@@ -64,7 +64,7 @@ export const getTeam = (t: TFunction): TeamProps[] => {
       socialNetworks: [
         {
           name: 'LinkedIn',
-          url: 'https://www.linkedin.com/in/stefano-ventrudo-64742783/',
+          url: 'https://www.linkedin.com/in/stefano-ventrudo/',
         },
         {
           name: 'Github',
