@@ -75,6 +75,7 @@ const ServiceCard = ({
             alt={title}
             fill
             style={{ objectFit: 'cover', objectPosition: 'center top' }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 332px"
             className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:transform group-hover:saturate-100"
           />
         </div>
