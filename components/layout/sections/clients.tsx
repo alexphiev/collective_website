@@ -1,9 +1,10 @@
-"use client";
+'use client'
 
-import { clients } from "@/utils/clients-utils";
-import { Marquee } from "@devnomic/marquee";
-import "@devnomic/marquee/dist/index.css";
-import Link from "next/link";
+import { clients } from '@/utils/clients-utils'
+import { Marquee } from '@devnomic/marquee'
+import '@devnomic/marquee/dist/index.css'
+import Link from 'next/link'
+import { saEvent } from '@/utils/analytics-utils'
 
 export const ClientsSection = () => {
   return (
@@ -18,7 +19,7 @@ export const ClientsSection = () => {
           {clients.map(({ url, name }) => (
             <div
               key={name}
-              className="flex items-center text-xl md:text-xl font-medium filter grayscale hover:filter-none"
+              className="flex items-center text-xl font-medium grayscale filter hover:filter-none md:text-xl"
             >
               {/* <Image
                 className="mr-2"
@@ -28,10 +29,13 @@ export const ClientsSection = () => {
                 height={50}
               /> */}
               <Link
-                href={url || ""}
+                href={url || ''}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
+                onClick={() => {
+                  saEvent(`click_clients_${name}}`)
+                }}
               >
                 {name}
               </Link>
@@ -40,5 +44,5 @@ export const ClientsSection = () => {
         </Marquee>
       </div>
     </section>
-  );
-};
+  )
+}

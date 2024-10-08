@@ -5,7 +5,7 @@ export const FooterSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
 
   return (
-    <footer id="footer" className="pt-24 gradient-background-bottom">
+    <footer id="footer" className="gradient-background-bottom pt-24">
       <div className="container p-6 sm:max-w-[90%] xl:max-w-[80%]">
         {/* <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
@@ -111,5 +111,5 @@ export const FooterSection = async ({ lng }: { lng: string }) => {
         </section>
       </div>
     </footer>
-  );
-};
+  )
+}

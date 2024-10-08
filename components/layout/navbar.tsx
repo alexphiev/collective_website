@@ -1,20 +1,21 @@
-"use client";
-import { useTranslation } from "@/app/i18n/client";
-import { getServiceList } from "@/utils/services-utils";
-import { ChevronRight, Linkedin, Menu, Sprout } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
+'use client'
+
+import { useTranslation } from '@/app/i18n/client'
+import { saEvent } from '@/utils/analytics-utils'
+import { getServiceList } from '@/utils/services-utils'
+import { Linkedin, Menu } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { Button } from '../ui/button'
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "../ui/navigation-menu";
-import { Separator } from "../ui/separator";
+} from '../ui/navigation-menu'
+import { Separator } from '../ui/separator'
 import {
   Sheet,
   SheetContent,
@@ -22,63 +23,77 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { ToggleLanguage } from "./toogle-language";
-import { ToggleTheme } from "./toogle-theme";
+} from '../ui/sheet'
+import { ToggleLanguage } from './toogle-language'
+import logoWhite from '@/public/logo-white-transparent.png'
 
 interface RouteProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 export const Navbar = ({ lng }: { lng: string }) => {
-  const { t } = useTranslation(lng);
-  const [isOpen, setIsOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const { t } = useTranslation(lng)
+  const [isOpen, setIsOpen] = useState(false)
+  const [hasScrolled, setHasScrolled] = useState(false)
 
-  const serviceList = getServiceList(t);
+  const serviceList = getServiceList(t)
 
   const routeList: RouteProps[] = [
     {
-      href: "#impact",
-      label: t("impact.section.title"),
+      href: '#impact',
+      label: t('impact.section.title'),
     },
     {
-      href: "#services",
-      label: t("services.title"),
+      href: '#services',
+      label: t('services.title'),
     },
     {
-      href: "#about",
-      label: t("about.section.title"),
+      href: '#projects',
+      label: t('projects.title'),
     },
     {
-      href: "#contact",
-      label: t("contact.title"),
+      href: '#about',
+      label: t('about.section.title'),
     },
-  ];
+    {
+      href: '#contact',
+      label: t('contact.title'),
+    },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setHasScrolled(scrollTop > 10);
-    };
+      const scrollTop = window.scrollY
+      setHasScrolled(scrollTop > 10)
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <header
-      className={`bg-opacity-15 w-full top-0 mx-auto sticky z-40 flex justify-between items-center py-2 px-10 transition-all duration-500 ${
+      className={`sticky top-0 z-40 mx-auto flex w-full items-center justify-between bg-opacity-15 px-4 py-2 transition-all duration-500 lg:px-10 ${
         hasScrolled
-          ? "bg-gradient-to-b from-secondary to-transparent backdrop-blur-md border-b"
-          : "bg-transparent border-transparent"
+          ? 'border-b bg-gradient-to-b from-secondary to-transparent backdrop-blur-md'
+          : 'border-transparent bg-transparent'
       }`}
     >
-      <Link href="/" className="hidden lg:flex font-bold text-lg items-center">
+      <Link href="/" className="flex items-center">
+        <Image
+          src={logoWhite}
+          alt="Dev For Good Logo"
+          width={40}
+          height={40}
+          className="mr-2"
+        />
+        <span className="text-lg font-bold lg:hidden">Dev For Good</span>
+      </Link>
+      <Link href="/" className="hidden items-center text-lg font-bold lg:flex">
         Dev For Good
       </Link>
       {/* <!-- Mobile --> */}
@@ -93,7 +108,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
 
           <SheetContent
             side="left"
-            className="flex flex-col justify-between w-52 rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+            className="flex w-52 flex-col justify-between rounded-br-2xl rounded-tr-2xl border-secondary bg-card"
           >
             <div>
               <SheetHeader className="mb-4 ml-4">
@@ -119,71 +134,25 @@ export const Navbar = ({ lng }: { lng: string }) => {
               </div>
             </div>
 
-            <SheetFooter className="flex-col sm:flex-col justify-start items-start">
+            <SheetFooter className="flex-col items-start justify-start sm:flex-col">
               <Separator className="mb-2" />
               <ToggleLanguage lng={lng} />
-              <ToggleTheme lng={lng} />
+              {/*<ToggleTheme lng={lng} />*/}
             </SheetFooter>
           </SheetContent>
         </Sheet>
       </div>
 
       {/* <!-- Desktop --> */}
-      <NavigationMenu className="hidden lg:block mx-auto">
+      <NavigationMenu className="mx-auto hidden lg:block">
         <NavigationMenuList>
-          {/* Advanced navigation item 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent hover:bg-transparent/20 focus:bg-transparent/20">
-            {t("services.title")}
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-accent/50 to-primary/50 p-6 no-underline outline-none focus:shadow-md"
-                      href="#services"
-                    >
-                      <Sprout className="h-6 w-6 text-accent-foreground" />
-                      <div className="mb-2 mt-4 text-lg font-medium text-accent-foreground">
-                        {t("services.section.title")}
-                      </div>
-                      <p className="text-sm leading-tight text-accent-foreground/80">
-                        {t("services.section.description")}
-                      </p>
-                    </a>
-                  </NavigationMenuLink>
-                </li>
-                <li className="row-span-3">
-                  <ul className="flex flex-col flex-1 justify-between">
-                    {serviceList.map(({ title, description }) => (
-                      <>
-                        <li
-                          key={title}
-                          className="rounded-md p-3 text-sm hover:bg-muted hover:cursor-pointer"
-                        >
-                          <Link href={"#service-list"} className="flex items-center justify-between">
-                            <p className="font-semibold text-foreground">
-                              {title}
-                            </p>
-                            <ChevronRight className="h-4 w-4 text-muted-foreground" />
-                          </Link>
-                        </li>
-                        <Separator className="my-2" />
-                      </>
-                    ))}
-                  </ul>
-                </li>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          */}
           {/* Simple navigation links */}
           {routeList.map(({ href, label }) => (
             <NavigationMenuItem key={label}>
               <NavigationMenuLink
                 href={href}
-                className={`bg-transparent hover:bg-transparent/20 w-24 ${navigationMenuTriggerStyle()}`}
+                className={`w-24 bg-transparent hover:bg-transparent/20 ${navigationMenuTriggerStyle()}`}
+                onClick={() => saEvent(`click_navbar_${href}}`)}
               >
                 {label}
               </NavigationMenuLink>
@@ -208,11 +177,12 @@ export const Navbar = ({ lng }: { lng: string }) => {
             href="https://www.linkedin.com/company/dev-for-good/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => saEvent('click_navbar_linkedin')}
           >
             <Linkedin className="size-5" />
           </Link>
         </Button>
       </div>
     </header>
-  );
-};
+  )
+}

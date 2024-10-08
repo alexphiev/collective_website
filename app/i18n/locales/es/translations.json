@@ -27,6 +27,35 @@
       "description": "Nuestro equipo sobresale en el desarrollo del lado del servidor, la gestión de bases de datos y la integración de APIs, garantizando que tu aplicación sea segura, escalable y de alto rendimiento. Aplicamos las mejores prácticas en gestión de servidores, servicios en la nube y seguridad para apoyar un flujo de datos sin interrupciones. Ya sea optimizando la infraestructura existente o construyendo un nuevo backend, nos aseguramos de que tus sistemas sean resilientes y estén preparados para el crecimiento."
     }
   },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Nuestras soluciones innovadoras para los desafíos modernos",
+    "description": "Creemos en aprovechar el poder de la tecnología y la creatividad para impulsar un cambio positivo.\n\nNuestros proyectos están dedicados a abordar desafíos sociales, ambientales y comunitarios con soluciones sostenibles e innovadoras.\n\nDesde empoderar a las comunidades locales hasta crear plataformas para la defensa del medio ambiente, estamos comprometidos a construir un mundo mejor para todos. Juntos, convirtamos las ideas en acciones que marquen una verdadera diferencia",
+    "overview": "Visión general",
+    "challenges": "Desafíos",
+    "solutions": "Soluciones",
+    "features": "Características",
+    "technologies": "Tecnologías Utilizadas",
+    "testimonial": "Testimonio del Cliente",
+    "duration": "{{count}} meses",
+    "teamSize": "{{count}} miembros involucrados",
+    "bluekomune": {
+      "title": "Aplicación web Full Stack para la colaboración de expertos en océanos",
+      "company": "Blue Komune",
+      "description": "Desarrollo de una aplicación web desde cero para la colaboración de expertos en océanos, con un enfoque en la facilidad de uso y el compromiso. El motor de búsqueda de IA permite a los usuarios encontrar proyectos y expertos de manera poderosa.",
+      "features": "Autenticación, mensajería instantánea y directa, motor de búsqueda instantáneo, integración de mapas, videollamadas personalizadas con grabaciones, transcripción de llamadas con IA, componentes del servidor y diseño responsivo.",
+      "challenges": "Blue Komune necesitaba una aplicación web completamente equipada y potenciada por IA con una experiencia de usuario atractiva para conectar expertos y proyectos relacionados con la conservación de los océanos de la manera más eficiente posible.",
+      "solutions": "Elegimos la tecnología más innovadora y popular disponible para construir un producto de vanguardia. La última tecnología webRTC para las videollamadas y la IA para la transcripción y análisis de llamadas nos permitió entregar un producto que cumplió con los más altos estándares de calidad y experiencia de usuario."
+    },
+    "bridgeforbillions": {
+      "title": "Rediseño de una aplicación web compleja para una total adaptabilidad",
+      "company": "Bridge For Billions",
+      "features": "Versión móvil del sitio web, más de cincuenta páginas adaptadas, estructura común para cada nueva página",
+      "description": "Dar acceso a la plataforma a personas en áreas remotas del mundo sin acceso a una computadora, desarrollando una versión móvil del sitio web.",
+      "challenges": "La aplicación React no era en absoluto adaptable y utilizaba gráficos complejos y elementos visuales que requerían un rediseño completo.",
+      "solutions": "Adaptamos más de cincuenta páginas para hacer que la aplicación web fuera completamente adaptable y creamos una estructura común para cada nueva página para asegurar la consistencia y facilidad de uso en el futuro."
+    }
+  },
   "contact": {
     "title": "Contacto",
     "getInTouch": "Contacto",
@@ -46,7 +75,6 @@
     "validationErrorTitle": "Por favor, completa todos los campos",
     "validationErrorDescription": "Todos los campos son obligatorios."
   },
-  "projects": "Proyectos",
   "lang": {
     "en": {
       "code": "EN",

@@ -45,7 +45,43 @@
     "validationErrorTitle": "Please fill in all fields",
     "validationErrorDescription": "All fields are required."
   },
-  "projects": "Projects",
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Our innovative solutions for modern challenges",
+    "description": "We believe in harnessing the power of technology and creativity to drive positive change.\n\nOur projects are dedicated to addressing social, environmental, and community challenges with sustainable and innovative solutions.\n\nFrom empowering local communities to creating platforms for environmental advocacy, we are committed to building a better world for everyone. Together, let's turn ideas into actions that make a real difference",
+    "overview": "Overview",
+    "challenges": "Challenges",
+    "solutions": "Solutions",
+    "features": "Features",
+    "technologies": "Technologies Used",
+    "testimonial": "Client Testimonial",
+    "duration": "{{count}} months",
+    "teamSize": "{{count}} members involved",
+    "bluekomune": {
+      "title": "Full Stack Web application for ocean experts collaboration",
+      "company": "Blue Komune",
+      "description": "Development of a web application from scratch for ocean experts collaboration, with a focus on ease of use and engagement. The AI search engine enables users to find projects and experts in a powerful manner.",
+      "features": "Authentication, instant and direct messaging, instant search engine, map integration, customlive video calls with recordings, AI call transcription, server components and responsive design.",
+      "challenges": "Blue Komune needed a fully featured and AI-powered web application with an engaging user experience to connect experts and projects related to ocean conservation as efficiently as possible.",
+      "solutions": "We chose the most innovative and popular tech available to build a cutting-edge product. The latest webRTC technology for the video calls and AI for the call transcription and analysis allowed us to deliver a product that met the highest standards of quality and user experience."
+    },
+    "bridgeforbillions": {
+      "title": "Redesign of a complex web application for full responsiveness",
+      "company": "Bridge For Billions",
+      "features": "Mobile-friendly version of the website, more than fifty pages adapted, common structure for every new page",
+      "description": "Give access to the platform to people in remote areas of the world without access to a computer, by developing a mobile-friendly version of the website.",
+      "challenges": "The React application was not responsive at all and used complex graphs and visual elements that required a full redesign.",
+      "solutions": "We adapted more than fifty pages to make the web application fully responsive and created a common structure for every new page to ensure consistency and ease of use in the future."
+    },
+    "edumiam": {
+      "title": "Backend and database full restructuration",
+      "company": "Edumiam",
+      "features": "PostgreSQL database hosted on Supabase backend, database triggers and automations, Forest Admin panel, Python script for data migration and business algorithms.",
+      "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
+      "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
+      "solutions": "Meticulous data migration from Airtable and Excel to a PostgreSQL database hosted on Supabase in several phases, with the addition of triggers and automations to ensure data consistency and integrity. Creation of a Python script to automate the business algorithms to optimize the internal processes of the company."
+    }
+  },
   "lang": {
     "en": {
       "code": "EN",
