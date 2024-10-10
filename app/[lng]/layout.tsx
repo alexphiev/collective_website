@@ -22,9 +22,9 @@ export async function generateMetadata({
   params: { lng: string }
 }): Promise<Metadata> {
   const title = {
-    en: 'Dev For Good - Freelance Developers for positive impact',
-    fr: 'Dev For Good - Développeurs Freelance à impact positif',
-    es: 'Dev For Good - Desarrolladores Freelance para impacto positivo',
+    en: 'Dev For Good - Developer collective for positive impact',
+    fr: 'Dev For Good - Collectif de développeurs à impact positif',
+    es: 'Dev For Good - Colectivo de desarrolladores para impacto positivo',
   }[lng]
 
   const description = {
