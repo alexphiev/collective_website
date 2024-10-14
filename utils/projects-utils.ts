@@ -16,6 +16,7 @@ import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
+import { SiJupyter as JupyterIcon } from 'react-icons/si'
 
 import BlueKomuneImage1 from '@/public/projects/bluekomune-1.png'
 import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
@@ -139,6 +140,10 @@ export const getProjects = (t: TFunction): Project[] => {
         {
           name: 'PyTorch',
           icon: PyTorchIcon,
+        },
+        {
+          name: 'Jupyter Notebook',
+          icon: JupyterIcon,
         },
       ],
       featured: true,
