@@ -80,6 +80,14 @@
       "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
       "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
       "solutions": "Meticulous data migration from Airtable and Excel to a PostgreSQL database hosted on Supabase in several phases, with the addition of triggers and automations to ensure data consistency and integrity. Creation of a Python script to automate the business algorithms to optimize the internal processes of the company."
+    },
+    "crn": {
+      "title": "Cervical cancer risk prediction",
+      "company": "Cancer Registry of Norway",
+      "description": "Predicting the development of cervical cancer based on individual screening histories. This allows for faster intervention for individuals with higher risk, while reducing the number of examinations for individuals with lower risk.",
+      "features": "We aimed to explore the performance of deep learning models on screening history data, which consists of a sequence of health examinations over long time intervals.",
+      "challenges": "Screening intervals are 3 years on average, resulting in sparse data and limited information available per individual over long time periods. This makes it hard to predict what will happen in the future.",
+      "solutions": "Trained multiple variants of recurrent neural networks (RNN, LSTM and GRU) on screening history data. Subsequently, we investigated the model performance across populations by comparing the prediction results between Norwegian and Estonian screening data."
     }
   },
   "lang": {

@@ -15,12 +15,14 @@ import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
+import { SiPytorch as PyTorchIcon } from 'react-icons/si'
 
 import BlueKomuneImage1 from '@/public/projects/bluekomune-1.png'
 import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
 import BridgeImage1 from '@/public/projects/bridgeforbillions-1.png'
 import EdumiamImage1 from '@/public/projects/edumiam-1.png'
 import EdumiamImage2 from '@/public/projects/edumiam-2.png'
+import CRNImage from '@/public/projects/crn-1.jpg'
 
 export interface Tech {
   name: string
@@ -124,6 +126,24 @@ export const getProjects = (t: TFunction): Project[] => {
       featured: true,
       isNew: false,
       teamSize: 2,
+    },
+    {
+      code: 'crn',
+      images: [CRNImage],
+      clientName: 'Cancer Registry of Norway',
+      techList: [
+        {
+          name: 'Python',
+          icon: PythonIcon,
+        },
+        {
+          name: 'PyTorch',
+          icon: PyTorchIcon,
+        },
+      ],
+      featured: true,
+      isNew: false,
+      teamSize: 1,
     },
   ]
 }
