@@ -71,8 +71,7 @@ export default function ProjectDetails({
           <div className="flex flex-shrink-0 items-center gap-2">
             <Users className="h-5 w-5 text-muted-foreground" />
             <span className="text-sm text-muted-foreground">
-              {teamSize > 1 && t('projects.teamSize', { count: teamSize })}
-              {teamSize == 1 && t('projects.teamSizeIndividual')}
+              {t('projects.teamSize', { count: teamSize })}
             </span>
           </div>
         </div>

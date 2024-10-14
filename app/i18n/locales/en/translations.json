@@ -56,8 +56,8 @@
     "technologies": "Technologies Used",
     "testimonial": "Client Testimonial",
     "duration": "{{count}} months",
-    "teamSize": "{{count}} members involved",
-    "teamSizeIndividual": "1 member involved",
+    "teamSize_one": "{{count}} member involved",
+    "teamSize_other": "{{count}} members involved",
     "bluekomune": {
       "title": "Full Stack Web application for ocean experts collaboration",
       "company": "Blue Komune",
