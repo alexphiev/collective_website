@@ -38,7 +38,8 @@
     "technologies": "Tecnologías Utilizadas",
     "testimonial": "Testimonio del Cliente",
     "duration": "{{count}} meses",
-    "teamSize": "{{count}} miembros involucrados",
+    "teamSize_one": "{{count}} miembro involucrado",
+    "teamSize_other": "{{count}} miembros involucrados",
     "bluekomune": {
       "title": "Aplicación web Full Stack para la colaboración de expertos en océanos",
       "company": "Blue Komune",
@@ -54,6 +55,22 @@
       "description": "Dar acceso a la plataforma a personas en áreas remotas del mundo sin acceso a una computadora, desarrollando una versión móvil del sitio web.",
       "challenges": "La aplicación React no era en absoluto adaptable y utilizaba gráficos complejos y elementos visuales que requerían un rediseño completo.",
       "solutions": "Adaptamos más de cincuenta páginas para hacer que la aplicación web fuera completamente adaptable y creamos una estructura común para cada nueva página para asegurar la consistencia y facilidad de uso en el futuro."
+    },
+    "edumiam": {
+      "title": "Reestructuración completa de backend y base de datos",
+      "company": "Edumiam",
+      "features": "Base de datos PostgreSQL alojada en el backend de Supabase, trigger y automatizaciones de base de datos, panel de administración Forest Admin, script de Python para migración de datos y algoritmos de negocio.",
+      "description": "Migración de la aplicación existente a una base de datos y backend escalables y estructurados, con la adición de nuevas funciones y mejoras en los procesos internos de la empresa.",
+      "challenges": "Datos no estructurados y pesados almacenados en Airtable y Excel, con procesos internos ineficientes realizados manualmente.",
+      "solutions": "Migración meticulosa de datos desde Airtable y Excel a una base de datos PostgreSQL alojada en Supabase en varias fases, con la adición de trigger y automatizaciones para garantizar la consistencia e integridad de los datos. Creación de un script en Python para automatizar los algoritmos de negocio y optimizar los procesos internos de la empresa."
+    },
+    "reusam": {
+      "title": "Digitalización de un servicio de envases reutilizables",
+      "company": "Reusa'm",
+      "features": "MVP con la plataforma sin código Adalo, aplicaciones móviles nativas para Android e iOS, arquitectura de backend desarrollada con Python, framework Django y MySQL, mejoras en el sitio web.",
+      "description": "Reusa'm es un innovador servicio de depósito de envases reutilizables que opera en Valencia. Su objetivo es reducir el impacto ambiental alentando a las empresas y clientes a utilizar envases reutilizables. Ayudamos a Reusa'm a pasar de un sistema de depósito manual a una plataforma totalmente digital, proporcionando a los usuarios una experiencia optimizada para alquilar, rastrear y devolver envases de manera eficiente.",
+      "challenges": "Reusa'm operaba originalmente con un sistema de depósito manual, lo que requería un esfuerzo considerable por parte de los usuarios y empleados. El desafío era diseñar una solución digital fluida que pudiera escalar con la red creciente de empresas y mejorar la eficiencia del ciclo de depósito y devolución.",
+      "solutions": "Lideramos la transformación digital desarrollando una aplicación web sin código para validar el servicio y evaluar las necesidades de los usuarios. A partir de ahí, construimos dos aplicaciones móviles nativas (iOS y Android) utilizando un backend impulsado por el framework Django y MySQL, lo que permitió una fácil gestión de envases mediante tecnología de códigos QR. La integración de tarjetas de crédito garantizó depósitos y devoluciones automatizados, haciendo que el sistema fuera más escalable y fácil de usar."
     }
   },
   "contact": {
