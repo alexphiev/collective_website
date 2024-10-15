@@ -53,6 +53,22 @@
       "description": "Donner accès à la plateforme aux personnes dans les régions reculées du monde sans accès à un ordinateur, en développant une version mobile du site web.",
       "challenges": "L'application React n'était pas du tout responsive et utilisait des graphiques complexes et des éléments visuels qui nécessitaient une refonte complète.",
       "solutions": "Nous avons adapté plus de cinquante pages pour rendre l'application web entièrement responsive et créé une structure commune pour chaque nouvelle page afin d'assurer la cohérence et la facilité d'utilisation à l'avenir."
+    },
+    "edumiam": {
+      "title": "Restructuration complète du backend et de la base de données",
+      "company": "Edumiam",
+      "features": "Base de données PostgreSQL hébergée sur le backend Supabase, déclencheurs et automatisations de la base de données, panneau Forest Admin, script Python pour la migration des données et algorithmes métier.",
+      "description": "Migration de l'application existante vers une base de données et un backend évolutifs et structurés, avec l'ajout de nouvelles fonctionnalités et des améliorations dans les processus internes de l'entreprise.",
+      "challenges": "Données non structurées et volumineuses stockées dans Airtable et Excel, avec des processus internes inefficaces effectués manuellement.",
+      "solutions": "Migration minutieuse des données depuis Airtable et Excel vers une base de données PostgreSQL hébergée sur Supabase en plusieurs phases, avec l'ajout de déclencheurs et d'automatisations pour garantir la cohérence et l'intégrité des données. Création d'un script Python pour automatiser les algorithmes métier et optimiser les processus internes de l'entreprise."
+    },
+    "viva-backend": {
+      "title": "Développement Backend pour Solution Smart Home en Marque Blanche",
+      "company": "Viva Labs",
+      "features": "Les fonctionnalités incluaient une automatisation sécurisée pour la protection de la maison via l'intégration avec un Centre de Réception des Alarmes, des capacités d'enregistrement et de diffusion en temps réel avec des systèmes de caméras, une intégration complète avec des assistants vocaux tels qu'Alexa, Google Home et IFTTT, un moteur d'automatisation dans l'application pour la gestion de l'éclairage intelligent et du contrôle de la température, et une gestion efficace des appareils IoT via une passerelle/routeur physique pour une automatisation domestique fluide.",
+      "description": "Développement de services backend évolutifs pour une solution smart home en marque blanche, utilisant l'infrastructure cloud AWS, des microservices et des intégrations IoT pour offrir une expérience client fluide. Le backend supportait l'automatisation de la maison intelligente, les systèmes de sécurité, les algorithmes d'économie d'énergie et les intégrations avec des assistants vocaux comme Alexa et Google Home.",
+      "challenges": "Les défis incluaient la transition d'une architecture monolithique à un système basé sur des microservices, la gestion d'une forte demande pour de nouvelles fonctionnalités tout en assurant la stabilité et l'évolutivité du système, la gestion d'intégrations complexes de cloud à cloud et de dispositifs IoT, et le maintien de l'efficacité des coûts tout en assurant des performances élevées sous une forte demande des utilisateurs.",
+      "solutions": "Une architecture backend robuste utilisant principalement Java et les services AWS, conçue pour supporter l'écosystème smart home de VivaLabs. La solution comprenait des microservices pour l'automatisation, la gestion des IoT, les portails de service client, et plus encore. L'utilisation des services cloud AWS a permis une mise à l'échelle et une surveillance efficaces, assurant la fiabilité et les performances de tous les systèmes."
     }
   },
   "contact": {
