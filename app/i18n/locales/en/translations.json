@@ -60,7 +60,7 @@
     "teamSize_other": "{{count}} members involved",
     "bluekomune": {
       "title": "Full Stack Web application for ocean experts collaboration",
-      "company": "Blue Komune",
+      "company": "Blue Komune - Platform for ocean experts collaboration",
       "description": "Development of a web application from scratch for ocean experts collaboration, with a focus on ease of use and engagement. The AI search engine enables users to find projects and experts in a powerful manner.",
       "features": "Authentication, instant and direct messaging, instant search engine, map integration, customlive video calls with recordings, AI call transcription, server components and responsive design.",
       "challenges": "Blue Komune needed a fully featured and AI-powered web application with an engaging user experience to connect experts and projects related to ocean conservation as efficiently as possible.",
@@ -68,7 +68,7 @@
     },
     "bridgeforbillions": {
       "title": "Redesign of a complex web application for full responsiveness",
-      "company": "Bridge For Billions",
+      "company": "Bridge For Billions - Online entrepreneurship programs",
       "features": "Mobile-friendly version of the website, more than fifty pages adapted, common structure for every new page",
       "description": "Give access to the platform to people in remote areas of the world without access to a computer, by developing a mobile-friendly version of the website.",
       "challenges": "The React application was not responsive at all and used complex graphs and visual elements that required a full redesign.",
@@ -76,7 +76,7 @@
     },
     "edumiam": {
       "title": "Backend and database full restructuration",
-      "company": "Edumiam",
+      "company": "Edumiam - Training courses for early childhood professionals",
       "features": "PostgreSQL database hosted on Supabase backend, database triggers and automations, Forest Admin panel, Python script for data migration and business algorithms.",
       "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
       "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
@@ -84,7 +84,7 @@
     },
     "reusam": {
       "title": "Digitalization of a Reusable Packaging Service",
-      "company": "Reusa'm",
+      "company": "Reusa'm - Reusable packaging service",
       "features": "MVP with Adalo no-code platform, native mobile applications for Android and iOS, backend architecture developed using Python, Django framework and MySQL, Website improvements.",
       "description": "Reusa'm is an innovative reusable packaging deposit service operating in Valencia. It aims to reduce environmental impact by encouraging businesses and customers to use reusable containers. We helped Reusa'm transition from a manual deposit system to a fully digital platform, providing users with a streamlined experience to rent, track, and return containers efficiently.",
       "challenges": "Reusa'm originally operated with a manual deposit system, requiring significant user and employee effort. The challenge was to design a seamless, digital solution that could scale with the growing network of businesses and improve the efficiency of the deposit-return cycle.",

@@ -66,8 +66,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
                         src={images.length > 0 ? images[0] : placeholderImage}
                         alt={`Project image for ${t(`projects.${code}.title`)}`}
                         width={500}
-                        height={400}
-                        className="h-[200px] w-full rounded-md object-cover transition-all duration-300 hover:scale-105 lg:h-[400px]"
+                        className="h-auto w-full rounded-md object-cover transition-all duration-300 hover:scale-105 lg:h-[400px]"
                       />
                       <div className="flex flex-col gap-0 pt-4">
                         <h3 className="text-xl font-semibold">
@@ -99,7 +98,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
             }
           }}
         >
-          <DialogContent className="gradient-background-top h-[95vh] w-[95vw] max-w-[95vw] overflow-hidden rounded-lg p-0 sm:max-w-[90vw] md:max-w-[80vw] lg:h-[90vh] lg:max-h-[700px] lg:w-[70vw] lg:max-w-[600px]">
+          <DialogContent className="gradient-background-top h-[95vh] w-[95vw] max-w-[95vw] overflow-hidden rounded-lg p-0 sm:max-w-[90vw] md:max-w-[80vw] lg:h-[90vh] lg:max-h-[850px] lg:w-[70vw] lg:max-w-[600px]">
             <div className="h-full overflow-y-auto">
               <ProjectDetails project={projects[selectedProject]} lng={lng} />
             </div>

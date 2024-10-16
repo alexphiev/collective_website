@@ -83,8 +83,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                             src={flagIcon}
                             alt={`${firstName} ${lastName}'s flag`}
                             width={32}
-                            height={24}
-                            className="object-cover"
+                            className="h-auto"
                           />
                         </div>
                       </CardTitle>
