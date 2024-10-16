@@ -70,6 +70,14 @@
       "description": "Reusa'm est un service innovant de dépôt d'emballages réutilisables opérant à Valence. Il vise à réduire l'impact environnemental en incitant les entreprises et les clients à utiliser des contenants réutilisables. Nous avons aidé Reusa'm à passer d'un système de dépôt manuel à une plateforme entièrement numérique, offrant aux utilisateurs une expérience simplifiée pour louer, suivre et retourner des contenants de manière efficace.",
       "challenges": "Reusa'm fonctionnait à l'origine avec un système de dépôt manuel, nécessitant un effort important de la part des utilisateurs et des employés. Le défi consistait à concevoir une solution numérique fluide capable de s'adapter à la croissance du réseau d'entreprises et à améliorer l'efficacité du cycle de dépôt et de retour.",
       "solutions": "Nous avons mené la transformation numérique en développant une application web no-code pour valider le service et évaluer les besoins des utilisateurs. Ensuite, nous avons construit deux applications mobiles natives (iOS et Android) en utilisant un backend alimenté par le framework Django et MySQL, permettant une gestion facile des contenants via la technologie des codes QR. L'intégration de cartes de crédit a permis des dépôts et des retours automatisés, rendant le système plus évolutif et convivial."
+    },
+    "crn": {
+      "title": "Prédiction du risque de cancer du col de l'utérus",
+      "company": "Registre du Cancer de Norvège",
+      "description": "Prédiction du développement du cancer du col de l'utérus basée sur les historiques de dépistage individuels. Cela permet une intervention plus rapide pour les personnes à haut risque, tout en réduisant le nombre d'examens pour les personnes à faible risque.",
+      "features": "Nous avons cherché à explorer la performance des modèles d'apprentissage profond sur les données d'historique de dépistage, qui consistent en une séquence d'examens de santé sur de longs intervalles de temps.",
+      "challenges": "Les intervalles de dépistage sont en moyenne de 3 ans, ce qui entraîne des données éparses et des informations limitées disponibles par individu sur de longues périodes. Cela rend difficile la prédiction de ce qui se passera à l'avenir.",
+      "solutions": "Nous avons entraîné plusieurs variantes de réseaux de neurones récurrents (RNN, LSTM et GRU) sur les données d'historique de dépistage. Par la suite, nous avons étudié la performance du modèle à travers les populations en comparant les résultats de prédiction entre les données de dépistage norvégiennes et estoniennes."
     }
   },
   "contact": {

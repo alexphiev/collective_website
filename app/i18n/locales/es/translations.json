@@ -71,6 +71,14 @@
       "description": "Reusa'm es un innovador servicio de depósito de envases reutilizables que opera en Valencia. Su objetivo es reducir el impacto ambiental alentando a las empresas y clientes a utilizar envases reutilizables. Ayudamos a Reusa'm a pasar de un sistema de depósito manual a una plataforma totalmente digital, proporcionando a los usuarios una experiencia optimizada para alquilar, rastrear y devolver envases de manera eficiente.",
       "challenges": "Reusa'm operaba originalmente con un sistema de depósito manual, lo que requería un esfuerzo considerable por parte de los usuarios y empleados. El desafío era diseñar una solución digital fluida que pudiera escalar con la red creciente de empresas y mejorar la eficiencia del ciclo de depósito y devolución.",
       "solutions": "Lideramos la transformación digital desarrollando una aplicación web sin código para validar el servicio y evaluar las necesidades de los usuarios. A partir de ahí, construimos dos aplicaciones móviles nativas (iOS y Android) utilizando un backend impulsado por el framework Django y MySQL, lo que permitió una fácil gestión de envases mediante tecnología de códigos QR. La integración de tarjetas de crédito garantizó depósitos y devoluciones automatizados, haciendo que el sistema fuera más escalable y fácil de usar."
+    },
+    "crn": {
+      "title": "Predicción del riesgo de cáncer cervical",
+      "company": "Registro de Cáncer de Noruega",
+      "description": "Predicción del desarrollo de cáncer cervical basado en historiales de detección individuales. Esto permite una intervención más rápida para individuos con mayor riesgo, mientras se reduce el número de exámenes para individuos con menor riesgo.",
+      "features": "Nuestro objetivo fue explorar el rendimiento de modelos de aprendizaje profundo en datos de historial de detección, que consisten en una secuencia de exámenes de salud a lo largo de largos intervalos de tiempo.",
+      "challenges": "Los intervalos de detección son de 3 años en promedio, lo que resulta en datos dispersos e información limitada disponible por individuo durante largos períodos de tiempo. Esto hace que sea difícil predecir lo que sucederá en el futuro.",
+      "solutions": "Entrenamos múltiples variantes de redes neuronales recurrentes (RNN, LSTM y GRU) en datos de historial de detección. Posteriormente, investigamos el rendimiento del modelo entre poblaciones comparando los resultados de predicción entre datos de detección noruegos y estonios."
     }
   },
   "contact": {

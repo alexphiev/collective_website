@@ -15,6 +15,8 @@ import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
+import { SiPytorch as PyTorchIcon } from 'react-icons/si'
+import { SiJupyter as JupyterIcon } from 'react-icons/si'
 import { ImAndroid } from 'react-icons/im'
 import { IoLogoApple } from 'react-icons/io5'
 import { BiLogoDjango } from 'react-icons/bi'
@@ -27,6 +29,7 @@ import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
 import BridgeImage1 from '@/public/projects/bridgeforbillions-1.png'
 import EdumiamImage1 from '@/public/projects/edumiam-1.png'
 import EdumiamImage2 from '@/public/projects/edumiam-2.png'
+import CRNImage from '@/public/projects/crn-1.jpg'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
 import Reusam3 from '@/public/projects/reusam-3.png'
@@ -166,6 +169,28 @@ export const getProjects = (t: TFunction): Project[] => {
         {
           name: 'Wordpress',
           icon: FaWordpress,
+        },
+      ],
+      featured: true,
+      isNew: false,
+      teamSize: 1,
+    },
+    {
+      code: 'crn',
+      images: [CRNImage],
+      clientName: 'Cancer Registry of Norway',
+      techList: [
+        {
+          name: 'Python',
+          icon: PythonIcon,
+        },
+        {
+          name: 'PyTorch',
+          icon: PyTorchIcon,
+        },
+        {
+          name: 'Jupyter Notebook',
+          icon: JupyterIcon,
         },
       ],
       featured: true,
