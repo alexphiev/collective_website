@@ -56,7 +56,8 @@
     "technologies": "Technologies Used",
     "testimonial": "Client Testimonial",
     "duration": "{{count}} months",
-    "teamSize": "{{count}} members involved",
+    "teamSize_one": "{{count}} member involved",
+    "teamSize_other": "{{count}} members involved",
     "bluekomune": {
       "title": "Full Stack Web application for ocean experts collaboration",
       "company": "Blue Komune",
@@ -80,6 +81,22 @@
       "description": "Migration of the existing application to a scalable and structured database and backend, with the addition of new features and improvements in the internal processes of the company.",
       "challenges": "Unstructured, heavy data stored in Airtable and Excel, with inefficient internal processes done manually.",
       "solutions": "Meticulous data migration from Airtable and Excel to a PostgreSQL database hosted on Supabase in several phases, with the addition of triggers and automations to ensure data consistency and integrity. Creation of a Python script to automate the business algorithms to optimize the internal processes of the company."
+    },
+    "reusam": {
+      "title": "Digitalization of a Reusable Packaging Service",
+      "company": "Reusa'm",
+      "features": "MVP with Adalo no-code platform, native mobile applications for Android and iOS, backend architecture developed using Python, Django framework and MySQL, Website improvements.",
+      "description": "Reusa'm is an innovative reusable packaging deposit service operating in Valencia. It aims to reduce environmental impact by encouraging businesses and customers to use reusable containers. We helped Reusa'm transition from a manual deposit system to a fully digital platform, providing users with a streamlined experience to rent, track, and return containers efficiently.",
+      "challenges": "Reusa'm originally operated with a manual deposit system, requiring significant user and employee effort. The challenge was to design a seamless, digital solution that could scale with the growing network of businesses and improve the efficiency of the deposit-return cycle.",
+      "solutions": "We led the digital transformation by developing a no-code web app to validate the service and gauge user needs. From there, we built two native mobile applications (iOS and Android) using a backend powered by Django framework and MySQL, allowing for easy container management via QR code technology. Credit card integration ensured automated deposits and returns, making the system more scalable and user-friendly."
+    },
+    "crn": {
+      "title": "Cervical cancer risk prediction",
+      "company": "Cancer Registry of Norway",
+      "description": "Predicting the development of cervical cancer based on individual screening histories. This allows for faster intervention for individuals with higher risk, while reducing the number of examinations for individuals with lower risk.",
+      "features": "We aimed to explore the performance of deep learning models on screening history data, which consists of a sequence of health examinations over long time intervals.",
+      "challenges": "Screening intervals are 3 years on average, resulting in sparse data and limited information available per individual over long time periods. This makes it hard to predict what will happen in the future.",
+      "solutions": "Trained multiple variants of recurrent neural networks (RNN, LSTM and GRU) on screening history data. Subsequently, we investigated the model performance across populations by comparing the prediction results between Norwegian and Estonian screening data."
     }
   },
   "lang": {
@@ -165,7 +182,8 @@
     "subtitle": "What our clients say",
     "henrik": "I worked with the Dev for Good Collective for years. They consistently delivered great work with an eye for quality and design. They are proactive, see opportunities, and you can trust them to do what's needed to get the job done.",
     "jaime": "The collective was hired to make our React-based web application fully responsive using Ant Design. Their attention to detail, clear communication, and punctuality were remarkable. Our users continue to benefit from the improvements they successfully implemented.",
-    "kyrre": "I've had the pleasure of working with this team over several years, and they are competent, hard-working, honest and delightful to work with. Your project will be safe in the hands of a team that really cares about doing great work. My warmest recommendations."
+    "kyrre": "I've had the pleasure of working with this team over several years, and they are competent, hard-working, honest and delightful to work with. Your project will be safe in the hands of a team that really cares about doing great work. My warmest recommendations.",
+    "vincent": "Alexandre and Stefano brought exceptional technical expertise, designing a solid architecture while consistently delivering high-quality code at speed. Their creativity and adaptability were crucial to meeting the dynamic needs of our startup."
   },
   "about": {
     "section": {
