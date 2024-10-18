@@ -112,6 +112,10 @@ export default function RootLayout({
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
       <head>
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
