@@ -103,7 +103,9 @@ const ServiceCard = ({
           isClicked ? 'h-full' : 'h-0 opacity-0'
         }`}
       >
-        <CardTitle className="mb-4">{title}</CardTitle>
+        <div className="mb-4 text-2xl font-semibold leading-none tracking-tight">
+          {title}
+        </div>
         <p>{description}</p>
       </div>
     </Card>
