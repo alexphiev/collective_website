@@ -27,6 +27,8 @@ import BridgeImage1 from '@/public/projects/bridgeforbillions-1.png'
 import EdumiamImage1 from '@/public/projects/edumiam-1.png'
 import EdumiamImage2 from '@/public/projects/edumiam-2.png'
 import VivaLabsImage1 from '@/public/projects/vivalabs-1.png'
+import VivaLabsImage2 from '@/public/projects/vivalabs-2.png'
+import VivaLabsImage3 from '@/public/projects/vivalabs-3.png'
 
 export interface Tech {
   name: string
@@ -133,7 +135,7 @@ export const getProjects = (t: TFunction): Project[] => {
     },
     {
       code: 'viva-backend',
-      images: [VivaLabsImage1],
+      images: [VivaLabsImage1, VivaLabsImage2, VivaLabsImage3],
       clientName: 'Viva Labs',
       techList: [
         {
