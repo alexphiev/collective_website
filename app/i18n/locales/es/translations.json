@@ -79,7 +79,16 @@
       "features": "Nuestro objetivo fue explorar el rendimiento de modelos de aprendizaje profundo en datos de historial de detección, que consisten en una secuencia de exámenes de salud a lo largo de largos intervalos de tiempo.",
       "challenges": "Los intervalos de detección son de 3 años en promedio, lo que resulta en datos dispersos e información limitada disponible por individuo durante largos períodos de tiempo. Esto hace que sea difícil predecir lo que sucederá en el futuro.",
       "solutions": "Entrenamos múltiples variantes de redes neuronales recurrentes (RNN, LSTM y GRU) en datos de historial de detección. Posteriormente, investigamos el rendimiento del modelo entre poblaciones comparando los resultados de predicción entre datos de detección noruegos y estonios."
+    },
+    "viva-backend": {
+      "title": "Desarrollo Backend para Solución Smart Home de Marca Blanca",
+      "company": "Viva Labs",
+      "features": "Las características incluyeron automatización segura para la protección del hogar a través de la integración con el Centro de Recepción de Alarmas, capacidades de grabación y transmisión en tiempo real con sistemas de cámaras, integración total con asistentes de voz como Alexa, Google Home e IFTTT, un motor de automatización dentro de la aplicación para gestionar la iluminación inteligente y el control de temperatura, y una gestión eficiente de dispositivos IoT a través de una puerta de enlace/routers físicos para una automatización del hogar fluida.",
+      "description": "Desarrollo de servicios backend escalables para una solución smart home de marca blanca, utilizando infraestructura en la nube de AWS, microservicios e integraciones IoT para proporcionar una experiencia sin interrupciones al cliente. El backend soportaba la automatización del hogar inteligente, sistemas de seguridad, algoritmos de ahorro de energía e integraciones con asistentes de voz como Alexa y Google Home.",
+      "challenges": "Los desafíos incluyeron la transición de una arquitectura monolítica a un sistema basado en microservicios, la gestión de una alta demanda de nuevas características mientras se garantizaba la estabilidad y escalabilidad del sistema, el manejo de integraciones complejas de nube a nube y dispositivos IoT, y el mantenimiento de la eficiencia en costos junto con un alto rendimiento bajo demanda intensa de usuarios.",
+      "solutions": "Una arquitectura backend robusta utilizando principalmente Java y servicios de AWS, diseñada para apoyar el ecosistema smart home de VivaLabs. La solución incluyó microservicios para automatización, gestión de IoT, portales de servicio al cliente, y más. El uso de servicios en la nube de AWS permitió un escalado y monitoreo eficientes, asegurando confiabilidad y rendimiento en todos los sistemas."
     }
+
   },
   "contact": {
     "title": "Contacto",
