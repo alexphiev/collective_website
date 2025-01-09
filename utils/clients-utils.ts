@@ -8,6 +8,14 @@ export const clients = [
     url: 'https://www.bridgeforbillions.org/',
   },
   {
+    name: 'Cancer Registry of Norway',
+    url: 'https://www.kreftregisteret.no/',
+  },
+  {
+    name: 'Oly',
+    url: 'https://oly-platform.com',
+  },
+  {
     name: 'Blue Komune',
     url: 'https://www.bluekomune.org/',
   },
@@ -20,16 +28,16 @@ export const clients = [
     url: 'https://www.enelx.com/',
   },
   {
+    name: 'Bloom',
+    url: 'https://bloomassociation.org',
+  },
+  {
     name: 'Learning Planet Institute',
     url: 'https://www.learningplanetinstitute.org/',
   },
   {
     name: 'Edumiam',
     url: 'https://www.edumiam.com/',
-  },
-  {
-    name: 'Cancer Registry of Norway',
-    url: 'https://www.kreftregisteret.no/',
   },
   // {
   //   name: "Privitar",

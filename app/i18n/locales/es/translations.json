@@ -88,7 +88,6 @@
       "challenges": "Los desafíos incluyeron la transición de una arquitectura monolítica a un sistema basado en microservicios, la gestión de una alta demanda de nuevas características mientras se garantizaba la estabilidad y escalabilidad del sistema, el manejo de integraciones complejas de nube a nube y dispositivos IoT, y el mantenimiento de la eficiencia en costos junto con un alto rendimiento bajo demanda intensa de usuarios.",
       "solutions": "Una arquitectura backend robusta utilizando principalmente Java y servicios de AWS, diseñada para apoyar el ecosistema smart home de VivaLabs. La solución incluyó microservicios para automatización, gestión de IoT, portales de servicio al cliente, y más. El uso de servicios en la nube de AWS permitió un escalado y monitoreo eficientes, asegurando confiabilidad y rendimiento en todos los sistemas."
     }
-
   },
   "contact": {
     "title": "Contacto",
@@ -193,7 +192,8 @@
     "henrik": "Trabajé con el colectivo Dev for Good durante años. Constantemente entregaron un gran trabajo con un ojo para la calidad y el diseño. Son proactivos, ven oportunidades y puedes confiar en que harán lo necesario para completar el trabajo.",
     "jaime": "El colectivo fue contratado para hacer que nuestra aplicación web basada en React fuera completamente receptiva utilizando Ant Design. Su atención al detalle, comunicación clara y puntualidad fueron notables. Nuestros usuarios continúan beneficiándose de las mejoras que implementaron con éxito.",
     "kyrre": "He tenido el placer de trabajar con este equipo durante varios años. Son competentes, trabajadores, honestos y es fue encantador trabajar con ellos. Tu proyecto estará en manos de un equipo que realmente se preocupa por hacer un gran trabajo. Mis más cálidas recomendaciones.",
-    "vincent": "Alexandre y Stefano aportaron una experiencia técnica excepcional, diseñando una arquitectura sólida mientras entregaban constantemente código de alta calidad a gran velocidad. Su creatividad y adaptabilidad fueron cruciales para satisfacer las necesidades dinámicas de nuestra startup."
+    "vincent": "Alexandre y Stefano aportaron una experiencia técnica excepcional, diseñando una arquitectura sólida mientras entregaban constantemente código de alta calidad a gran velocidad. Su creatividad y adaptabilidad fueron cruciales para satisfacer las necesidades dinámicas de nuestra startup.",
+    "caroline": "Trabajé con el colectivo Dev For Good durante más de un año en la migración de nuestra infraestructura sin código a una solución robusta y escalable utilizando principalmente Supabase y Forest Admin. Diseñaron y desarrollaron meticulosamente la nueva solución desde cero, logrando migrar con éxito una gran cantidad de datos existentes."
   },
   "about": {
     "section": {
