@@ -78,6 +78,14 @@
       "features": "Nous avons cherché à explorer la performance des modèles d'apprentissage profond sur les données d'historique de dépistage, qui consistent en une séquence d'examens de santé sur de longs intervalles de temps.",
       "challenges": "Les intervalles de dépistage sont en moyenne de 3 ans, ce qui entraîne des données éparses et des informations limitées disponibles par individu sur de longues périodes. Cela rend difficile la prédiction de ce qui se passera à l'avenir.",
       "solutions": "Nous avons entraîné plusieurs variantes de réseaux de neurones récurrents (RNN, LSTM et GRU) sur les données d'historique de dépistage. Par la suite, nous avons étudié la performance du modèle à travers les populations en comparant les résultats de prédiction entre les données de dépistage norvégiennes et estoniennes."
+    },
+    "viva-backend": {
+      "title": "Desarrollo Backend para Solución Smart Home de Marca Blanca",
+      "company": "Viva Labs",
+      "features": "Las características incluyeron automatización segura para la protección del hogar a través de la integración con el Centro de Recepción de Alarmas, capacidades de grabación y transmisión en tiempo real con sistemas de cámaras, integración total con asistentes de voz como Alexa, Google Home e IFTTT, un motor de automatización dentro de la aplicación para gestionar la iluminación inteligente y el control de temperatura, y una gestión eficiente de dispositivos IoT a través de una puerta de enlace/routers físicos para una automatización del hogar fluida.",
+      "description": "Desarrollo de servicios backend escalables para una solución smart home de marca blanca, utilizando infraestructura en la nube de AWS, microservicios e integraciones IoT para proporcionar una experiencia sin interrupciones al cliente. El backend soportaba la automatización del hogar inteligente, sistemas de seguridad, algoritmos de ahorro de energía e integraciones con asistentes de voz como Alexa y Google Home.",
+      "challenges": "Los desafíos incluyeron la transición de una arquitectura monolítica a un sistema basado en microservicios, la gestión de una alta demanda de nuevas características mientras se garantizaba la estabilidad y escalabilidad del sistema, el manejo de integraciones complejas de nube a nube y dispositivos IoT, y el mantenimiento de la eficiencia en costos junto con un alto rendimiento bajo demanda intensa de usuarios.",
+      "solutions": "Una arquitectura backend robusta utilizando principalmente Java y servicios de AWS, diseñada para apoyar el ecosistema smart home de VivaLabs. La solución incluyó microservicios para automatización, gestión de IoT, portales de servicio al cliente, y más. El uso de servicios en la nube de AWS permitió un escalado y monitoreo eficientes, asegurando confiabilidad y rendimiento en todos los sistemas."
     }
   },
   "contact": {
@@ -183,7 +191,8 @@
     "henrik": "J'ai travaillé avec le collectif Dev for Good pendant des années. Ils ont toujours livré un excellent travail avec un souci de qualité et de design. Ils sont proactifs, voient des opportunités et vous pouvez leur faire confiance pour que le travail soit fait.",
     "jaime": "Le collectif a été engagé pour rendre notre application Web basée sur React entièrement réactive en utilisant Ant Design. Leur souci du détail, leur communication claire et leur ponctualité étaient remarquables. Nos utilisateurs continuent de bénéficier des améliorations qu'ils ont mises en œuvre avec succès.",
     "kyrre": "J'ai eu le plaisir de travailler avec cette équipe pendant plusieurs années, et ils sont compétents, travailleurs, honnêtes et agréables. Votre projet sera entre les mains d'une équipe qui se soucie vraiment de faire du bon travail. Mes recommandations les plus chaleureuses.",
-    "vincent": "Alexandre et Stefano ont apporté une expertise technique exceptionnelle, concevant une architecture solide tout en livrant constamment un code de haute qualité efficacement. Leur créativité et leur adaptabilité ont été cruciales pour répondre aux besoins dynamiques de notre startup."
+    "vincent": "Alexandre et Stefano ont apporté une expertise technique exceptionnelle, concevant une architecture solide tout en livrant constamment un code de haute qualité efficacement. Leur créativité et leur adaptabilité ont été cruciales pour répondre aux besoins dynamiques de notre startup.",
+    "caroline": "J'ai travaillé avec le collectif Dev For Good pendant plus d'un an sur la migration de notre infrastructure no-code vers une solution robuste et scalable utilisant Supabase et Forest Admin notamment. Ils ont méticuleusement designé et développé la nouvelle solution de zéro, pour y migrer avec succès une grande quantité de données existantes."
   },
   "about": {
     "section": {

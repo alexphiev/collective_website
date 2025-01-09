@@ -15,6 +15,11 @@ import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
+import { FaJava as JavaIcon } from "react-icons/fa";
+import { FaAws as AwsIcon } from "react-icons/fa";
+import { SiAwslambda as AwsLambdaIcon } from "react-icons/si";
+import { SiJirasoftware as JiraSoftwareIcon } from "react-icons/si";
+import { SiDocker as DockerIcon } from "react-icons/si";
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
 import { SiJupyter as JupyterIcon } from 'react-icons/si'
 import { ImAndroid } from 'react-icons/im'
@@ -29,6 +34,9 @@ import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
 import BridgeImage1 from '@/public/projects/bridgeforbillions-1.png'
 import EdumiamImage1 from '@/public/projects/edumiam-1.png'
 import EdumiamImage2 from '@/public/projects/edumiam-2.png'
+import VivaLabsImage1 from '@/public/projects/vivalabs-1.png'
+import VivaLabsImage2 from '@/public/projects/vivalabs-2.png'
+import VivaLabsImage3 from '@/public/projects/vivalabs-3.png'
 import CRNImage from '@/public/projects/crn-1.jpg'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
@@ -136,6 +144,36 @@ export const getProjects = (t: TFunction): Project[] => {
       featured: true,
       isNew: false,
       teamSize: 2,
+    },
+    {
+      code: 'viva-backend',
+      images: [VivaLabsImage1, VivaLabsImage2, VivaLabsImage3],
+      clientName: 'Viva Labs',
+      techList: [
+        {
+          name: 'Java',
+          icon: JavaIcon,
+        },
+        {
+          name: 'AWS',
+          icon: AwsIcon,
+        },
+        {
+          name: 'AWS Lambdas',
+          icon: AwsLambdaIcon,
+        },
+        {
+          name: 'Jira Software',
+          icon: JiraSoftwareIcon,
+        },
+        {
+          name: 'Docker',
+          icon: DockerIcon,
+        }
+      ],
+      featured: true,
+      isNew: false,
+      teamSize: 3,
     },
     {
       code: 'reusam',
