@@ -9,8 +9,8 @@ import { SectionTitle } from './section-title'
 export const ImpactSection = async ({ lng }: { lng: string }) => {
   const { t } = await useTranslation(lng)
   const cardData = [
-    { value: 8, label: t('impact.years') },
-    { value: clients.length, label: t('impact.clients') },
+    { value: 10, label: t('impact.years') },
+    { value: 18, label: t('impact.clients') },
     { value: sdgs.length, label: t('impact.sdgs') },
   ]
 

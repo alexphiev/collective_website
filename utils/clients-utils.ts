@@ -63,4 +63,12 @@ export const clients = [
     name: 'Cornell Lab of Ornithology',
     url: 'https://www.birds.cornell.edu/',
   },
+  {
+    name: 'AFEV',
+    url: 'https://afev.org',
+  },
+  {
+    name: 'Association Bilan Carbone',
+    url: 'https://abc-transitionbascarbone.fr/',
+  },
 ]

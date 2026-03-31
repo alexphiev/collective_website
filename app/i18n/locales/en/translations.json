@@ -9,6 +9,10 @@
       "title": "Digital products for a better world",
       "description": "We use the best available technology to help your ideas have the impact they deserve."
     },
+    "ai": {
+      "title": "AI Agents & Automations",
+      "description": "We design and deploy intelligent AI agents and automation pipelines tailored to your workflows. From automated data processing to multi-step AI-driven tasks, we help your organization save time, reduce manual effort, and scale smarter using the latest LLM and orchestration technologies."
+    },
     "webapp": {
       "title": "Web Applications and Websites",
       "description": "Crafting beautiful, lightning-fast Web applications and websites. We focus on a user-centric design with enhanced performance and optimized SEO, from MVP to full-scale production-ready products."
@@ -24,6 +28,10 @@
     "backend": {
       "title": "Backend Services",
       "description": "Our team excels in server-side development, database management, and API integration, ensuring your application is secure, scalable, and high-performing. We apply best practices in server management, cloud services, and security to support seamless data flow. Whether optimizing existing infrastructure or building a new backend, we ensure your systems are resilient and growth-ready."
+    },
+    "audit": {
+      "title": "Technical Audit",
+      "description": "We conduct in-depth technical audits of your existing systems, architecture, and codebase. Through interviews with users, internal teams, and external stakeholders, we identify bottlenecks, assess technology choices, and deliver clear, actionable recommendations to align your tech stack with your organization's needs and long-term goals."
     }
   },
   "contact": {
@@ -105,6 +113,14 @@
       "features": "Marketplace aggregation engine, event bus and task queue architecture, Shopify integration with custom adapters, real-time inventory synchronization, large-scale migration from no-code tools (GSheets, N8N), scalable and modular backend.",
       "challenges": "Oly was running critical business operations on no-code tools including Google Sheets and N8N, which were becoming bottlenecks as the platform scaled. The aggregation of multiple second-hand fashion sources required a robust, event-driven architecture capable of handling high volumes of concurrent data flows.",
       "solutions": "We designed and built a fully scalable marketplace aggregator using Node.js and Next.js, integrated with Shopify via custom adapters. An event bus and task queue system were implemented to ensure reliable, asynchronous data synchronization across sources. The no-code infrastructure was successfully migrated to this new architecture with zero data loss."
+     },
+      "afev": {
+      "title": "Technical Audit for a Large French NGO",
+      "company": "AFEV",
+      "description": "Technical audit for a large French NGO (with hundreds of employees) using an open source CRM, several Symfony applications, no-code tools, an ETL, and multiple synchronized databases. The audit included interviews with users, internal teams, and external consultants to understand the rationale behind technology choices and determine the most appropriate solution for the organization's needs.",
+      "features": "Structured interviews with users and internal teams, external consultant coordination, technology stack mapping, database architecture analysis, no-code and ETL integration review, detailed written recommendations.",
+      "challenges": "The organization relied on a complex and heterogeneous ecosystem of interconnected tools — a SuiteCRM open source CRM, multiple Symfony applications, no-code tools, and synchronized databases — making it difficult to assess overall coherence and identify the root causes of recurring issues.",
+      "solutions": "We conducted a thorough audit combining technical analysis and stakeholder interviews across all levels of the organization. This allowed us to build a complete picture of the existing stack, understand the original intent behind each technology choice, and deliver clear, prioritized recommendations aligned with the NGO's operational constraints and long-term goals."
     },
     "crn": {
       "title": "Cervical cancer risk prediction",
@@ -132,10 +148,12 @@
   "hero": {
     "title.1": "Developing your vision for change",
     "title.2": {
-      "1": "Mobile Applications",
-      "2": "Web Applications & Websites",
-      "3": "Backend Services",
-      "4": "Data & Machine Learning"
+      "1": "AI Agents & Automations",
+      "2": "Mobile Applications",
+      "3": "Web Applications & Websites",
+      "4": "Backend Services",
+      "5": "Data & Machine Learning",
+      "6": "Technical Audit"
     },
     "subtitle": "Partner with conscious developers, dedicated to sustainable and positive impact on environment and society.",
     "badge": {

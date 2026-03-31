@@ -29,6 +29,8 @@ import { TbBrandMysql } from 'react-icons/tb'
 import { BsStripe } from 'react-icons/bs'
 import { FaWordpress } from 'react-icons/fa'
 import { SiShopify } from 'react-icons/si'
+import { SiSymfony } from 'react-icons/si'
+import { FaDatabase } from 'react-icons/fa'
 
 import BlueKomuneImage1 from '@/public/projects/bluekomune-1.png'
 import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
@@ -40,6 +42,7 @@ import VivaLabsImage2 from '@/public/projects/vivalabs-2.png'
 import VivaLabsImage3 from '@/public/projects/vivalabs-3.png'
 import CRNImage from '@/public/projects/crn-1.jpg'
 import OlyImage from '@/public/projects/oly-1.png'
+import AFEVImage from '@/public/projects/afev-1.png'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
 import Reusam3 from '@/public/projects/reusam-3.png'
@@ -240,6 +243,32 @@ export const getProjects = (t: TFunction): Project[] => {
       featured: true,
       isNew: true,
       teamSize: 2,
+    },
+    {
+      code: 'afev',
+      images: [AFEVImage],
+      clientName: 'AFEV',
+      techList: [
+        {
+          name: 'SuiteCRM',
+          icon: FaDatabase,
+        },
+        {
+          name: 'Symfony',
+          icon: SiSymfony,
+        },
+        {
+          name: 'ETL',
+          icon: FaDatabase,
+        },
+        {
+          name: 'MySQL',
+          icon: TbBrandMysql,
+        },
+      ],
+      featured: true,
+      isNew: true,
+      teamSize: 3,
     },
     {
       code: 'crn',

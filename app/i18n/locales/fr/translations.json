@@ -9,6 +9,10 @@
       "title": "Des solutions technologiques pour un monde meilleur",
       "description": "Nous utilisons les technologies les plus avancées pour aider vos idées à avoir l'impact qu'elles méritent."
     },
+    "ai": {
+      "title": "Agents IA & Automatisations",
+      "description": "Nous concevons et déployons des agents IA intelligents et des pipelines d'automatisation adaptés à vos processus métier. Du traitement automatisé des données aux tâches complexes pilotées par l'IA, nous aidons votre organisation à gagner du temps, réduire les tâches manuelles et scaler plus intelligemment grâce aux dernières technologies LLM et d'orchestration."
+    },
     "webapp": {
       "title": "Applications Web et Sites Web",
       "description": "Création d'applications Web et de sites Web élégants et performants. Nous réalisons des solutions sur mesure centrées sur l'expérience utilisateur, le design et le SEO, du MVP jusqu'au produit fini déployé en production."
@@ -24,6 +28,10 @@
     "backend": {
       "title": "Solutions Backend",
       "description": "Notre équipe excelle dans le développement backend, la gestion de bases de données et l'intégration d'APIs, garantissant une solution sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services Cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser une infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à grandir."
+    },
+    "audit": {
+      "title": "Audit Technique",
+      "description": "Nous réalisons des audits techniques approfondis de vos systèmes, architectures et bases de code existants. À travers des entretiens avec les utilisateurs, les équipes internes et les parties prenantes externes, nous identifions les points de friction, évaluons les choix technologiques et formulons des recommandations concrètes pour aligner votre stack technique avec les besoins et objectifs à long terme de votre organisation."
     }
   },
   "projects": {
@@ -79,6 +87,14 @@
       "challenges": "Oly gérait des opérations métier critiques via des outils no-code comme Google Sheets et N8N, devenus des goulots d'étranglement au fur et à mesure de la croissance de la plateforme. L'agrégation de multiples sources de mode seconde main nécessitait une architecture robuste, orientée événements, capable de gérer des volumes élevés de flux de données concurrents.",
       "solutions": "Nous avons conçu et développé un agrégateur de marketplace entièrement scalable avec Node.js et Next.js, intégré à Shopify via des adaptateurs personnalisés. Un event bus et un système de files de tâches ont été mis en place pour assurer une synchronisation asynchrone et fiable des données entre les sources. L'infrastructure no-code a été migrée avec succès vers cette nouvelle architecture sans perte de données."
     },
+    "afev": {
+      "title": "Audit technique pour une grande ONG française",
+      "company": "AFEV",
+      "description": "Audit technique pour une grande ONG française (comptant des centaines de salariés) utilisant un CRM open source, plusieurs applications Symfony, des outils no-code, un ETL ainsi que plusieurs bases de données synchronisées. Cet audit a inclus des entretiens avec les utilisateurs, les équipes internes et des consultants externes afin de comprendre les raisons des choix technologiques effectués et de déterminer la solution la plus adaptée aux besoins de l'organisation.",
+      "features": "Entretiens structurés avec les utilisateurs et les équipes internes, coordination avec des consultants externes, cartographie du système d'information, analyse de l'architecture des bases de données, revue des intégrations no-code et ETL, recommandations écrites détaillées et priorisées.",
+      "challenges": "L'organisation reposait sur un écosystème hétérogène et interconnecté d'outils — un CRM open source SuiteCRM, plusieurs applications Symfony, des outils no-code et des bases de données synchronisées — rendant difficile l'évaluation de la cohérence globale et l'identification des causes profondes des dysfonctionnements récurrents.",
+      "solutions": "Nous avons mené un audit complet combinant analyse technique et entretiens avec l'ensemble des parties prenantes. Cette approche nous a permis de construire une vision globale du système existant, de comprendre la logique derrière chaque choix technologique, et de livrer des recommandations claires et priorisées, adaptées aux contraintes opérationnelles et aux objectifs à long terme de l'organisation."
+    },
     "crn": {
       "title": "Prédiction du risque de cancer du col de l'utérus",
       "company": "Registre du Cancer de Norvège",
@@ -132,10 +148,12 @@
   "hero": {
     "title.1": "Développons votre vision du changement",
     "title.2": {
-      "1": "Applications Mobiles",
-      "2": "Applications Web et Sites Web",
-      "3": "Services Backend",
-      "4": "Données et Machine Learning"
+      "1": "Agents IA & Automatisations",
+      "2": "Applications Mobiles",
+      "3": "Applications Web et Sites Web",
+      "4": "Services Backend",
+      "5": "Données et Machine Learning",
+      "6": "Audit Technique"
     },
     "subtitle": "Partenaire avec des développeurs conscients, dédiés à un impact durable et positif sur l'environnement et la société.",
     "badge": {
