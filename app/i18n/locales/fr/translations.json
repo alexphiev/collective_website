@@ -71,6 +71,14 @@
       "challenges": "Reusa'm fonctionnait à l'origine avec un système de dépôt manuel, nécessitant un effort important de la part des utilisateurs et des employés. Le défi consistait à concevoir une solution numérique fluide capable de s'adapter à la croissance du réseau d'entreprises et à améliorer l'efficacité du cycle de dépôt et de retour.",
       "solutions": "Nous avons mené la transformation numérique en développant une application web no-code pour valider le service et évaluer les besoins des utilisateurs. Ensuite, nous avons construit deux applications mobiles natives (iOS et Android) en utilisant un backend alimenté par le framework Django et MySQL, permettant une gestion facile des contenants via la technologie des codes QR. L'intégration de cartes de crédit a permis des dépôts et des retours automatisés, rendant le système plus évolutif et convivial."
     },
+    "afev": {
+      "title": "Audit technique pour une grande ONG française",
+      "company": "AFEV",
+      "description": "Audit technique pour une grande ONG française (comptant des centaines de salariés) utilisant un CRM open source, plusieurs applications Symfony, des outils no-code, un ETL ainsi que plusieurs bases de données synchronisées. Cet audit a inclus des entretiens avec les utilisateurs, les équipes internes et des consultants externes afin de comprendre les raisons des choix technologiques effectués et de déterminer la solution la plus adaptée aux besoins de l'organisation.",
+      "features": "Entretiens structurés avec les utilisateurs et les équipes internes, coordination avec des consultants externes, cartographie du système d'information, analyse de l'architecture des bases de données, revue des intégrations no-code et ETL, recommandations écrites détaillées et priorisées.",
+      "challenges": "L'organisation reposait sur un écosystème hétérogène et interconnecté d'outils — un CRM open source SuiteCRM, plusieurs applications Symfony, des outils no-code et des bases de données synchronisées — rendant difficile l'évaluation de la cohérence globale et l'identification des causes profondes des dysfonctionnements récurrents.",
+      "solutions": "Nous avons mené un audit complet combinant analyse technique et entretiens avec l'ensemble des parties prenantes. Cette approche nous a permis de construire une vision globale du système existant, de comprendre la logique derrière chaque choix technologique, et de livrer des recommandations claires et priorisées, adaptées aux contraintes opérationnelles et aux objectifs à long terme de l'organisation."
+    },
     "crn": {
       "title": "Prédiction du risque de cancer du col de l'utérus",
       "company": "Registre du Cancer de Norvège",
