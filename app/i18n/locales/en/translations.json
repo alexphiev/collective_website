@@ -98,6 +98,14 @@
       "challenges": "Reusa'm originally operated with a manual deposit system, requiring significant user and employee effort. The challenge was to design a seamless, digital solution that could scale with the growing network of businesses and improve the efficiency of the deposit-return cycle.",
       "solutions": "We led the digital transformation by developing a no-code web app to validate the service and gauge user needs. From there, we built two native mobile applications (iOS and Android) using a backend powered by Django framework and MySQL, allowing for easy container management via QR code technology. Credit card integration ensured automated deposits and returns, making the system more scalable and user-friendly."
     },
+    "oly": {
+      "title": "Architecture and Development of a Scalable Second-Hand Fashion Marketplace",
+      "company": "Oly",
+      "description": "Architecture and development of a complex marketplace aggregator for second-hand fashion. Using Node.js, Next.js and Shopify, this solution is fully scalable and synchronized with event bus, task queues, adapters and more. The work included a large-scale migration from no-code tools such as Google Sheets and N8N.",
+      "features": "Marketplace aggregation engine, event bus and task queue architecture, Shopify integration with custom adapters, real-time inventory synchronization, large-scale migration from no-code tools (GSheets, N8N), scalable and modular backend.",
+      "challenges": "Oly was running critical business operations on no-code tools including Google Sheets and N8N, which were becoming bottlenecks as the platform scaled. The aggregation of multiple second-hand fashion sources required a robust, event-driven architecture capable of handling high volumes of concurrent data flows.",
+      "solutions": "We designed and built a fully scalable marketplace aggregator using Node.js and Next.js, integrated with Shopify via custom adapters. An event bus and task queue system were implemented to ensure reliable, asynchronous data synchronization across sources. The no-code infrastructure was successfully migrated to this new architecture with zero data loss."
+    },
     "crn": {
       "title": "Cervical cancer risk prediction",
       "company": "Cancer Registry of Norway",

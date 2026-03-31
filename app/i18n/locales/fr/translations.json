@@ -71,6 +71,14 @@
       "challenges": "Reusa'm fonctionnait à l'origine avec un système de dépôt manuel, nécessitant un effort important de la part des utilisateurs et des employés. Le défi consistait à concevoir une solution numérique fluide capable de s'adapter à la croissance du réseau d'entreprises et à améliorer l'efficacité du cycle de dépôt et de retour.",
       "solutions": "Nous avons mené la transformation numérique en développant une application web no-code pour valider le service et évaluer les besoins des utilisateurs. Ensuite, nous avons construit deux applications mobiles natives (iOS et Android) en utilisant un backend alimenté par le framework Django et MySQL, permettant une gestion facile des contenants via la technologie des codes QR. L'intégration de cartes de crédit a permis des dépôts et des retours automatisés, rendant le système plus évolutif et convivial."
     },
+    "oly": {
+      "title": "Architecture et développement d'un agrégateur de marketplace mode seconde main",
+      "company": "Oly",
+      "description": "Architecture et développement d'un agrégateur de marketplace complexe pour la mode de seconde main. Utilisant Node.js, Next.js et Shopify, cette solution est entièrement scalable et synchronisée via un event bus, des files de tâches, des adaptateurs et plus encore. Le projet a également inclus une migration à grande échelle depuis des outils no-code tels que Google Sheets et N8N.",
+      "features": "Moteur d'agrégation de marketplace, architecture event bus et files de tâches, intégration Shopify avec adaptateurs personnalisés, synchronisation des stocks en temps réel, migration à grande échelle depuis des outils no-code (GSheets, N8N), backend scalable et modulaire.",
+      "challenges": "Oly gérait des opérations métier critiques via des outils no-code comme Google Sheets et N8N, devenus des goulots d'étranglement au fur et à mesure de la croissance de la plateforme. L'agrégation de multiples sources de mode seconde main nécessitait une architecture robuste, orientée événements, capable de gérer des volumes élevés de flux de données concurrents.",
+      "solutions": "Nous avons conçu et développé un agrégateur de marketplace entièrement scalable avec Node.js et Next.js, intégré à Shopify via des adaptateurs personnalisés. Un event bus et un système de files de tâches ont été mis en place pour assurer une synchronisation asynchrone et fiable des données entre les sources. L'infrastructure no-code a été migrée avec succès vers cette nouvelle architecture sans perte de données."
+    },
     "crn": {
       "title": "Prédiction du risque de cancer du col de l'utérus",
       "company": "Registre du Cancer de Norvège",

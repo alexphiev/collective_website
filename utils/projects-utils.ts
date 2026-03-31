@@ -28,6 +28,7 @@ import { BiLogoDjango } from 'react-icons/bi'
 import { TbBrandMysql } from 'react-icons/tb'
 import { BsStripe } from 'react-icons/bs'
 import { FaWordpress } from 'react-icons/fa'
+import { SiShopify } from 'react-icons/si'
 
 import BlueKomuneImage1 from '@/public/projects/bluekomune-1.png'
 import BlueKomuneImage2 from '@/public/projects/bluekomune-2.png'
@@ -38,6 +39,7 @@ import VivaLabsImage1 from '@/public/projects/vivalabs-1.png'
 import VivaLabsImage2 from '@/public/projects/vivalabs-2.png'
 import VivaLabsImage3 from '@/public/projects/vivalabs-3.png'
 import CRNImage from '@/public/projects/crn-1.jpg'
+import OlyImage from '@/public/projects/oly-1.png'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
 import Reusam3 from '@/public/projects/reusam-3.png'
@@ -212,6 +214,32 @@ export const getProjects = (t: TFunction): Project[] => {
       featured: true,
       isNew: false,
       teamSize: 1,
+    },
+    {
+      code: 'oly',
+      images: [OlyImage],
+      clientName: 'Oly',
+      techList: [
+        {
+          name: 'Node.js',
+          icon: NodeJsIcon,
+        },
+        {
+          name: 'Next.js',
+          icon: NextJsIcon,
+        },
+        {
+          name: 'Shopify',
+          icon: SiShopify,
+        },
+        {
+          name: 'TypeScript',
+          icon: TypeScriptIcon,
+        },
+      ],
+      featured: true,
+      isNew: true,
+      teamSize: 2,
     },
     {
       code: 'crn',
