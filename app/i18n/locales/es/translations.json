@@ -80,6 +80,14 @@
       "challenges": "Reusa'm operaba originalmente con un sistema de depósito manual, lo que requería un esfuerzo considerable por parte de los usuarios y empleados. El desafío era diseñar una solución digital fluida que pudiera escalar con la red creciente de empresas y mejorar la eficiencia del ciclo de depósito y devolución.",
       "solutions": "Lideramos la transformación digital desarrollando una aplicación web sin código para validar el servicio y evaluar las necesidades de los usuarios. A partir de ahí, construimos dos aplicaciones móviles nativas (iOS y Android) utilizando un backend impulsado por el framework Django y MySQL, lo que permitió una fácil gestión de envases mediante tecnología de códigos QR. La integración de tarjetas de crédito garantizó depósitos y devoluciones automatizados, haciendo que el sistema fuera más escalable y fácil de usar."
     },
+    "afev": {
+      "title": "Auditoría Técnica para una Gran ONG Francesa",
+      "company": "AFEV",
+      "description": "Auditoría técnica para una gran ONG francesa (con cientos de empleados) que utiliza un CRM de código abierto, varias aplicaciones Symfony, herramientas no-code, un ETL y múltiples bases de datos sincronizadas. La auditoría incluyó entrevistas con usuarios, equipos internos y consultores externos para comprender las razones detrás de las decisiones tecnológicas y determinar la solución más adecuada para las necesidades de la organización.",
+      "features": "Entrevistas estructuradas con usuarios y equipos internos, coordinación con consultores externos, mapeo del sistema de información, análisis de la arquitectura de bases de datos, revisión de integraciones no-code y ETL, recomendaciones escritas detalladas y priorizadas.",
+      "challenges": "La organización dependía de un ecosistema heterogéneo e interconectado de herramientas — un CRM de código abierto SuiteCRM, múltiples aplicaciones Symfony, herramientas no-code y bases de datos sincronizadas — lo que dificultaba evaluar la coherencia global e identificar las causas raíz de los problemas recurrentes.",
+      "solutions": "Realizamos una auditoría exhaustiva combinando análisis técnico y entrevistas con todas las partes interesadas. Esto nos permitió construir una visión completa del sistema existente, comprender la lógica detrás de cada decisión tecnológica y entregar recomendaciones claras y priorizadas, alineadas con las restricciones operativas y los objetivos a largo plazo de la organización."
+    },
     "crn": {
       "title": "Predicción del riesgo de cáncer cervical",
       "company": "Registro de Cáncer de Noruega",
