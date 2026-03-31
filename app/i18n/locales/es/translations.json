@@ -80,6 +80,14 @@
       "challenges": "Reusa'm operaba originalmente con un sistema de depósito manual, lo que requería un esfuerzo considerable por parte de los usuarios y empleados. El desafío era diseñar una solución digital fluida que pudiera escalar con la red creciente de empresas y mejorar la eficiencia del ciclo de depósito y devolución.",
       "solutions": "Lideramos la transformación digital desarrollando una aplicación web sin código para validar el servicio y evaluar las necesidades de los usuarios. A partir de ahí, construimos dos aplicaciones móviles nativas (iOS y Android) utilizando un backend impulsado por el framework Django y MySQL, lo que permitió una fácil gestión de envases mediante tecnología de códigos QR. La integración de tarjetas de crédito garantizó depósitos y devoluciones automatizados, haciendo que el sistema fuera más escalable y fácil de usar."
     },
+    "oly": {
+      "title": "Arquitectura y Desarrollo de un Agregador de Marketplace de Moda de Segunda Mano",
+      "company": "Oly",
+      "description": "Arquitectura y desarrollo de un complejo agregador de marketplace para moda de segunda mano. Usando Node.js, Next.js y Shopify, esta solución es completamente escalable y sincronizada mediante un event bus, colas de tareas, adaptadores y más. El trabajo incluyó una migración a gran escala desde herramientas no-code como Google Sheets y N8N.",
+      "features": "Motor de agregación de marketplace, arquitectura de event bus y colas de tareas, integración con Shopify mediante adaptadores personalizados, sincronización de inventario en tiempo real, migración a gran escala desde herramientas no-code (GSheets, N8N), backend escalable y modular.",
+      "challenges": "Oly gestionaba operaciones de negocio críticas con herramientas no-code como Google Sheets y N8N, que se estaban convirtiendo en cuellos de botella a medida que la plataforma crecía. La agregación de múltiples fuentes de moda de segunda mano requería una arquitectura robusta y orientada a eventos capaz de manejar altos volúmenes de flujos de datos concurrentes.",
+      "solutions": "Diseñamos y construimos un agregador de marketplace totalmente escalable con Node.js y Next.js, integrado con Shopify mediante adaptadores personalizados. Se implementó un event bus y un sistema de colas de tareas para garantizar una sincronización asíncrona y confiable de los datos entre fuentes. La infraestructura no-code fue migrada exitosamente a esta nueva arquitectura sin pérdida de datos."
+    },
     "afev": {
       "title": "Auditoría Técnica para una Gran ONG Francesa",
       "company": "AFEV",
