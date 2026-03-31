@@ -10,6 +10,10 @@
       "title": "Productos digitales para un mundo mejor",
       "description": "Utilizamos la mejor tecnología disponible para ayudar a que tus ideas tengan el impacto que merecen."
     },
+    "ai": {
+      "title": "Agentes IA y Automatizaciones",
+      "description": "Diseñamos y desplegamos agentes de IA inteligentes y pipelines de automatización adaptados a tus flujos de trabajo. Desde el procesamiento automatizado de datos hasta tareas complejas impulsadas por IA, ayudamos a tu organización a ahorrar tiempo, reducir el esfuerzo manual y escalar de forma más inteligente utilizando las últimas tecnologías LLM y de orquestación."
+    },
     "webapp": {
       "title": "Aplicaciones Web y Sitios Web",
       "description": "Creamos aplicaciones web y sitios web hermosos y ultrarrápidos. Nos enfocamos en un diseño centrado en el usuario con un rendimiento mejorado y SEO optimizado, desde MVP hasta productos listos para producción a gran escala."
@@ -25,6 +29,10 @@
     "backend": {
       "title": "Servicios Backend",
       "description": "Nuestro equipo sobresale en el desarrollo del lado del servidor, la gestión de bases de datos y la integración de APIs, garantizando que tu aplicación sea segura, escalable y de alto rendimiento. Aplicamos las mejores prácticas en gestión de servidores, servicios en la nube y seguridad para apoyar un flujo de datos sin interrupciones. Ya sea optimizando la infraestructura existente o construyendo un nuevo backend, nos aseguramos de que tus sistemas sean resilientes y estén preparados para el crecimiento."
+    },
+    "audit": {
+      "title": "Auditoría Técnica",
+      "description": "Realizamos auditorías técnicas en profundidad de tus sistemas, arquitectura y base de código existentes. A través de entrevistas con usuarios, equipos internos y partes interesadas externas, identificamos cuellos de botella, evaluamos las decisiones tecnológicas y proporcionamos recomendaciones claras y accionables para alinear tu stack tecnológico con las necesidades y objetivos a largo plazo de tu organización."
     }
   },
   "projects": {

@@ -31,7 +31,7 @@ export const ServicesSection = ({ lng }: { lng: string }) => {
         {t('services.section.description')}
       </h3>
 
-      <div className="container grid grid-cols-1 gap-4 px-0 lg:grid-cols-4">
+      <div className="container grid grid-cols-1 gap-4 px-0 lg:grid-cols-3">
         {serviceList.map((service, index) => (
           <ServiceCard
             key={index}

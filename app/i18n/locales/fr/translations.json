@@ -9,6 +9,10 @@
       "title": "Des solutions technologiques pour un monde meilleur",
       "description": "Nous utilisons les technologies les plus avancées pour aider vos idées à avoir l'impact qu'elles méritent."
     },
+    "ai": {
+      "title": "Agents IA & Automatisations",
+      "description": "Nous concevons et déployons des agents IA intelligents et des pipelines d'automatisation adaptés à vos processus métier. Du traitement automatisé des données aux tâches complexes pilotées par l'IA, nous aidons votre organisation à gagner du temps, réduire les tâches manuelles et scaler plus intelligemment grâce aux dernières technologies LLM et d'orchestration."
+    },
     "webapp": {
       "title": "Applications Web et Sites Web",
       "description": "Création d'applications Web et de sites Web élégants et performants. Nous réalisons des solutions sur mesure centrées sur l'expérience utilisateur, le design et le SEO, du MVP jusqu'au produit fini déployé en production."
@@ -24,6 +28,10 @@
     "backend": {
       "title": "Solutions Backend",
       "description": "Notre équipe excelle dans le développement backend, la gestion de bases de données et l'intégration d'APIs, garantissant une solution sécurisée, évolutive et performante. Nous appliquons les meilleures pratiques en gestion de serveurs, services Cloud et sécurité pour assurer un flux de données fluide. Que ce soit pour optimiser une infrastructure existante ou construire un nouveau backend, nous veillons à ce que vos systèmes soient résilients et prêts à grandir."
+    },
+    "audit": {
+      "title": "Audit Technique",
+      "description": "Nous réalisons des audits techniques approfondis de vos systèmes, architectures et bases de code existants. À travers des entretiens avec les utilisateurs, les équipes internes et les parties prenantes externes, nous identifions les points de friction, évaluons les choix technologiques et formulons des recommandations concrètes pour aligner votre stack technique avec les besoins et objectifs à long terme de votre organisation."
     }
   },
   "projects": {
