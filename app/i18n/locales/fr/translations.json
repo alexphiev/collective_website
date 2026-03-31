@@ -124,10 +124,12 @@
   "hero": {
     "title.1": "Développons votre vision du changement",
     "title.2": {
-      "1": "Applications Mobiles",
-      "2": "Applications Web et Sites Web",
-      "3": "Services Backend",
-      "4": "Données et Machine Learning"
+      "1": "Agents IA & Automatisations",
+      "2": "Applications Mobiles",
+      "3": "Applications Web et Sites Web",
+      "4": "Services Backend",
+      "5": "Données et Machine Learning",
+      "6": "Audit Technique"
     },
     "subtitle": "Partenaire avec des développeurs conscients, dédiés à un impact durable et positif sur l'environnement et la société.",
     "badge": {

@@ -125,10 +125,12 @@
   "hero": {
     "title.1": "Desarrollando tu visión de cambio",
     "title.2": {
-      "1": "Aplicaciones Móviles",
-      "2": "Aplicaciones Web y Sitios Web",
-      "3": "Servicios Backend",
-      "4": "Datos y Machine Learning"
+      "1": "Agentes IA y Automatizaciones",
+      "2": "Aplicaciones Móviles",
+      "3": "Aplicaciones Web y Sitios Web",
+      "4": "Servicios Backend",
+      "5": "Datos y Machine Learning",
+      "6": "Auditoría Técnica"
     },
     "subtitle": "Colabora con desarrolladores conscientes, dedicados a un impacto sostenible y positivo en el medio ambiente y la sociedad.",
     "badge": {
