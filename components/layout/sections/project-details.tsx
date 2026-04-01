@@ -14,7 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Project } from '@/utils/projects-utils'
 import { Users } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
-import placeholderImage from '/public/projects/placeholder.jpg'
+import placeholderImage from '@/public/projects/placeholder.jpg'
 import { TechList } from './tech-list'
 
 export default function ProjectDetails({

@@ -9,7 +9,7 @@ import { SiStrapi as StrapiIcon } from 'react-icons/si'
 import { SiReact as ReactIcon } from 'react-icons/si'
 import { SiAntdesign as AntDesignIcon } from 'react-icons/si'
 import { SiHtml5 as Html5Icon } from 'react-icons/si'
-import { SiCss3 as Css3Icon } from 'react-icons/si'
+import { SiCss as Css3Icon } from 'react-icons/si'
 import { SiSupabase as SupabaseIcon } from 'react-icons/si'
 import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
@@ -17,7 +17,7 @@ import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
 import { FaJava as JavaIcon } from "react-icons/fa";
 import { FaAws as AwsIcon } from "react-icons/fa";
-import { SiAwslambda as AwsLambdaIcon } from "react-icons/si";
+import { TbFileLambda as AwsLambdaIcon } from "react-icons/tb";
 import { SiJirasoftware as JiraSoftwareIcon } from "react-icons/si";
 import { SiDocker as DockerIcon } from "react-icons/si";
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
