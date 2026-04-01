@@ -5,22 +5,20 @@ import { cn } from '@/lib/utils'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { dir } from 'i18next'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import '../globals.css'
 import { languages } from '../i18n/settings'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
 export async function generateMetadata({
-  params: { lng },
+  params,
 }: {
-  params: { lng: string }
+  params: Promise<{ lng: string }>
 }): Promise<Metadata> {
+  const { lng } = await params
   const title = {
     en: 'Dev For Good - Developer collective for positive impact',
     fr: 'Dev For Good - Collectif de développeurs à impact positif',
@@ -88,13 +86,14 @@ export async function generateMetadata({
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { lng },
+  params,
 }: Readonly<{
   children: React.ReactNode
-  params: { lng: string }
+  params: Promise<{ lng: string }>
 }>) {
+  const { lng } = await params
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -146,7 +145,7 @@ export default function RootLayout({
           href={`${process.env.NEXT_PUBLIC_URL}/site.webmanifest`}
         />
       </head>
-      <body className={cn('min-h-screen bg-background', inter.className)}>
+      <body className={cn('min-h-screen bg-background')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

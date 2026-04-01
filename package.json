@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@devnomic/marquee": "^1.0.3",
+    "@fontsource-variable/inter": "^5.2.8",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-collapsible": "^1.1.12",
