@@ -18,7 +18,7 @@ import { useState } from 'react'
 import ProjectDetails from './project-details'
 import { SectionDivider } from './section-divider'
 import { TechList } from './tech-list'
-import placeholderImage from '/public/projects/placeholder.jpg'
+import placeholderImage from '@/public/projects/placeholder.jpg'
 
 export const ProjectSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
