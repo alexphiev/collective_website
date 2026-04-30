@@ -9,7 +9,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
-import { Dialog, DialogContent } from '@/components/ui/dialog'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+} from '@/components/ui/dialog'
 import { getProjects } from '@/utils/projects-utils'
 import Autoplay from 'embla-carousel-autoplay'
 import { InfoIcon } from 'lucide-react'
@@ -18,7 +23,7 @@ import { useState } from 'react'
 import ProjectDetails from './project-details'
 import { SectionDivider } from './section-divider'
 import { TechList } from './tech-list'
-import placeholderImage from '/public/projects/placeholder.jpg'
+import placeholderImage from '@/public/projects/placeholder.jpg'
 
 export const ProjectSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
@@ -67,7 +72,7 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
                         alt={`Project image for ${t(`projects.${code}.title`)}`}
                         width={500}
                         height={400}
-                        className="h-[200px] w-full rounded-md object-cover transition-all duration-300 hover:scale-105 lg:h-[400px]"
+                        className="h-auto w-full rounded-md object-cover transition-all duration-300 hover:scale-105"
                       />
                       <div className="flex flex-col gap-0 pt-4">
                         <h3 className="text-xl font-semibold">
@@ -100,6 +105,16 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
           }}
         >
           <DialogContent className="gradient-background-top h-[95vh] w-[95vw] max-w-[95vw] overflow-hidden rounded-lg p-0 sm:max-w-[90vw] md:max-w-[80vw] lg:h-[90vh] lg:max-h-[700px] lg:w-[70vw] lg:max-w-[600px]">
+            <DialogTitle className="sr-only">
+              {selectedProject !== null
+                ? t(`projects.${projects[selectedProject].code}.title`)
+                : t('projects.title')}
+            </DialogTitle>
+            <DialogDescription className="sr-only">
+              {selectedProject !== null
+                ? t(`projects.${projects[selectedProject].code}.description`)
+                : t('projects.description')}
+            </DialogDescription>
             <div className="h-full overflow-y-auto">
               <ProjectDetails project={projects[selectedProject]} lng={lng} />
             </div>

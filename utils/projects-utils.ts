@@ -9,17 +9,17 @@ import { SiStrapi as StrapiIcon } from 'react-icons/si'
 import { SiReact as ReactIcon } from 'react-icons/si'
 import { SiAntdesign as AntDesignIcon } from 'react-icons/si'
 import { SiHtml5 as Html5Icon } from 'react-icons/si'
-import { SiCss3 as Css3Icon } from 'react-icons/si'
+import { SiCss as Css3Icon } from 'react-icons/si'
 import { SiSupabase as SupabaseIcon } from 'react-icons/si'
 import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
-import { FaJava as JavaIcon } from "react-icons/fa";
-import { FaAws as AwsIcon } from "react-icons/fa";
-import { SiAwslambda as AwsLambdaIcon } from "react-icons/si";
-import { SiJirasoftware as JiraSoftwareIcon } from "react-icons/si";
-import { SiDocker as DockerIcon } from "react-icons/si";
+import { FaJava as JavaIcon } from 'react-icons/fa'
+import { FaAws as AwsIcon } from 'react-icons/fa'
+import { FaAws as AwsLambdaIcon } from 'react-icons/fa'
+import { SiJirasoftware as JiraSoftwareIcon } from 'react-icons/si'
+import { SiDocker as DockerIcon } from 'react-icons/si'
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
 import { SiJupyter as JupyterIcon } from 'react-icons/si'
 import { ImAndroid } from 'react-icons/im'
@@ -41,8 +41,6 @@ import VivaLabsImage1 from '@/public/projects/vivalabs-1.png'
 import VivaLabsImage2 from '@/public/projects/vivalabs-2.png'
 import VivaLabsImage3 from '@/public/projects/vivalabs-3.png'
 import CRNImage from '@/public/projects/crn-1.jpg'
-import OlyImage from '@/public/projects/oly-1.png'
-import AFEVImage from '@/public/projects/afev-1.png'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
 import Reusam3 from '@/public/projects/reusam-3.png'
@@ -174,7 +172,7 @@ export const getProjects = (t: TFunction): Project[] => {
         {
           name: 'Docker',
           icon: DockerIcon,
-        }
+        },
       ],
       featured: true,
       isNew: false,
@@ -220,7 +218,7 @@ export const getProjects = (t: TFunction): Project[] => {
     },
     {
       code: 'oly',
-      images: [OlyImage],
+      images: [],
       clientName: 'Oly',
       techList: [
         {
@@ -246,7 +244,7 @@ export const getProjects = (t: TFunction): Project[] => {
     },
     {
       code: 'afev',
-      images: [AFEVImage],
+      images: [],
       clientName: 'AFEV',
       techList: [
         {

@@ -14,7 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Project } from '@/utils/projects-utils'
 import { Users } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
-import placeholderImage from '/public/projects/placeholder.jpg'
+import placeholderImage from '@/public/projects/placeholder.jpg'
 import { TechList } from './tech-list'
 
 export default function ProjectDetails({
@@ -38,7 +38,7 @@ export default function ProjectDetails({
                     <Image
                       src={src}
                       alt={`Project screenshot ${index + 1}`}
-                      className="h-full w-full object-contain"
+                      className="h-auto w-full object-contain"
                     />
                   </CarouselItem>
                 ))}
@@ -55,8 +55,8 @@ export default function ProjectDetails({
           <Image
             src={placeholderImage}
             alt={t('project placeholder image')}
-            className="h-full w-full object-contain"
-            layout="fill"
+            className="object-contain"
+            fill
           />
         )}
       </div>

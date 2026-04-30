@@ -3,7 +3,8 @@
 import { useTranslation } from '@/app/i18n/client'
 import { saEvent } from '@/utils/analytics-utils'
 import { getServiceList } from '@/utils/services-utils'
-import { Linkedin, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
+import { FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -179,7 +180,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
             rel="noopener noreferrer"
             onClick={() => saEvent('click_navbar_linkedin')}
           >
-            <Linkedin className="size-5" />
+            <FaLinkedin className="size-5" />
           </Link>
         </Button>
       </div>

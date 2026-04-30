@@ -1,6 +1,6 @@
 'use client'
 
-import { Linkedin } from 'lucide-react'
+import { FaLinkedin } from 'react-icons/fa'
 import { saEvent } from '@/utils/analytics-utils'
 
 interface LinkedInLinkProps {
@@ -20,7 +20,7 @@ const LinkedInLink: React.FC<LinkedInLinkProps> = ({ url, firstName }) => {
       }}
     >
       <div className="rounded-full bg-background/15 p-2 text-foreground/80 hover:bg-background/40 hover:text-foreground">
-        <Linkedin className="h-6 w-6" />
+        <FaLinkedin className="h-6 w-6" />
       </div>
     </a>
   )

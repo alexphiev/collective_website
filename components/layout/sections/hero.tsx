@@ -1,7 +1,7 @@
 import { useTranslation } from '@/app/i18n'
 import { ContactUsButton } from '../contact-us-button'
 import { TypewritterComponent } from '../typewritter-component'
-import heroBackground from '@/public/hero-background.avif'
+import heroBackground from '@/public/hero-background.webp'
 import Image from 'next/image'
 import ScrollDownArrow from '../scroll-down-arrow'
 

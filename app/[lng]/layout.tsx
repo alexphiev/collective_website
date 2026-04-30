@@ -17,10 +17,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { lng },
+  params,
 }: {
-  params: { lng: string }
+  params: Promise<{ lng: string }>
 }): Promise<Metadata> {
+  const { lng } = await params
   const title = {
     en: 'Dev For Good - Developer collective for positive impact',
     fr: 'Dev For Good - Collectif de développeurs à impact positif',
@@ -88,13 +89,14 @@ export async function generateMetadata({
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { lng },
+  params,
 }: Readonly<{
   children: React.ReactNode
-  params: { lng: string }
+  params: Promise<{ lng: string }>
 }>) {
+  const { lng } = await params
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',

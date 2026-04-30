@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add *)",
+      "Bash(pnpm build *)",
+      "Bash(node -e \"const ri = require\\('/Users/alexandrephiev/Projects/collective_website/node_modules/react-icons/si'\\); console.log\\(Object.keys\\(ri\\).filter\\(k => /aws/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const fa = require\\('/Users/alexandrephiev/Projects/collective_website/node_modules/react-icons/fa'\\); console.log\\(Object.keys\\(fa\\).filter\\(k => /lambda/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const fa6 = require\\('/Users/alexandrephiev/Projects/collective_website/node_modules/react-icons/fa6'\\); console.log\\(Object.keys\\(fa6\\).filter\\(k => /aws|lambda/i.test\\(k\\)\\).slice\\(0,5\\)\\)\")"
+    ]
+  }
+}
