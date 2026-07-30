@@ -30,7 +30,7 @@ export const ImpactSection = async ({ lng }: { lng: string }) => {
                 key={index}
                 className="flex flex-col items-center justify-center rounded-lg border border-white border-opacity-20 bg-white bg-opacity-5 p-4 text-center shadow-lg backdrop-blur-lg backdrop-filter"
               >
-                <div className="bg-gradient-to-bl from-accent to-primary bg-clip-text text-6xl text-transparent">
+                <div className="bg-linear-to-bl from-accent to-primary bg-clip-text text-6xl text-transparent">
                   {data.value}
                 </div>
                 <div>{data.label}</div>
