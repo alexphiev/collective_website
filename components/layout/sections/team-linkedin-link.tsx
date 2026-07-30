@@ -1,6 +1,6 @@
 'use client'
 
-import { Linkedin } from 'lucide-react'
+import { FaLinkedin as Linkedin } from 'react-icons/fa6'
 import { saEvent } from '@/utils/analytics-utils'
 
 interface LinkedInLinkProps {

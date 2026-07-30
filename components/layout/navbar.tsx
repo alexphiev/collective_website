@@ -3,7 +3,9 @@
 import { useTranslation } from '@/app/i18n/client'
 import { saEvent } from '@/utils/analytics-utils'
 import { getServiceList } from '@/utils/services-utils'
-import { Linkedin, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
+import { FaLinkedin as Linkedin } from 'react-icons/fa6'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'

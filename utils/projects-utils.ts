@@ -19,7 +19,6 @@ import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
 import { FaJava as JavaIcon } from 'react-icons/fa'
 import { FaAws as AwsIcon } from 'react-icons/fa'
-import { SiAwslambda as AwsLambdaIcon } from 'react-icons/si'
 import { SiJirasoftware as JiraSoftwareIcon } from 'react-icons/si'
 import { SiDocker as DockerIcon } from 'react-icons/si'
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
@@ -199,10 +198,6 @@ export const getProjects = (t: TFunction): Project[] => {
         {
           name: 'AWS',
           icon: AwsIcon,
-        },
-        {
-          name: 'AWS Lambdas',
-          icon: AwsLambdaIcon,
         },
         {
           name: 'Jira Software',
