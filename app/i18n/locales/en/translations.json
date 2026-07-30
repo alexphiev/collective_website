@@ -113,8 +113,16 @@
       "features": "Marketplace aggregation engine, event bus and task queue architecture, Shopify integration with custom adapters, real-time inventory synchronization, large-scale migration from no-code tools (GSheets, N8N), scalable and modular backend.",
       "challenges": "Oly was running critical business operations on no-code tools including Google Sheets and N8N, which were becoming bottlenecks as the platform scaled. The aggregation of multiple second-hand fashion sources required a robust, event-driven architecture capable of handling high volumes of concurrent data flows.",
       "solutions": "We designed and built a fully scalable marketplace aggregator using Node.js and Next.js, integrated with Shopify via custom adapters. An event bus and task queue system were implemented to ensure reliable, asynchronous data synchronization across sources. The no-code infrastructure was successfully migrated to this new architecture with zero data loss."
-     },
-      "afev": {
+    },
+    "abc": {
+      "title": "Functionality for the transition plan and other improvements",
+      "company": "Association pour la Transition Bas Carbone",
+      "description": "Development of new features and continuous improvements on the BC+ platform which calculates in detail the emissions of each company and proposes reduction actions.",
+      "features": "Transition plan, mathematical calculations of compensation on graphs, performance improvements, security and global design.",
+      "challenges": "Application of complex mathematical formulas in the code, use of advanced compensation display methods.",
+      "solutions": "Collaboration with the methodology team and frequent communication to find the best solutions together."
+    },
+    "afev": {
       "title": "Technical Audit for a Large French NGO",
       "company": "AFEV",
       "description": "Technical audit for a large French NGO (with hundreds of employees) using an open source CRM, several Symfony applications, no-code tools, an ETL, and multiple synchronized databases. The audit included interviews with users, internal teams, and external consultants to understand the rationale behind technology choices and determine the most appropriate solution for the organization's needs.",

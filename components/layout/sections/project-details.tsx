@@ -14,7 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Project } from '@/utils/projects-utils'
 import { Users } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
-import placeholderImage from '/public/projects/placeholder.jpg'
+import { ProjectPlaceholder } from './project-placeholder'
 import { TechList } from './tech-list'
 
 export default function ProjectDetails({
@@ -28,18 +28,21 @@ export default function ProjectDetails({
   const { images, techList, teamSize } = project
   return (
     <div className="flex h-full w-full flex-col items-center justify-start overflow-y-auto">
-      <div className="relative max-h-[400px] w-full">
+      <div className="relative w-full">
         {images.length > 0 ? (
           <div className="relative mx-auto w-full">
             <Carousel className="w-full">
               <CarouselContent>
                 {images.map((src: StaticImageData, index: number) => (
                   <CarouselItem key={index}>
-                    <Image
-                      src={src}
-                      alt={`Project screenshot ${index + 1}`}
-                      className="h-full w-full object-contain"
-                    />
+                    <div className="relative aspect-video w-full bg-muted">
+                      <Image
+                        src={src}
+                        alt={`Project screenshot ${index + 1}`}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
@@ -52,12 +55,7 @@ export default function ProjectDetails({
             </Carousel>
           </div>
         ) : (
-          <Image
-            src={placeholderImage}
-            alt={t('project placeholder image')}
-            className="h-full w-full object-contain"
-            layout="fill"
-          />
+          <ProjectPlaceholder className="aspect-video w-full" />
         )}
       </div>
 

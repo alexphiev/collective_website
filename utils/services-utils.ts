@@ -3,15 +3,13 @@ import data from '@/public/services/data-primary.jpg'
 import mobile from '@/public/services/mobile-primary.jpg'
 import webapp from '@/public/services/web-primary.jpg'
 import backend from '@/public/services/backend-primary.jpg'
-import ai from '@/public/services/ai-primary.jpg'
-import audit from '@/public/services/audit-primary.jpg'
 import { StaticImageData } from 'next/image'
 
 export interface Service {
   title: string
   href: string
   description: string
-  image: StaticImageData
+  image?: StaticImageData
 }
 
 export const getServiceList = (t: TFunction): Service[] => {
@@ -20,7 +18,6 @@ export const getServiceList = (t: TFunction): Service[] => {
       title: t('services.ai.title'),
       href: '#ai',
       description: t('services.ai.description'),
-      image: ai,
     },
     {
       title: t('services.webapp.title'),
@@ -50,7 +47,6 @@ export const getServiceList = (t: TFunction): Service[] => {
       title: t('services.audit.title'),
       href: '#audit',
       description: t('services.audit.description'),
-      image: audit,
     },
   ]
 }

@@ -16,9 +16,9 @@ import { InfoIcon } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import ProjectDetails from './project-details'
+import { ProjectPlaceholder } from './project-placeholder'
 import { SectionDivider } from './section-divider'
 import { TechList } from './tech-list'
-import placeholderImage from '/public/projects/placeholder.jpg'
 
 export const ProjectSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
@@ -62,13 +62,18 @@ export const ProjectSection = ({ lng }: { lng: string }) => {
                       onClick={() => setSelectedProject(index)}
                     >
                       <InfoIcon className="absolute right-4 top-4 z-10 h-6 w-6 text-transparent transition-all duration-300 ease-in-out group-hover:text-foreground/80" />
-                      <Image
-                        src={images.length > 0 ? images[0] : placeholderImage}
-                        alt={`Project image for ${t(`projects.${code}.title`)}`}
-                        width={500}
-                        height={400}
-                        className="h-[200px] w-full rounded-md object-cover transition-all duration-300 hover:scale-105 lg:h-[400px]"
-                      />
+                      {images.length > 0 ? (
+                        <div className="relative aspect-video w-full overflow-hidden rounded-md bg-muted">
+                          <Image
+                            src={images[0]}
+                            alt={`Project image for ${t(`projects.${code}.title`)}`}
+                            fill
+                            className="object-contain transition-all duration-300 hover:scale-105"
+                          />
+                        </div>
+                      ) : (
+                        <ProjectPlaceholder className="aspect-video w-full rounded-md transition-all duration-300 hover:scale-105" />
+                      )}
                       <div className="flex flex-col gap-0 pt-4">
                         <h3 className="text-xl font-semibold">
                           {t(`projects.${code}.title`)}

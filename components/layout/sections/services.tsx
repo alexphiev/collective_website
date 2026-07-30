@@ -10,6 +10,7 @@ import { SectionDivider } from './section-divider'
 import { ContactUsButton } from '../contact-us-button'
 import { InfoIcon } from 'lucide-react'
 import { saEvent } from '@/utils/analytics-utils'
+import { ServicePlaceholder } from './service-placeholder'
 
 export const ServicesSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng)
@@ -70,14 +71,18 @@ const ServiceCard = ({
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="relative h-full w-full">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center top' }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 332px"
-            className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:transform group-hover:saturate-100"
-          />
+          {image ? (
+            <Image
+              src={image}
+              alt={title}
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 332px"
+              className="saturate-[0.6] transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:transform group-hover:saturate-100"
+            />
+          ) : (
+            <ServicePlaceholder className="h-full w-full transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:transform" />
+          )}
         </div>
       </div>
       <CardContent

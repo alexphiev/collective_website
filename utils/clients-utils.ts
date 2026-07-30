@@ -8,6 +8,10 @@ export const clients = [
     url: 'https://www.bridgeforbillions.org/',
   },
   {
+    name: 'Association pour la Transition Bas Carbone',
+    url: 'https://abc-transitionbascarbone.fr/',
+  },
+  {
     name: 'Cancer Registry of Norway',
     url: 'https://www.kreftregisteret.no/',
   },
@@ -64,11 +68,7 @@ export const clients = [
     url: 'https://www.birds.cornell.edu/',
   },
   {
-    name: 'AFEV',
+    name: 'AFEV - Association de la fondation étudiante pour la ville',
     url: 'https://afev.org',
-  },
-  {
-    name: 'Association Bilan Carbone',
-    url: 'https://abc-transitionbascarbone.fr/',
   },
 ]

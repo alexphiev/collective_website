@@ -9,17 +9,19 @@ import { SiStrapi as StrapiIcon } from 'react-icons/si'
 import { SiReact as ReactIcon } from 'react-icons/si'
 import { SiAntdesign as AntDesignIcon } from 'react-icons/si'
 import { SiHtml5 as Html5Icon } from 'react-icons/si'
-import { SiCss3 as Css3Icon } from 'react-icons/si'
+import { SiCss as Css3Icon } from 'react-icons/si'
+import { SiMui as MaterialUiIcon } from 'react-icons/si'
+import { SiPrisma as PrismaIcon } from 'react-icons/si'
 import { SiSupabase as SupabaseIcon } from 'react-icons/si'
 import { SiPostgresql as PostgresqlIcon } from 'react-icons/si'
 import { MdForest as ForestAdminIcon } from 'react-icons/md'
 import { FaNodeJs as NodeJsIcon } from 'react-icons/fa'
 import { SiPython as PythonIcon } from 'react-icons/si'
-import { FaJava as JavaIcon } from "react-icons/fa";
-import { FaAws as AwsIcon } from "react-icons/fa";
-import { SiAwslambda as AwsLambdaIcon } from "react-icons/si";
-import { SiJirasoftware as JiraSoftwareIcon } from "react-icons/si";
-import { SiDocker as DockerIcon } from "react-icons/si";
+import { FaJava as JavaIcon } from 'react-icons/fa'
+import { FaAws as AwsIcon } from 'react-icons/fa'
+import { SiAwslambda as AwsLambdaIcon } from 'react-icons/si'
+import { SiJirasoftware as JiraSoftwareIcon } from 'react-icons/si'
+import { SiDocker as DockerIcon } from 'react-icons/si'
 import { SiPytorch as PyTorchIcon } from 'react-icons/si'
 import { SiJupyter as JupyterIcon } from 'react-icons/si'
 import { ImAndroid } from 'react-icons/im'
@@ -46,6 +48,11 @@ import AFEVImage from '@/public/projects/afev-1.png'
 import Reusam1 from '@/public/projects/reusam-1.png'
 import Reusam2 from '@/public/projects/reusam-2.png'
 import Reusam3 from '@/public/projects/reusam-3.png'
+import OlyImage1 from '@/public/projects/oly-1.png'
+import OlyImage2 from '@/public/projects/oly-2.png'
+import ABCImage1 from '@/public/projects/abc-1.png'
+import ABCImage2 from '@/public/projects/abc-2.png'
+import ABCImage3 from '@/public/projects/abc-3.png'
 
 export interface Tech {
   name: string
@@ -93,6 +100,36 @@ export const getProjects = (t: TFunction): Project[] => {
       featured: true,
       isNew: true,
       teamSize: 2,
+    },
+    {
+      code: 'abc',
+      images: [ABCImage1, ABCImage2, ABCImage3],
+      clientName: 'Association pour la Transition Bas Carbone',
+      techList: [
+        {
+          name: 'Next.js',
+          icon: NextJsIcon,
+        },
+        {
+          name: 'Material UI',
+          icon: MaterialUiIcon,
+        },
+        {
+          name: 'TypeScript',
+          icon: TypeScriptIcon,
+        },
+        {
+          name: 'Prisma',
+          icon: PrismaIcon,
+        },
+        {
+          name: 'PostgreSQL',
+          icon: PostgresqlIcon,
+        },
+      ],
+      featured: true,
+      isNew: true,
+      teamSize: 1,
     },
     {
       code: 'bridgeforbillions',
@@ -174,7 +211,7 @@ export const getProjects = (t: TFunction): Project[] => {
         {
           name: 'Docker',
           icon: DockerIcon,
-        }
+        },
       ],
       featured: true,
       isNew: false,
@@ -220,7 +257,7 @@ export const getProjects = (t: TFunction): Project[] => {
     },
     {
       code: 'oly',
-      images: [OlyImage],
+      images: [OlyImage1, OlyImage2],
       clientName: 'Oly',
       techList: [
         {

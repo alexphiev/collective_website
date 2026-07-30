@@ -88,6 +88,14 @@
       "challenges": "Oly gestionaba operaciones de negocio críticas con herramientas no-code como Google Sheets y N8N, que se estaban convirtiendo en cuellos de botella a medida que la plataforma crecía. La agregación de múltiples fuentes de moda de segunda mano requería una arquitectura robusta y orientada a eventos capaz de manejar altos volúmenes de flujos de datos concurrentes.",
       "solutions": "Diseñamos y construimos un agregador de marketplace totalmente escalable con Node.js y Next.js, integrado con Shopify mediante adaptadores personalizados. Se implementó un event bus y un sistema de colas de tareas para garantizar una sincronización asíncrona y confiable de los datos entre fuentes. La infraestructura no-code fue migrada exitosamente a esta nueva arquitectura sin pérdida de datos."
     },
+    "abc": {
+      "title": "Funcionalidad para el plan de transición y otras mejoras",
+      "company": "Association pour la Transition Bas Carbone",
+      "description": "Desarrollo de nuevas funcionalidades y mejoras continuas en la plataforma BC+ que calcula en detalle las emisiones de GES de cada empresa y propone acciones de reducción de emisiones.",
+      "features": "Plan de transición, cálculos matemáticos de compensación en gráficos, mejoras de rendimiento, seguridad y diseño global.",
+      "challenges": "Aplicación de fórmulas matemáticas complejas en el código, uso de métodos avanzados de visualización de compensación.",
+      "solutions": "Trabajo en colaboración con el equipo metodológico y comunicación frecuente para encontrar las mejores soluciones juntos."
+    },
     "afev": {
       "title": "Auditoría Técnica para una Gran ONG Francesa",
       "company": "AFEV",
