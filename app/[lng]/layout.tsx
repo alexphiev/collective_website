@@ -97,7 +97,7 @@ export async function generateMetadata(
 export default async function RootLayout(
   props: Readonly<{
     children: React.ReactNode
-    params: { lng: string }
+    params: Promise<{ lng: string }>
   }>
 ) {
   const params = await props.params;

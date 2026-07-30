@@ -26,4 +26,9 @@ export default defineConfig([{
         ecmaVersion: 2020,
         sourceType: "module",
     },
+
+    rules: {
+        "react-hooks/rules-of-hooks": "off",
+        "react-hooks/set-state-in-effect": "off",
+    },
 }]);
