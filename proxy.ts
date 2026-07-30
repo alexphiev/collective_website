@@ -29,7 +29,7 @@ function shouldExcludePath(pathname: string): boolean {
   return excludedPatterns.some((pattern) => pattern.test(pathname))
 }
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const pathname = req.nextUrl.pathname
 
   if (shouldExcludePath(pathname)) {
