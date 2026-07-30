@@ -12,7 +12,13 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default function Home({ params: { lng } }: { params: { lng: string } }) {
+export default async function Home(props: { params: Promise<{ lng: string }> }) {
+  const params = await props.params;
+
+  const {
+    lng
+  } = params;
+
   return (
     <>
       <HeroSection lng={lng} />
