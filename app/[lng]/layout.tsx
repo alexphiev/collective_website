@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import '../globals.css'
+import { CookiesProvider } from '@/components/layout/cookies-provider'
 import { languages } from '../i18n/settings'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -162,17 +163,19 @@ export default async function RootLayout(
         />
       </head>
       <body className={cn('min-h-screen bg-background', inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          forcedTheme="dark"
-          disableTransitionOnChange
-        >
-          <Navbar lng={lng} />
-          {children}
-          <Toaster />
-          <SpeedInsights />
-        </ThemeProvider>
+        <CookiesProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            forcedTheme="dark"
+            disableTransitionOnChange
+          >
+            <Navbar lng={lng} />
+            {children}
+            <Toaster />
+            <SpeedInsights />
+          </ThemeProvider>
+        </CookiesProvider>
       </body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
