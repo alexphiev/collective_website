@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import '../globals.css'
+import { CookiesProvider } from '@/components/layout/cookies-provider'
 import { languages } from '../i18n/settings'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,11 +17,17 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export async function generateMetadata({
-  params: { lng },
-}: {
-  params: { lng: string }
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ lng: string }>
+  }
+): Promise<Metadata> {
+  const params = await props.params;
+
+  const {
+    lng
+  } = params;
+
   const title = {
     en: 'Dev For Good - Developer collective for positive impact',
     fr: 'Dev For Good - Collectif de développeurs à impact positif',
@@ -88,13 +95,22 @@ export async function generateMetadata({
   }
 }
 
-export default function RootLayout({
-  children,
-  params: { lng },
-}: Readonly<{
-  children: React.ReactNode
-  params: { lng: string }
-}>) {
+export default async function RootLayout(
+  props: Readonly<{
+    children: React.ReactNode
+    params: Promise<{ lng: string }>
+  }>
+) {
+  const params = await props.params;
+
+  const {
+    lng
+  } = params;
+
+  const {
+    children
+  } = props;
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -147,17 +163,19 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('min-h-screen bg-background', inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          forcedTheme="dark"
-          disableTransitionOnChange
-        >
-          <Navbar lng={lng} />
-          {children}
-          <Toaster />
-          <SpeedInsights />
-        </ThemeProvider>
+        <CookiesProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            forcedTheme="dark"
+            disableTransitionOnChange
+          >
+            <Navbar lng={lng} />
+            {children}
+            <Toaster />
+            <SpeedInsights />
+          </ThemeProvider>
+        </CookiesProvider>
       </body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
