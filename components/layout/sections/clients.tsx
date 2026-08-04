@@ -11,9 +11,9 @@ export const ClientsSection = () => {
     <section id="clients" className="py-10">
       <div className="container">
         <Marquee
-          className="gap-12"
+          className="gap-[3rem]"
           fade
-          innerClassName="gap-12"
+          innerClassName="gap-[3rem]"
           pauseOnHover
         >
           {clients.map(({ url, name }) => (

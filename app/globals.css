@@ -1,32 +1,12 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@config '../tailwind.config.ts';
-
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@layer utilities {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* *=========== Theme =========== */
-}
+/* *=========== Theme =========== */
 @layer base {
   :root {
     /* Base colors */
@@ -102,38 +82,36 @@
   }
 }
 
-@layer utilities {
-  .shadow-light {
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.085);
-  }
+.shadow-light {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.085);
+}
 
-  .shadow-dark {
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
-  }
+.shadow-dark {
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
+}
 
-  .container {
-    width: 85%;
-  }
+.container {
+  width: 85%;
+}
 
+.grid {
+  gap: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  /* Tailwind's sm breakpoint is 640px */
   .grid {
-    gap: 1.2rem;
+    gap: 0.8rem;
   }
-
-  @media (max-width: 640px) {
-    /* Tailwind's sm breakpoint is 640px */
-    .grid {
-      gap: 0.8rem;
-    }
-    .container {
-      width: 90%;
-    }
+  .container {
+    width: 90%;
   }
+}
 
-  @media (min-width: 1280px) {
-    /* Tailwind's xl breakpoint is 1280px */
-    .grid {
-      gap: 1.5rem;
-    }
+@media (min-width: 1280px) {
+  /* Tailwind's xl breakpoint is 1280px */
+  .grid {
+    gap: 1.5rem;
   }
 }
 
@@ -149,25 +127,25 @@
 .gradient-background-top {
   background-image: linear-gradient(
     to top,
-    var(--color-secondary),
-    var(--color-background)
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
 .gradient-background {
   background-image: linear-gradient(
     to top,
-    var(--color-background),
-    var(--color-secondary),
-    var(--color-background)
+    theme('colors.background'),
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
 .gradient-background-bottom {
   background-image: linear-gradient(
     to bottom,
-    var(--color-secondary),
-    var(--color-background)
+    theme('colors.secondary.DEFAULT'),
+    theme('colors.background')
   );
 }
 
@@ -188,5 +166,5 @@
   animation-range: entry 0% cover 40%;
 }
 .text-gradient {
-  @apply bg-linear-to-tr from-primary to-accent bg-clip-text text-transparent;
+  @apply bg-gradient-to-tr from-primary to-accent bg-clip-text text-transparent;
 }

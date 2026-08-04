@@ -81,7 +81,7 @@ export const Navbar = ({ lng }: { lng: string }) => {
     <header
       className={`sticky top-0 z-40 mx-auto flex w-full items-center justify-between bg-opacity-15 px-4 py-2 transition-all duration-500 lg:px-10 ${
         hasScrolled
-          ? 'border-b bg-linear-to-b from-secondary to-transparent backdrop-blur-md'
+          ? 'border-b bg-gradient-to-b from-secondary to-transparent backdrop-blur-md'
           : 'border-transparent bg-transparent'
       }`}
     >

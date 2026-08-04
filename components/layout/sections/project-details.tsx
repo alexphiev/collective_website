@@ -62,11 +62,11 @@ export default function ProjectDetails({
       <div className="w-full space-y-0 p-4">
         <div className="align-center flex flex-wrap items-center justify-between gap-4">
           <div className="min-w-[200px] flex-1">
-            <h2 className="wrap-break-word text-2xl font-bold">
+            <h2 className="break-words text-2xl font-bold">
               {t(`projects.${project.code}.title`)}
             </h2>
           </div>
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex flex-shrink-0 items-center gap-2">
             <Users className="h-5 w-5 text-muted-foreground" />
             <span className="text-sm text-muted-foreground">
               {t('projects.teamSize', { count: teamSize })}
@@ -80,7 +80,7 @@ export default function ProjectDetails({
         <TechList techList={techList} />
 
         <Tabs defaultValue="description" className="w-full pt-6">
-          <TabsList className="grid w-full grid-cols-4 bg-card">
+          <TabsList className="grid w-[100%] grid-cols-4 bg-card">
             <TabsTrigger value="description">
               {t('projects.overview')}
             </TabsTrigger>

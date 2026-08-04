@@ -30,13 +30,13 @@ export const TestimonialSection = async ({ lng }: { lng: string }) => {
         opts={{
           align: 'start',
         }}
-        className="relative mx-auto w-[80%] lg:w-[85%] lg:max-w-(--breakpoint-xl)"
+        className="relative mx-auto w-[80%] lg:w-[85%] lg:max-w-screen-xl"
       >
         <CarouselContent>
           {getTestimonials(t).map(({ name, comment, title, image }) => (
             <CarouselItem key={name} className="md:basis-1/2 lg:basis-1/3">
               <div className="relative h-[295px] w-full overflow-hidden rounded-xl bg-transparent drop-shadow-xl">
-                <Card className="absolute inset-px z-1 flex flex-col rounded-xl bg-card opacity-90">
+                <Card className="absolute inset-[1px] z-[1] flex flex-col rounded-xl bg-card opacity-90">
                   <CardContent className="h-[195px] overflow-auto text-ellipsis pb-0 pt-6">
                     {`"${comment}"`}
                   </CardContent>

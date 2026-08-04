@@ -45,7 +45,7 @@ export const AboutSection = async ({ lng }: { lng: string }) => {
                 <div className="absolute -left-1/2 -top-1/2 h-full w-full bg-accent/50 blur-[50px]"></div>
                 <div className="absolute left-1/2 top-1/2 h-full w-full bg-accent/50 blur-[50px]"></div>
 
-                <Card className="relative inset-px flex h-[calc(100%-2px)] w-[calc(100%-2px)] flex-col overflow-hidden rounded-xl bg-card opacity-90 drop-shadow-xl">
+                <Card className="relative inset-[1px] flex h-[calc(100%-2px)] w-[calc(100%-2px)] flex-col overflow-hidden rounded-xl bg-card opacity-90 drop-shadow-xl">
                   <CardHeader className="relative gap-0 p-0">
                     <div className="h-full overflow-hidden">
                       <a

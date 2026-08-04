@@ -23,11 +23,11 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
         />
       </div>
 
-      <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-background"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
 
-      <div className="container relative z-10 mx-auto flex w-full max-w-(--breakpoint-xl) items-center justify-center px-0 lg:px-4">
+      <div className="container relative z-10 mx-auto flex w-full max-w-screen-xl items-center justify-center px-0 lg:px-4">
         <div className="flex flex-col items-start justify-start space-y-4 text-start sm:space-y-4">
-          <div className="mx-auto max-w-(--breakpoint-xl) text-start text-4xl font-semibold md:text-6xl">
+          <div className="mx-auto max-w-screen-xl text-start text-4xl font-semibold md:text-6xl">
             <div className="pb-3 text-3xl md:text-6xl">{t('hero.title.1')}</div>
             <div>
               <span className="text-gradient text-xl md:text-6xl">
@@ -37,7 +37,7 @@ export const HeroSection = async ({ lng }: { lng: string }) => {
               </span>
             </div>
           </div>
-          <h1 className="text-md w-full max-w-(--breakpoint-sm) text-start text-muted-foreground md:text-xl">
+          <h1 className="text-md w-full max-w-screen-sm text-start text-muted-foreground md:text-xl">
             {t('hero.subtitle')}
           </h1>
           <ContactUsButton

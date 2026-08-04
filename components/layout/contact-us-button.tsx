@@ -26,7 +26,7 @@ export const ContactUsButton = ({
       }`}
     >
       <div className="group relative inline-block">
-        {/* <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-linear-to-r from-secondary via-primary to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div> */}
+        {/* <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-secondary via-primary to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div> */}
         <Button
           variant="default"
           className="group/arrow relative p-8 text-lg"
